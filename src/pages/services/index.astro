@@ -1,0 +1,43 @@
+---
+import Base from "../../layouts/Base.astro";
+import ServiceCard from "../../components/ServiceCard.astro";
+import { getServices } from "../../lib/content";
+import { services as serviceMeta } from "../../data/services";
+
+const services = await getServices();
+---
+
+<Base
+  title="Services"
+  description="Window washing, gutter cleaning, pressure washing, auto detailing, house painting and roof moss removal across Spokane, the Spokane Valley and Coeur d'Alene."
+>
+  <div class="pagehead">
+    <div class="container">
+      <h1>Our services</h1>
+      <p class="pagehead__lede">
+        Six services, one local team, free estimates. Most homes need two or three on a schedule
+        rather than all at once.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="grid grid--3">
+        {services.map((s) => {
+          const meta = serviceMeta[s.data.slug] ?? {};
+          return (
+            <ServiceCard
+              title={s.data.title}
+              slug={s.data.slug}
+              description={s.data.description}
+              image={meta.image}
+              icon={meta.icon}
+              headingLevel={2}
+            />
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</Base>

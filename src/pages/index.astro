@@ -1,0 +1,170 @@
+---
+import Base from "../layouts/Base.astro";
+import { getSite, getServices, formatPhone } from "../lib/content";
+import ServiceCard from "../components/ServiceCard.astro";
+import { services as serviceMeta } from "../data/services";
+
+const site = await getSite();
+const services = await getServices();
+---
+
+<Base title={site.name} description={site.tagline}>
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <span class="hero__eyebrow">Serving Spokane &amp; Coeur d'Alene since {site.since}</span>
+        <h1>A clearer view of your home.</h1>
+        <p class="hero__lede">
+          Professional window washing, gutter cleaning, pressure washing, roof moss removal and
+          house painting. Owner-operated, free estimates, and no subcontractor on your property.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--accent btn--lg" href="/schedule/">Get a free estimate</a>
+          <a class="btn btn--ghost btn--lg" href={`tel:${site.phone}`}>
+            Call {formatPhone(site.phone)}
+          </a>
+        </div>
+        <div class="hero__proof">
+          <span class="hero__proof-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Free estimates
+          </span>
+          <span class="hero__proof-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Insured &amp; background-checked
+          </span>
+          <span class="hero__proof-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            10% off with Bitcoin Cash
+          </span>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img
+          src="/images/hero-window-washer.webp"
+          alt="A window washer cleaning the glass of a home in the Spokane Valley"
+          width="1024"
+          height="768"
+          fetchpriority="high"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <h2>What we do</h2>
+        <p>
+          Six services, one local team. Most homes need two or three of them on a schedule rather
+          than all at once, and we will tell you honestly which are worth doing.
+        </p>
+      </div>
+      <div class="grid grid--3">
+        {services.map((s) => {
+          const meta = serviceMeta[s.data.slug] ?? {};
+          return (
+            <ServiceCard
+              title={s.data.title}
+              slug={s.data.slug}
+              description={s.data.description}
+              image={meta.image}
+              icon={meta.icon}
+            />
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <h2>How it works</h2>
+        <p>No contracts, no upselling, no pressure. Three steps and we are done.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Tell us what you need</h3>
+          <p>
+            Book online in a couple of minutes, or call and describe the job. Photos help if you
+            are not sure which service it is.
+          </p>
+        </li>
+        <li>
+          <h3>Get a free estimate</h3>
+          <p>
+            You get a clear price before anything starts. If it is not worth doing, we will say
+            so rather than take the job.
+          </p>
+        </li>
+        <li>
+          <h3>We do the work</h3>
+          <p>
+            Owner-operated and insured, with the same person quoting the job and doing it. Payment
+            on completion, 10% off if you pay with Bitcoin Cash.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Questions people ask</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How much does window washing cost?</summary>
+          <p>
+            It depends on size, storeys, and how long it has been since the last clean. You get a
+            fixed price in writing before we start, so there are no surprises on the day.
+          </p>
+        </details>
+        <details>
+          <summary>Do I need to be home while you work?</summary>
+          <p>
+            Not necessarily. Many customers are at work. We can text you photos when we finish, and
+            you can settle payment remotely.
+          </p>
+        </details>
+        <details>
+          <summary>How often should gutters be cleaned?</summary>
+          <p>
+            Twice a year is the usual answer in this region, and more if you have trees close to
+            the roof. Clogged gutters cause ice dams in winter, which is expensive to fix.
+          </p>
+        </details>
+        <details>
+          <summary>Do you cover areas outside Spokane?</summary>
+          <p>
+            Yes. We work across {site.area.slice(0, 3).join(", ")}, and further afield for larger
+            jobs. Travel is included in the estimate.
+          </p>
+        </details>
+        <details>
+          <summary>What is the 10% Bitcoin Cash discount?</summary>
+          <p>
+            Paying in Bitcoin Cash takes a 10% discount off the total. It is a small experiment in
+            how we get paid, and it applies to every service.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready for a free estimate?</h2>
+      <p>
+        Tell us what your property needs. We will quote it honestly, including telling you when a
+        job is not worth doing.
+      </p>
+      <div class="cta-band__actions">
+        <a class="btn btn--accent btn--lg" href="/schedule/">Book a visit</a>
+        <a class="btn btn--ghost btn--lg" href={`tel:${site.phone}`}>Call now</a>
+      </div>
+    </div>
+  </section>
+</Base>

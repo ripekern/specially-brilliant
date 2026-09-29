@@ -1,0 +1,52 @@
+---
+import { services } from "../data/services";
+
+interface Props {
+  title: string;
+  slug: string;
+  description?: string;
+  image?: string;
+  icon?: string;
+  /** h3 when the card sits under a section heading, h2 when it follows the page h1. */
+  headingLevel?: 2 | 3;
+}
+
+const { title, slug, description, image, icon, headingLevel = 3 } = Astro.props;
+const Heading = `h${headingLevel}`;
+const meta = services[slug];
+
+const icons: Record<string, string> = {
+  droplet: "M12 3s6 6.5 6 10.5A6 6 0 0 1 6 13.5C6 9.5 12 3 12 3Z",
+  gutter: "M3 6h18M3 12h18M3 18h18",
+  spray: "M4 20h16M7 16V9m0 0 8-4m-8 4 8 2",
+  car: "M5 13l1.5-5h11L19 13M4 13h16v5H4zM7 18v2M17 18v2",
+  paint: "M4 20h16M6 16l9-9 3 3-9 9H6z",
+  moss: "M12 20V9m0 0c-2 0-3-2-3-4 2 0 3 2 3 4Zm0 4c3 0 5-2 5-5-3 0-5 2-5 5Z",
+};
+---
+
+<a class="card" href={`/${slug}/`}>
+  <div class="card__media">
+    {image ? (
+      <img src={image} alt="" width="640" height="400" loading="lazy" decoding="async" />
+    ) : (
+      <div
+        style="display:grid;place-items:center;height:100%;background:var(--brand-100);color:var(--brand-700)"
+      >
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d={icons[icon ?? ""] ?? icons.droplet} />
+        </svg>
+      </div>
+    )}
+  </div>
+  <div class="card__body">
+    <Heading class="card__title">{meta?.label ?? title}</Heading>
+    <p class="card__text">{description ?? meta?.blurb ?? ""}</p>
+    <span class="card__cta">
+      Learn more
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <path d="m9 18 6-6-6-6" />
+      </svg>
+    </span>
+  </div>
+</a>

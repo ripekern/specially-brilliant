@@ -1,0 +1,51 @@
+---
+import { getSite, getServices, formatPhone } from "../lib/content";
+import { services as serviceMeta } from "../data/services";
+
+const site = await getSite();
+const services = await getServices();
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h2>{site.legalName}</h2>
+        <p class="footer__blurb">
+          Owner-operated in the {site.area[0]} area since {site.since}. Window washing, gutter
+          cleaning, pressure washing, detailing, painting and roof moss removal.
+        </p>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <ul class="footer__list">
+          {services.map((s) => (
+            <li>
+              <a href={`/${s.data.slug}/`}>{serviceMeta[s.data.slug]?.label ?? s.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3>Get in touch</h3>
+        <ul class="footer__list">
+          <li><a href={`tel:${site.phone}`}>{formatPhone(site.phone)}</a></li>
+          <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+          <li><a href="/schedule/">Book a visit</a></li>
+          <li><a href="/about-us/">About {site.owner.split(" ")[0]}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>&copy; {year} {site.legalName}. All rights reserved.</span>
+      <span>
+        Serving {site.area.slice(0, 3).join(", ")} and surrounding areas.
+        <a href="/privacy-policy/">Legal notice</a>
+      </span>
+    </div>
+  </div>
+</footer>

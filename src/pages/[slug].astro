@@ -1,0 +1,70 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../layouts/Base.astro";
+import SidebarCta from "../components/SidebarCta.astro";
+import { getSite } from "../lib/content";
+import { services as serviceMeta } from "../data/services";
+
+export async function getStaticPaths() {
+  // Astro hoists getStaticPaths out of module scope, so `reserved` has to live
+  // inside the function body rather than at module level.
+  const reserved = ["home", "services"];
+
+  // Real collection entries are required here, not the {id, data} summaries that
+  // getPages() returns: render() needs the entry itself to resolve <Content />.
+  const entries = await getCollection("documents", ({ data }) => !data.draft);
+  return entries
+    .filter((e) => !reserved.includes(e.data.slug))
+    .map((page) => ({
+      params: { slug: page.data.slug },
+      props: { page, meta: serviceMeta[page.data.slug] },
+    }));
+}
+
+const { page, meta } = Astro.props;
+const { Content } = await render(page);
+const site = await getSite();
+const { data } = page;
+const isService = data.type === "service";
+const label = meta?.label ?? data.title;
+---
+
+<Base
+  title={isService ? label : data.title}
+  description={data.description}
+  noindex={data.noindex}
+>
+  <div class="pagehead">
+    <div class="container">
+      {data.type === "post" && (
+        <p class="breadcrumb">
+          <a href="/">Home</a> &rsaquo; Journal
+        </p>
+      )}
+      <h1>{isService ? label : data.title}</h1>
+      {data.description && <p class="pagehead__lede">{data.description}</p>}
+    </div>
+  </div>
+
+  <div class="container with-aside">
+    <article class="prose">
+      <Content />
+    </article>
+    <aside class="aside">
+      <SidebarCta />
+      {!isService && (
+        <div class="panel">
+          <h2>Our services</h2>
+          <ul class="panel__list">
+            <li><a href="/window-washing/">Window washing</a></li>
+            <li><a href="/gutter-cleaning/">Gutter cleaning</a></li>
+            <li><a href="/pressure-washing/">Pressure washing</a></li>
+            <li><a href="/automobile-detailing/">Auto detailing</a></li>
+            <li><a href="/house-painting/">House painting</a></li>
+            <li><a href="/moss-removal/">Roof moss removal</a></li>
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+</Base>

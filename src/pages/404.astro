@@ -1,0 +1,24 @@
+---
+import Base from "../layouts/Base.astro";
+import { getSite, formatPhone } from "../lib/content";
+
+const site = await getSite();
+---
+
+<Base title="Page not found" noindex={true}>
+  <div class="section">
+    <div class="container container--narrow" style="text-align:center;padding-block:var(--space-8)">
+      <h1>That page isn't here</h1>
+      <p style="color:var(--ink-600);margin-block:var(--space-4);font-size:var(--text-lg)">
+        The link may be old, or the page may have moved.
+      </p>
+      <div class="hero__actions" style="justify-content:center">
+        <a class="btn btn--primary" href="/">Go to the homepage</a>
+        <a class="btn btn--ghost" href="/services/">See all services</a>
+      </div>
+      <p style="margin-block-start:var(--space-6);color:var(--ink-500);font-size:var(--text-sm)">
+        Or call us on <a href={`tel:${site.phone}`}>{formatPhone(site.phone)}</a> and we will point you the right way.
+      </p>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,21 @@
+{
+  "name": "specially-brilliant",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "content:convert": "python3 tools/convert.py",
+    "content:classify": "python3 tools/classify.py",
+    "content:media": "python3 tools/localize_media.py",
+    "content:headings": "python3 tools/normalize_headings.py"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.5"
+  }
+}

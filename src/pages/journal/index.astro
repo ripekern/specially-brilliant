@@ -1,0 +1,54 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+// A static route gets no getStaticPaths props, so the collection is read directly.
+const posts = await getCollection("posts", ({ data }) => !data.draft);
+const sorted = [...posts].sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""));
+---
+
+<Base
+  title="Journal"
+  description="Practical home maintenance advice from a window washing and exterior care business in Spokane, Washington."
+>
+  <div class="pagehead">
+    <div class="container">
+      <p class="breadcrumb"><a href="/">Home</a> &rsaquo; Journal</p>
+      <h1>Journal</h1>
+      <p class="pagehead__lede">
+        Straight answers about maintaining your home, written by someone who does the work.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="grid grid--2">
+        {sorted.map((post) => {
+          const date = post.data.date
+            ? new Date(post.data.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })
+            : "";
+          return (
+            <a class="card" href={`/journal/${post.data.slug}/`}>
+              <div class="card__body">
+                <span class="card__cta" style="color:var(--ink-500)">{date}</span>
+                <h2 class="card__title" style="font-size:var(--text-lg)">{post.data.title}</h2>
+                <p class="card__text">{post.data.description ?? ""}</p>
+                <span class="card__cta">
+                  Read
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</Base>
