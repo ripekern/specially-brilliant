@@ -1,5 +1,6 @@
 ---
 import { services } from "../data/services";
+import { withBase } from "../lib/urls";
 
 interface Props {
   title: string;
@@ -25,10 +26,10 @@ const icons: Record<string, string> = {
 };
 ---
 
-<a class="card" href={`/${slug}/`}>
+<a class="card" href={withBase(`/${slug}/`)}>
   <div class="card__media">
     {image ? (
-      <img src={image} alt="" width="640" height="400" loading="lazy" decoding="async" />
+      <img src={withBase(image)} alt="" width="640" height="400" loading="lazy" decoding="async" />
     ) : (
       <div
         style="display:grid;place-items:center;height:100%;background:var(--brand-100);color:var(--brand-700)"

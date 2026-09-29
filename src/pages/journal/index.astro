@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import { withBase } from "../../lib/urls";
 
 // A static route gets no getStaticPaths props, so the collection is read directly.
 const posts = await getCollection("posts", ({ data }) => !data.draft);
@@ -13,7 +14,7 @@ const sorted = [...posts].sort((a, b) => (b.data.date ?? "").localeCompare(a.dat
 >
   <div class="pagehead">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Home</a> &rsaquo; Journal</p>
+      <p class="breadcrumb"><a href={withBase("/")}>Home</a> &rsaquo; Journal</p>
       <h1>Journal</h1>
       <p class="pagehead__lede">
         Straight answers about maintaining your home, written by someone who does the work.
@@ -33,7 +34,7 @@ const sorted = [...posts].sort((a, b) => (b.data.date ?? "").localeCompare(a.dat
               })
             : "";
           return (
-            <a class="card" href={`/journal/${post.data.slug}/`}>
+            <a class="card" href={withBase(`/journal/${post.data.slug}/`)}>
               <div class="card__body">
                 <span class="card__cta" style="color:var(--ink-500)">{date}</span>
                 <h2 class="card__title" style="font-size:var(--text-lg)">{post.data.title}</h2>

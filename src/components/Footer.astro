@@ -1,6 +1,7 @@
 ---
 import { getSite, getServices, formatPhone } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
+import { withBase } from "../lib/urls";
 
 const site = await getSite();
 const services = await getServices();
@@ -23,7 +24,7 @@ const year = new Date().getFullYear();
         <ul class="footer__list">
           {services.map((s) => (
             <li>
-              <a href={`/${s.data.slug}/`}>{serviceMeta[s.data.slug]?.label ?? s.data.title}</a>
+              <a href={withBase(`/${s.data.slug}/`)}>{serviceMeta[s.data.slug]?.label ?? s.data.title}</a>
             </li>
           ))}
         </ul>
@@ -34,8 +35,8 @@ const year = new Date().getFullYear();
         <ul class="footer__list">
           <li><a href={`tel:${site.phone}`}>{formatPhone(site.phone)}</a></li>
           <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-          <li><a href="/schedule/">Book a visit</a></li>
-          <li><a href="/about-us/">About {site.owner.split(" ")[0]}</a></li>
+          <li><a href={withBase("/schedule/")}>Book a visit</a></li>
+          <li><a href={withBase("/about-us/")}>About {site.owner.split(" ")[0]}</a></li>
         </ul>
       </div>
     </div>
@@ -44,7 +45,7 @@ const year = new Date().getFullYear();
       <span>&copy; {year} {site.legalName}. All rights reserved.</span>
       <span>
         Serving {site.area.slice(0, 3).join(", ")} and surrounding areas.
-        <a href="/privacy-policy/">Legal notice</a>
+        <a href={withBase("/privacy-policy/")}>Legal notice</a>
       </span>
     </div>
   </div>

@@ -4,6 +4,7 @@ import Base from "../layouts/Base.astro";
 import SidebarCta from "../components/SidebarCta.astro";
 import { getSite } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
+import { withBase } from "../lib/urls";
 
 export async function getStaticPaths() {
   // Astro hoists getStaticPaths out of module scope, so `reserved` has to live
@@ -38,7 +39,7 @@ const label = meta?.label ?? data.title;
     <div class="container">
       {data.type === "post" && (
         <p class="breadcrumb">
-          <a href="/">Home</a> &rsaquo; Journal
+          <a href={withBase("/")}>Home</a> &rsaquo; Journal
         </p>
       )}
       <h1>{isService ? label : data.title}</h1>
@@ -56,12 +57,12 @@ const label = meta?.label ?? data.title;
         <div class="panel">
           <h2>Our services</h2>
           <ul class="panel__list">
-            <li><a href="/window-washing/">Window washing</a></li>
-            <li><a href="/gutter-cleaning/">Gutter cleaning</a></li>
-            <li><a href="/pressure-washing/">Pressure washing</a></li>
-            <li><a href="/automobile-detailing/">Auto detailing</a></li>
-            <li><a href="/house-painting/">House painting</a></li>
-            <li><a href="/moss-removal/">Roof moss removal</a></li>
+            <li><a href={withBase("/window-washing/")}>Window washing</a></li>
+            <li><a href={withBase("/gutter-cleaning/")}>Gutter cleaning</a></li>
+            <li><a href={withBase("/pressure-washing/")}>Pressure washing</a></li>
+            <li><a href={withBase("/automobile-detailing/")}>Auto detailing</a></li>
+            <li><a href={withBase("/house-painting/")}>House painting</a></li>
+            <li><a href={withBase("/moss-removal/")}>Roof moss removal</a></li>
           </ul>
         </div>
       )}

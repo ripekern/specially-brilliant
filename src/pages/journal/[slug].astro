@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { getSite } from "../../lib/content";
+import { withBase } from "../../lib/urls";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
@@ -23,7 +24,7 @@ const date = post.data.date
   <div class="pagehead">
     <div class="container">
       <p class="breadcrumb">
-        <a href="/">Home</a> &rsaquo; <a href="/journal/">Journal</a>
+        <a href={withBase("/")}>Home</a> &rsaquo; <a href={withBase("/journal/")}>Journal</a>
       </p>
       <h1>{post.data.title}</h1>
       {date && <p class="pagehead__lede">{date}</p>}
@@ -39,7 +40,7 @@ const date = post.data.date
         <h2>Need this done?</h2>
         <p>We cover {site.area.slice(0, 3).join(", ")} and surrounding areas.</p>
         <div class="stack" style="margin-top:var(--space-4)">
-          <a class="btn btn--accent btn--block" href="/schedule/">Get a free estimate</a>
+          <a class="btn btn--accent btn--block" href={withBase("/schedule/")}>Get a free estimate</a>
         </div>
       </div>
     </aside>

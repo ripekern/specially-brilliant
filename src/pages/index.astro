@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import { getSite, getServices, formatPhone } from "../lib/content";
 import ServiceCard from "../components/ServiceCard.astro";
 import { services as serviceMeta } from "../data/services";
+import { withBase } from "../lib/urls";
 
 const site = await getSite();
 const services = await getServices();
@@ -19,7 +20,7 @@ const services = await getServices();
           house painting. Owner-operated, free estimates, and no subcontractor on your property.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--accent btn--lg" href="/schedule/">Get a free estimate</a>
+          <a class="btn btn--accent btn--lg" href={withBase("/schedule/")}>Get a free estimate</a>
           <a class="btn btn--ghost btn--lg" href={`tel:${site.phone}`}>
             Call {formatPhone(site.phone)}
           </a>
@@ -41,7 +42,7 @@ const services = await getServices();
       </div>
       <div class="hero__media">
         <img
-          src="/images/hero-window-washer.webp"
+          src={withBase("/images/hero-window-washer.webp")}
           alt="A window washer cleaning the glass of a home in the Spokane Valley"
           width="1024"
           height="768"
@@ -162,7 +163,7 @@ const services = await getServices();
         job is not worth doing.
       </p>
       <div class="cta-band__actions">
-        <a class="btn btn--accent btn--lg" href="/schedule/">Book a visit</a>
+        <a class="btn btn--accent btn--lg" href={withBase("/schedule/")}>Book a visit</a>
         <a class="btn btn--ghost btn--lg" href={`tel:${site.phone}`}>Call now</a>
       </div>
     </div>

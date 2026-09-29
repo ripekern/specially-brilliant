@@ -1,20 +1,26 @@
 ---
 import { getSite, getServices, formatPhone } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
+import { withBase } from "../lib/urls";
 
 const site = await getSite();
 // Page titles are full SEO strings ("Quality Window Washing Service in Spokane
 // Area"), which are far too long for navigation. Use the short card labels.
 const services = (await getServices()).filter((s) => serviceMeta[s.data.slug]);
-const current = Astro.url.pathname;
+
+// Astro.url.pathname includes the deploy base (e.g. /specially-brilliant/...), so
+// strip it before comparing against site-relative hrefs, or aria-current would
+// silently stop matching on a subpath deploy.
+const base = (import.meta.env.BASE_URL ?? "/").replace(/\/+$/, "");
+const current = Astro.url.pathname.startsWith(base) ? Astro.url.pathname.slice(base.length) : Astro.url.pathname;
 const isActive = (href: string) => current === href || current.startsWith(`${href}/`);
 const NAV_LIMIT = 3;
 ---
 
 <header class="header">
   <div class="container header__inner">
-    <a class="header__brand" href="/">
-      <img src="/favicon.svg" alt="" width="44" height="44" />
+    <a class="header__brand" href={withBase("/")}>
+      <img src={withBase("/favicon.svg")} alt="" width="44" height="44" />
       <span>
         <span class="header__name">Specially Brilliant</span>
         <span class="header__tagline">Window washing &amp; home care</span>
@@ -22,26 +28,26 @@ const NAV_LIMIT = 3;
     </a>
 
     <nav class="header__nav" aria-label="Main">
-      <a class="header__link" href="/services/" aria-current={isActive("/services") ? "page" : undefined}>
+      <a class="header__link" href={withBase("/services/")} aria-current={isActive("/services") ? "page" : undefined}>
         Services
       </a>
       {services.slice(0, NAV_LIMIT).map((s) => (
         <a
           class="header__link"
-          href={`/${s.data.slug}/`}
+          href={withBase(`/${s.data.slug}/`)}
           aria-current={isActive(`/${s.data.slug}`) ? "page" : undefined}
         >
           {serviceMeta[s.data.slug].label}
         </a>
       ))}
-      <a class="header__link" href="/about-us/" aria-current={isActive("/about-us") ? "page" : undefined}>
+      <a class="header__link" href={withBase("/about-us/")} aria-current={isActive("/about-us") ? "page" : undefined}>
         About
       </a>
     </nav>
 
     <div class="header__actions">
       <a class="header__phone" href={`tel:${site.phone}`}>{formatPhone(site.phone)}</a>
-      <a class="btn btn--primary" href="/schedule/">Book a visit</a>
+      <a class="btn btn--primary" href={withBase("/schedule/")}>Book a visit</a>
     </div>
   </div>
 </header>

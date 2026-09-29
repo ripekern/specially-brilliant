@@ -1,5 +1,6 @@
 ---
 import { getSite, formatPhone } from "../lib/content";
+import { withBase } from "../lib/urls";
 
 const site = await getSite();
 ---
@@ -8,7 +9,7 @@ const site = await getSite();
   <h2>Get a free estimate</h2>
   <p>No obligation, and we will tell you if the job is not worth doing.</p>
   <div class="stack" style="margin-top:var(--space-4)">
-    <a class="btn btn--accent btn--block" href="/schedule/">Book online</a>
+    <a class="btn btn--accent btn--block" href={withBase("/schedule/")}>Book online</a>
     <a class="btn btn--ghost btn--block" href={`tel:${site.phone}`} style="color:#fff;border-color:var(--brand-300)">
       {formatPhone(site.phone)}
     </a>
