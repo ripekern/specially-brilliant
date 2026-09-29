@@ -33,10 +33,11 @@ jobs:
         run: npm ci
 
       - name: Build
-        # A GitHub *project* site is served from /<repo>/, so the build has to
-        # emit asset paths under that subpath. Local builds default to "/".
-        env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+        # The custom domain in public/CNAME makes this a root deploy, so the
+        # build must emit root-relative asset paths. It used to be built for
+        # /specially-brilliant/ because that was the only address the site had;
+        # with the CNAME in place GitHub serves it at the domain root, and a
+        # subpath build puts every stylesheet and image at a URL that 404s.
         run: npm run build
 
       - name: Audit colour contrast
@@ -47,7 +48,7 @@ jobs:
       - name: Verify the build is internally consistent
         # A broken link or a missing image should fail the deploy rather than ship.
         run: |
-          python3 tools/verify_build.py "${{ github.event.repository.name }}"
+          python3 tools/verify_build.py
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
