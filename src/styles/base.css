@@ -96,12 +96,12 @@ p {
 }
 
 a {
-  color: var(--brand-700);
+  color: var(--text-brand);
   text-underline-offset: 0.2em;
 }
 
 a:hover {
-  color: var(--brand-500);
+  color: var(--text-brand-muted);
 }
 
 :focus-visible {

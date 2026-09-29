@@ -39,6 +39,11 @@ jobs:
           BASE_PATH: /${{ github.event.repository.name }}/
         run: npm run build
 
+      - name: Audit colour contrast
+        # Checks every real text/background pair in both light and dark mode
+        # against WCAG AA, so a token change cannot quietly break readability.
+        run: python3 tools/audit_contrast.py
+
       - name: Verify the build is internally consistent
         # A broken link or a missing image should fail the deploy rather than ship.
         run: |

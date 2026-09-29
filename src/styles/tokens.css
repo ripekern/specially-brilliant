@@ -31,8 +31,27 @@
   --ink-100: #f1f5f9;
   --white: #ffffff;
 
-  --success-600: #059669;
+  --success-600: #047857;
   --warning-600: #d97706;
+
+  /*
+   * Text-role brand tokens.
+   *
+   * The brand scale above does double duty: it is both the surface colour for
+   * buttons and panels, and the text colour for links, headings and card titles.
+   * A single token cannot invert for dark mode without turning every button
+   * background light. These split the two roles, so dark mode can brighten the
+   * text while the surfaces stay dark.
+   *
+   * Keep surfaces on the raw --brand-* scale; use these for any `color:`.
+   */
+  --text-brand-strong: var(--brand-800);
+  --text-brand: var(--brand-700);
+  --text-brand-muted: var(--brand-600);
+
+  /* The footer is a dark band in both modes, so it does not ride the ink scale. */
+  --footer-bg: var(--ink-900);
+  --footer-text: var(--ink-300);
 
   /* Type */
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -79,11 +98,25 @@
     --ink-800: #f1f5f9;
     --ink-700: #e2e8f0;
     --ink-600: #cbd5e1;
+    /* These two were previously left at their light values, which left the
+       faintest text at 3.73:1 on the dark page. */
+    --ink-500: #94a3b8;
+    --ink-400: #a3b1c4;
     --ink-300: #334155;
     --ink-200: #1e293b;
     --ink-100: #0f172a;
     --white: #111827;
     --brand-50: #0c2237;
     --brand-100: #0e2f4a;
+
+    /* Text roles brighten; the brand surfaces they sit on do not change. */
+    --text-brand-strong: #a8d4f0;
+    --text-brand: #7fbde6;
+    --text-brand-muted: #5aa8dc;
+
+    --success-600: #34d399;
+
+    --footer-bg: #0b2b45;
+    --footer-text: #cbd5e1;
   }
 }
