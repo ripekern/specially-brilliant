@@ -15,14 +15,16 @@ const services = (await getServices()).filter((s) => serviceMeta[s.data.slug]);
 const base = (import.meta.env.BASE_URL ?? "/").replace(/\/+$/, "");
 const current = Astro.url.pathname.startsWith(base) ? Astro.url.pathname.slice(base.length) : Astro.url.pathname;
 const isActive = (href: string) => current === href || current.startsWith(`${href}/`);
-const NAV_LIMIT = 3;
+// Two, not three: four nowrap nav links plus the phone and the CTA overflow the
+// 72rem container. The services page is the hub for the full list.
+const NAV_LIMIT = 2;
 ---
 
 <header class="header">
   <div class="container header__inner">
     <a class="header__brand" href={withBase("/")}>
-      <img src={withBase("/favicon.svg")} alt="" width="44" height="44" />
-      <span>
+      <img class="header__logo" src={withBase("/logo.png")} alt="" width="44" height="44" />
+      <span class="header__brandtext">
         <span class="header__name">Specially Brilliant</span>
         <span class="header__tagline">Window washing &amp; home care</span>
       </span>

@@ -13,6 +13,9 @@
   text-decoration: none;
   cursor: pointer;
   border: 2px solid transparent;
+  /* A button whose label wraps stops reading as a button. The one place a
+     button is allowed to wrap is a full-width block in a narrow column. */
+  white-space: nowrap;
   transition:
     background-color 0.15s ease,
     color 0.15s ease,
@@ -92,24 +95,43 @@
   text-decoration: none;
   color: inherit;
   margin-inline-end: auto;
+  /* The lockup is nowrap, so it must not be allowed to shrink: a crushed brand
+     lets the nav sit on top of it rather than pushing anything. */
+  flex: none;
 }
 
-.header__brand img {
+.header__logo {
   height: 2.75rem;
-  width: auto;
+  width: 2.75rem;
+  flex: none;
+  object-fit: contain;
+}
+
+/* The name and tagline are siblings inside one span, so they have to be given
+   their own lines or they run together and wrap against each other. */
+.header__brandtext {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .header__name {
+  display: block;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--text-lg);
-  line-height: 1.1;
+  line-height: 1.15;
   color: var(--text-brand-strong);
+  /* The brand is a fixed lockup: it shrinks in font size before it breaks. */
+  white-space: nowrap;
 }
 
 .header__tagline {
+  display: block;
   font-size: var(--text-xs);
+  line-height: 1.3;
   color: var(--ink-500);
+  white-space: nowrap;
 }
 
 .header__nav {
@@ -118,7 +140,9 @@
   align-items: center;
 }
 
-@media (min-width: 64rem) {
+/* The nav carries four nowrap links plus the phone and the CTA. It only appears
+   once all three fit; any earlier and the links land on top of the brand. */
+@media (min-width: 78rem) {
   .header__nav {
     display: flex;
   }
@@ -131,6 +155,9 @@
   font-size: var(--text-sm);
   text-decoration: none;
   color: var(--ink-700);
+  /* Service names are two words long; letting them break leaves the nav
+     looking ragged against the single-word links beside them. */
+  white-space: nowrap;
 }
 
 .header__link:hover,
@@ -151,11 +178,61 @@
   color: var(--text-brand-strong);
   text-decoration: none;
   font-size: var(--text-sm);
+  white-space: nowrap;
 }
 
 @media (min-width: 48rem) {
   .header__phone {
     display: inline-flex;
+  }
+}
+
+/* Below 48rem the lockup, the phone and the CTA cannot all sit on one line, and
+   the lockup is deliberately nowrap. The tagline is the piece that earns its
+   space least, so it is the piece that goes. */
+@media (max-width: 47.99rem) {
+  .header__inner {
+    gap: var(--space-3);
+  }
+
+  .header__logo {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .header__name {
+    font-size: var(--text-base);
+  }
+
+  .header__tagline {
+    display: none;
+  }
+
+  .header__actions .btn {
+    padding: 0.6rem 1rem;
+    font-size: var(--text-sm);
+  }
+}
+
+/* Narrowest phones still in circulation. Everything above is sized for 360px;
+   below that the lockup and the CTA have to give up a little more. */
+@media (max-width: 24rem) {
+  .header__inner {
+    padding-inline: var(--space-3);
+    gap: var(--space-2);
+  }
+
+  .header__logo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .header__name {
+    font-size: var(--text-sm);
+  }
+
+  .header__actions .btn {
+    padding: 0.55rem 0.85rem;
   }
 }
 
@@ -604,6 +681,21 @@
   margin-block-end: var(--space-3);
 }
 
+/* The ghost button is tuned for a white page, so on the dark brand-800 bands its
+   label and border need to invert or the button reads as 1.38:1. The cta band
+   and the accent panel are the same surface, so they share one rule. */
+.cta-band .btn--ghost,
+.panel--accent .btn--ghost {
+  color: #fff;
+  border-color: color-mix(in srgb, #fff 60%, transparent);
+}
+
+.cta-band .btn--ghost:hover,
+.panel--accent .btn--ghost:hover {
+  background: color-mix(in srgb, #fff 14%, transparent);
+  color: #fff;
+}
+
 .cta-band p {
   color: color-mix(in srgb, #fff 85%, transparent);
   max-width: 52ch;
@@ -672,14 +764,14 @@
 }
 
 .footer__legal {
-  border-top: 1px solid var(--ink-700);
+  border-top: 1px solid color-mix(in srgb, var(--footer-text) 25%, transparent);
   padding-block-start: var(--space-4);
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
   justify-content: space-between;
   font-size: var(--text-xs);
-  color: var(--ink-500);
+  color: var(--footer-text-muted);
 }
 
 /* Prose images and callouts */

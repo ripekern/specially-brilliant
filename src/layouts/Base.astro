@@ -74,7 +74,7 @@ const orgSchema = {
     />
 
     {base === "/" && <link rel="sitemap" href="/sitemap-index.xml" />}
-    <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
+    <link rel="icon" href={withBase("/logo.png")} type="image/png" sizes="any" />
 
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
     <slot name="head" />

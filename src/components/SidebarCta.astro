@@ -10,7 +10,7 @@ const site = await getSite();
   <p>No obligation, and we will tell you if the job is not worth doing.</p>
   <div class="stack" style="margin-top:var(--space-4)">
     <BookingCta class="btn btn--accent btn--block" label="Book online" />
-    <a class="btn btn--ghost btn--block" href={`tel:${site.phone}`} style="color:#fff;border-color:var(--brand-300)">
+    <a class="btn btn--ghost btn--block" href={`tel:${site.phone}`}>
       {formatPhone(site.phone)}
     </a>
   </div>
