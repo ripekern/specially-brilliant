@@ -18,3 +18,7 @@ node_modules/
 # Logs
 *.log
 npm-debug.log*
+
+# Python bytecode from the content and audit tools
+__pycache__/
+*.pyc
