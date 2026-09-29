@@ -32,8 +32,9 @@ WP Easy Pay form here; it could not be carried over to a static site, because
 card details must be submitted over a secure connection to a payment processor
 and never stored as part of a page.
 
-To pay by card, [book your visit](/schedule/) and mention that you would like an
-invoice sent. You will receive a secure payment link by email.
+To pay by card, [book your visit](https://calendar.proton.me/bookings#kqhaJrYVSePagYuW_pmFqPAoyub9f4pgF9w4Ps5jiMA=)
+and mention that you would like an invoice sent. You will receive a secure
+payment link by email.
 :::
 
 **Authorization**

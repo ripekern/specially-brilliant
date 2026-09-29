@@ -1,0 +1,25 @@
+---
+import { getSite } from "../lib/content";
+
+/**
+ * The booking call to action.
+ *
+ * Booking is the single most valuable action on the site, so the primary buttons
+ * link straight to the calendar rather than through an intermediate page. The URL
+ * lives in site.json so it is defined once; the schedule page carries its own copy
+ * for anyone reading the content directly.
+ *
+ * Same tab on purpose: a booking link that opens in a new tab tends to be left
+ * sitting behind the site, and the visitor loses their place.
+ */
+interface Props {
+  label?: string;
+  /** Omit for a plain text link that inherits its surrounding list styling. */
+  class?: string;
+}
+
+const { label = "Book a visit", class: className } = Astro.props;
+const site = await getSite();
+---
+
+{className ? <a class={className} href={site.bookingUrl}>{label}</a> : <a href={site.bookingUrl}>{label}</a>}

@@ -2,6 +2,7 @@
 import { getSite, getServices, formatPhone } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
+import BookingCta from "./BookingCta.astro";
 
 const site = await getSite();
 const services = await getServices();
@@ -35,7 +36,7 @@ const year = new Date().getFullYear();
         <ul class="footer__list">
           <li><a href={`tel:${site.phone}`}>{formatPhone(site.phone)}</a></li>
           <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-          <li><a href={withBase("/schedule/")}>Book a visit</a></li>
+          <li><BookingCta label="Book a visit" /></li>
           <li><a href={withBase("/about-us/")}>About {site.owner.split(" ")[0]}</a></li>
         </ul>
       </div>

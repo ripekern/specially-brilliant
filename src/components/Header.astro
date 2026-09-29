@@ -2,6 +2,7 @@
 import { getSite, getServices, formatPhone } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
+import BookingCta from "./BookingCta.astro";
 
 const site = await getSite();
 // Page titles are full SEO strings ("Quality Window Washing Service in Spokane
@@ -47,7 +48,7 @@ const NAV_LIMIT = 3;
 
     <div class="header__actions">
       <a class="header__phone" href={`tel:${site.phone}`}>{formatPhone(site.phone)}</a>
-      <a class="btn btn--primary" href={withBase("/schedule/")}>Book a visit</a>
+      <BookingCta class="btn btn--primary" />
     </div>
   </div>
 </header>

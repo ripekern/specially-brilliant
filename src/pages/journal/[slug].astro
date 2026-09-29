@@ -3,6 +3,7 @@ import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { getSite } from "../../lib/content";
 import { withBase } from "../../lib/urls";
+import BookingCta from "../../components/BookingCta.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
@@ -40,7 +41,7 @@ const date = post.data.date
         <h2>Need this done?</h2>
         <p>We cover {site.area.slice(0, 3).join(", ")} and surrounding areas.</p>
         <div class="stack" style="margin-top:var(--space-4)">
-          <a class="btn btn--accent btn--block" href={withBase("/schedule/")}>Get a free estimate</a>
+          <BookingCta class="btn btn--accent btn--block" label="Get a free estimate" />
         </div>
       </div>
     </aside>

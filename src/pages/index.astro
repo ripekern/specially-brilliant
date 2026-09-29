@@ -4,6 +4,7 @@ import { getSite, getServices, formatPhone } from "../lib/content";
 import ServiceCard from "../components/ServiceCard.astro";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
+import BookingCta from "../components/BookingCta.astro";
 
 const site = await getSite();
 const services = await getServices();
@@ -20,7 +21,7 @@ const services = await getServices();
           house painting. Owner-operated, free estimates, and no subcontractor on your property.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--accent btn--lg" href={withBase("/schedule/")}>Get a free estimate</a>
+          <BookingCta class="btn btn--accent btn--lg" label="Get a free estimate" />
           <a class="btn btn--ghost btn--lg" href={`tel:${site.phone}`}>
             Call {formatPhone(site.phone)}
           </a>
@@ -163,7 +164,7 @@ const services = await getServices();
         job is not worth doing.
       </p>
       <div class="cta-band__actions">
-        <a class="btn btn--accent btn--lg" href={withBase("/schedule/")}>Book a visit</a>
+        <BookingCta class="btn btn--accent btn--lg" label="Book a visit" />
         <a class="btn btn--ghost btn--lg" href={`tel:${site.phone}`}>Call now</a>
       </div>
     </div>
