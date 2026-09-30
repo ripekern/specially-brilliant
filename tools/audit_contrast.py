@@ -202,6 +202,12 @@ PAIRS = [
     ("success icon",           "--success-600","--white",     3.0, "components: .features svg"),
     ("success text",           "--success-600","--white",     4.5, "components: .pill--success"),
     ("focus ring",             "--brand-500", "--white",      3.0, "base.css: :focus-visible"),
+    # Fixed light surfaces. The payment card and the Bitcoin Cash chips keep a
+    # white background whatever the page is doing, so their text is pinned to a
+    # literal too -- a token would invert with the page and put near-white text
+    # on white. Scored with literals because that is what ships.
+    ("payment card address",   "#0f172a",    "#ffffff",     4.5, "components: .pay-card__addr on .pay-card"),
+    ("payment card label",     "#475569",    "#ffffff",     4.5, "components: .pay-card__label on .pay-card"),
 ]
 
 
