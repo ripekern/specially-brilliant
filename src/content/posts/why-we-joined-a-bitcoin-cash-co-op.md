@@ -1,7 +1,7 @@
 ---
-title: "Why We Joined a Digital Cash Co-Op"
+title: "Why We Joined a Bitcoin Cash Co-Op"
 description: "Why a local window washer joined a Bitcoin Cash co-op instead of a card network, and what it means for what customers pay."
-slug: "beyond-competition-join-the-cooperative-revolution-with-digital-cash"
+slug: "why-we-joined-a-bitcoin-cash-co-op"
 wpId: "995"
 date: "2025-06-05"
 modified: "2025-09-09"
@@ -29,18 +29,18 @@ That’s why we’re building a new kind of cooperative—one where local busine
 
 ## **The Currency of Cooperation**
 
-At the heart of our cooperative is Bitcoin [BCH]—a decentralized, peer-to-peer payment system that embodies the values we stand for. Bitcoin enables fast, low-fee payments that let customers pay you directly, without banks or middlemen. It offers financial sovereignty, empowering businesses to keep more of what they earn. Its borderless, censorship-resistant nature aligns with our belief in economic freedom for all.
+At the heart of our cooperative is Bitcoin Cash—a decentralized, peer-to-peer payment system that embodies the values we stand for. Bitcoin Cash enables fast, low-fee payments that let customers pay you directly, without banks or middlemen. It offers financial sovereignty, empowering businesses to keep more of what they earn. Its borderless, censorship-resistant nature aligns with our belief in economic freedom for all.
 
-Unlike the centralized fiat system that props up corporate giants and extracts value through fees and inflation, digital cash puts power back in the hands of small businesses and communities.
+Unlike the centralized fiat system that props up corporate giants and extracts value through fees and inflation, Bitcoin Cash puts power back in the hands of small businesses and communities.
 
-## **Join Us—Build the Future**
+## **Building It Together**
 
-We invite mission-driven businesses, artisans, tradespeople, and service providers to join our cooperative. Together, we can pool resources for marketing, logistics, and shared services. We can offer digital cash incentives to customers who support local, cooperative-aligned businesses. We can educate the public about bitcoin and economic freedom. And we can strengthen our resilience by supporting each other rather than competing.
+We have in mind mission-driven businesses, artisans, tradespeople and service providers who would want to work together this way. Together, we can pool resources for marketing, logistics, and shared services. We can offer Bitcoin Cash incentives to customers who support local, cooperative-aligned businesses. We can educate the public about Bitcoin Cash and economic freedom. And we can strengthen our resilience by supporting each other rather than competing.
 
-Let’s build a parallel economy—one that runs on collaboration, not competition; on digital cash, not broken financial systems. We’re not just accepting digital cash; we’re shaping a future around it.
+Let’s build a parallel economy—one that runs on collaboration, not competition; on Bitcoin Cash, not broken financial systems. We’re not just accepting Bitcoin Cash; we’re shaping a future around it.
 
-If you’re ready to work with—not against—fellow businesses and take a stand for economic sovereignty, [join our cooperative today](/bitcoin-cash-co-op/).
+If you run a local business and want to work with—not against—your neighbours, [here is what we are putting together](/bitcoin-cash-co-op/).
 **[SpeciallyBrilliant.com](/)**
 **[discover.cash](http://discover.cash)**
 
-#CooperationOverCompetition #Bitcoin #EconomicFreedom #LocalFirst #BitcoinForBusiness #SmallBusinessRevolution #BuildTogether #JoinTheCoop
+#CooperationOverCompetition #BitcoinCash #LocalFirst #BitcoinCashForBusiness #SmallBusinessRevolution #BuildTogether #JoinTheCoop

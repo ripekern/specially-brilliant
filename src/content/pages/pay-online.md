@@ -20,8 +20,6 @@ tags: []
 qr9uzk400z399gfkncmkzggwlxmlw46ra52qypvk8f
 ```
 
-A 10% discount applies to any service paid in Bitcoin Cash.
-
 Error? Get a supported wallet at [BitcoinCash.org](http://www.bitcoincash.org).
 
 ## Pay by card

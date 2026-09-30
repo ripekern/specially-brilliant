@@ -38,11 +38,11 @@ Sven [Pronounced Se-Ven]
 
 Sven has a passion for outdoor activities such as skiing, boating, swimming, and hiking, along with a strong commitment to maintaining an active lifestyle. Regular visits to the fitness center keep him engaged with sports like basketball, volleyball, racquetball, and running, complemented by dedicated time for stretching and recovery. He also follows a fully plant-based diet, reflecting his focus on health and wellness.
 
-## Digital cash
+## Bitcoin Cash
 
 Beyond physical activity, Sven enjoys traveling, connecting with others, and exploring creative outlets including writing, reading, calligraphy, graphic design, web design, and painting. Teaching, cleaning, and continuous learning are also integral parts of his life.
 
-A strong advocate for digital cash, Sven is passionate about helping people understand and use it. He believes that once the world embraces digital cash, it will become a more just, free, and empowered place for everyone.
+Sven is a strong advocate for Bitcoin Cash and is passionate about helping people understand and use it. He believes that as more people adopt Bitcoin Cash, the world becomes a more just, free and empowered place for everyone.
 
 Sven is deeply motivated by a desire to foster peace and serve as a steady, uplifting presence in the lives of others. As he puts it, *“There’s nothing more meaningful to me than sharing peaceful moments and real conversations with people—those are the things that truly last.”*
 
@@ -52,7 +52,7 @@ He looks forward to collaborating with you on your next project. Feel free to ex
 
 We are proud to have been meeting the needs of residential maintenance customers since 2012. Our goal is to provide the best possible service to our customers, and we are always looking for ways to improve. We appreciate the feedback we have received from our customers over the years, and we are constantly striving to make our service even better. Thank you for being a part of our company, and we look forward to continuing to serve you in the future.
 
-- ## [Beyond Competition: Join the Cooperative Revolution](/journal/beyond-competition-join-the-cooperative-revolution-with-digital-cash/)
+- ## [Why We Joined a Bitcoin Cash Co-Op](/journal/why-we-joined-a-bitcoin-cash-co-op/)
 
 The modern economy has long idolized business competition as the path to innovation and prosperity. But beneath this glossy myth lies a harsh truth: relentless competition breeds instability, waste, and short-term thinking. Instead of building value, companies often burn out in price wars, marketing battles, and a race to the bottom. It’s time for something… 
 

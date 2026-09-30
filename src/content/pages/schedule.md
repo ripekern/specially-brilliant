@@ -1,6 +1,6 @@
 ---
 title: "Schedule"
-description: "Book a visit online or call and describe the job. Free written estimates, no contracts, and 10% off any service paid in Bitcoin Cash."
+description: "Book a visit online or call and describe the job. Free written estimates, no contracts, and a local team that has worked in the Valley since 2012."
 slug: "schedule"
 wpId: "30"
 date: "2023-01-06"
@@ -19,12 +19,12 @@ confirmation straight away.
 
 [Open the booking calendar](https://calendar.proton.me/bookings#kqhaJrYVSePagYuW_pmFqPAoyub9f4pgF9w4Ps5jiMA=)
 
-## 10% discount when paying with Bitcoin Cash
+## Paying with Bitcoin Cash
 
 <span class="bch-mark"><img src="/images/bitcoin-cash-logo.svg" alt="Bitcoin Cash" width="265" height="36"></span>
 
-Every job paid in Bitcoin Cash is discounted 10%. It is a real discount on the
-final invoice, not a promotion that expires.
+We accept Bitcoin Cash for any service, at the same price. The wallet address is
+on the pay online page.
 
 ## Prefer to talk it through?
 

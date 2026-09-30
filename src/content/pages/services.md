@@ -73,4 +73,4 @@ tags: []
 
 [Get a free estimate](/moss-removal/)
 
-10% DISCOUNT WHEN PAYING WITH BITCOIN CASH
+WE ACCEPT BITCOIN CASH
