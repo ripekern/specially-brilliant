@@ -3,16 +3,17 @@ import sitemap from "@astrojs/sitemap";
 import rehypeBasePath from "./src/plugins/rehype-base-path.mjs";
 
 /**
- * Pages that must never appear in the sitemap: transactional, payment, lending
- * and lender-vetting URLs. They are `noindex` in the template, and a sitemap
- * listing them would contradict that.
+ * Pages that must never appear in the sitemap: transactional and payment URLs.
+ * They are `noindex` in the template, and a sitemap listing them would
+ * contradict that.
+ *
+ * /fees, /lender and /loan-vetting-worksheet used to be listed here. Those
+ * pages have been removed from the build, so the entries no longer match
+ * anything.
  */
 const EXCLUDE = [
   "/pay-online",
   "/payment-success",
-  "/fees",
-  "/lender",
-  "/loan-vetting-worksheet",
   "/bitcoin-cash-co-op",
   "/404",
 ];
