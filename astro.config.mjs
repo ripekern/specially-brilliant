@@ -3,9 +3,13 @@ import sitemap from "@astrojs/sitemap";
 import rehypeBasePath from "./src/plugins/rehype-base-path.mjs";
 
 /**
- * Pages that must never appear in the sitemap: transactional and payment URLs.
- * They are `noindex` in the template, and a sitemap listing them would
- * contradict that.
+ * Pages that must never appear in the sitemap: transactional, payment and the
+ * legal notice. They are `noindex` in the template, and a sitemap listing them
+ * would contradict that.
+ *
+ * /privacy-policy is here because the legal notice is not something to be found
+ * through search. It stays reachable from the footer, which is all a legal
+ * notice needs -- it has to exist and be linkable, not be discoverable.
  *
  * /fees, /lender and /loan-vetting-worksheet used to be listed here. Those
  * pages have been removed from the build, so the entries no longer match
@@ -15,6 +19,7 @@ const EXCLUDE = [
   "/pay-online",
   "/payment-success",
   "/bitcoin-cash-co-op",
+  "/privacy-policy",
   "/404",
 ];
 
