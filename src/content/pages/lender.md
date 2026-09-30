@@ -28,7 +28,7 @@ tags: []
 
 ![](/images/content/background-money-red-sm1.webp)
 
-[![Specially Brilliant Window Washing & More](/images/content/speciallybrilliantcapitallogotransparentwhite-2.webp)](https://speciallybrilliant.com/)
+[![Specially Brilliant Window Washing & More](/images/content/speciallybrilliantcapitallogotransparentwhite-2.webp)](/)
 
 Phone: [509.903.5116](tel:5099035116)
 

@@ -20,4 +20,4 @@ Lastly, professional gutter cleaning ensures that any potential problems, such a
 
 ## **Schedule a Visit**
 
-[Schedule](https://speciallybrilliant.com/schedule/)
+[Schedule](/schedule/)

@@ -20,7 +20,7 @@ tags: []
 - **Save Time & Money** – Efficient service that fits your budget and lifestyle.
 - **Create a Welcoming Space** – Impress guests and customers instantly.
 
-[Prices Starting at $119](https://speciallybrilliant.com/window-washing/)
+[Prices Starting at $119](/window-washing/)
 
 ## **Gutter Cleaning**
 
@@ -30,7 +30,7 @@ tags: []
 - **Save Time & Risk** – Skip the ladder—let us handle the mess. We are professionals with heights and quick service.
 - **Year-Round Peace of Mind** – Clean gutters mean worry-free weather.
 
-[Prices Starting at $119](https://speciallybrilliant.com/gutter-cleaning/)
+[Prices Starting at $119](/gutter-cleaning/)
 
 ## **House Washing** Package
 
@@ -40,7 +40,7 @@ tags: []
 - **Prevent Long-Term Damage** – Remove mold, grime, and buildup.
 - **Includes Window Cleaning** – Every house wash finishes with an exterior window cleaning to ensure both your home and windows are spotless.
 
-[Prices Starting at $249](https://speciallybrilliant.com/pressure-washing/)
+[Prices Starting at $249](/pressure-washing/)
 
 ## **House Painting** Package
 
@@ -50,7 +50,7 @@ tags: []
 - **Protect Surfaces** – Seal out weather, wear, and damage.
 - **Includes Window Cleaning** – Comes with exterior window cleaning to ensure windows are free of paint and dirt.
 
-[Schedule Your Free Estimate](https://speciallybrilliant.com/house-painting/)
+[Schedule Your Free Estimate](/house-painting/)
 
 ## **Automobile Detailing**
 
@@ -60,7 +60,7 @@ tags: []
 - **Protect Your Investment** – Guard paint and interiors from wear.
 - **Boost Resale Value** – A spotless car sells faster and for more money.
 
-[Prices Starting at $149](https://speciallybrilliant.com/automobile-detailing/)
+[Prices Starting at $149](/automobile-detailing/)
 
 ## **Moss Removal**
 
@@ -70,6 +70,6 @@ tags: []
 - **Save Time & Hassle** – Professional Experts Done Right
 - **Increase Curb Appeal** – Increase Resale Value
 
-[Prices Starting at $199](https://speciallybrilliant.com/specialty-lighting/)
+[Prices Starting at $199](/fees/)
 
 10% DISCOUNT WHEN PAYING WITH BITCOIN CASH

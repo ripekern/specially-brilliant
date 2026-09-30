@@ -22,4 +22,4 @@ Overall, pressure washing is a valuable service that offers both practical and a
 
 ## **Schedule a Visit**
 
-[Schedule](https://speciallybrilliant.com/schedule/)
+[Schedule](/schedule/)

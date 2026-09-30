@@ -20,4 +20,4 @@ Lastly, painting is a relatively affordable and simple way to update and revital
 
 ## **Schedule a Visit**
 
-[Schedule](https://speciallybrilliant.com/schedule/)
+[Schedule](/schedule/)

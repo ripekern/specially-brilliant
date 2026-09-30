@@ -38,8 +38,8 @@ We invite mission-driven businesses, artisans, tradespeople, and service provide
 
 Let’s build a parallel economy—one that runs on collaboration, not competition; on digital cash, not broken financial systems. We’re not just accepting digital cash; we’re shaping a future around it.
 
-If you’re ready to work with—not against—fellow businesses and take a stand for economic sovereignty, [join our cooperative today](https://speciallybrilliant.com/digital-cash-co-op/).
-**[SpeciallyBrilliant.com](https://speciallybrilliant.com)**
+If you’re ready to work with—not against—fellow businesses and take a stand for economic sovereignty, [join our cooperative today](/bitcoin-cash-co-op/).
+**[SpeciallyBrilliant.com](/)**
 **[discover.cash](http://discover.cash)**
 
 #CooperationOverCompetition #Bitcoin #EconomicFreedom #LocalFirst #BitcoinForBusiness #SmallBusinessRevolution #BuildTogether #JoinTheCoop

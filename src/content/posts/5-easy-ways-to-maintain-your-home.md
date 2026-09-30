@@ -43,4 +43,4 @@ It is very important in maintaining your homes’ environment by regular cleanin
 
 #### 5. Hire a home service expert
 
-If it becomes necessary to hire a home service expert, then that is the best choice. Specially Brilliant is happy to help in maintaining your home to keep it in the best condition. We provide services in the Spokane Valley Area. If you are looking for home services or would like a wellness company overview, then [contact us today!](https://speciallybrilliant.com/contact/)
+If it becomes necessary to hire a home service expert, then that is the best choice. Specially Brilliant is happy to help in maintaining your home to keep it in the best condition. We provide services in the Spokane Valley Area. If you are looking for home services or would like a wellness company overview, then [contact us today!](/schedule/)

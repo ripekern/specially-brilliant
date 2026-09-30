@@ -20,4 +20,4 @@ Don’t let decay compromise your shelter. Hire professionals who get the job do
 
 ## **Schedule a Visit**
 
-[Schedule](https://speciallybrilliant.com/schedule/)
+[Schedule](/schedule/)

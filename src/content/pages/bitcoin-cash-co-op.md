@@ -32,7 +32,7 @@ If you support economic freedom sign up below and become part of the cooperative
 
 ## **Together, we build stronger.**
 
-[Read our article to learn more!](https://speciallybrilliant.com/beyond-competition-join-the-cooperative-revolution-with-digital-cash/)
+[Read our article to learn more!](/journal/beyond-competition-join-the-cooperative-revolution-with-digital-cash/)
 
 ![Businesses are better without competition](/images/content/cooporative-2.webp)
 

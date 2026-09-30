@@ -10,4 +10,4 @@ order: 70
 noindex: true
 tags: []
 ---
-[![Specially Brilliant Window Washing & More](/images/content/speciallybrilliantcapitallogotransparentwhite-2.webp)](https://speciallybrilliant.com/)
+[![Specially Brilliant Window Washing & More](/images/content/speciallybrilliantcapitallogotransparentwhite-2.webp)](/)

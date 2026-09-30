@@ -20,4 +20,4 @@ Lastly, auto detailing also contributes to the comfort and health of the driver 
 
 ## **Schedule a Visit**
 
-[Schedule](https://speciallybrilliant.com/schedule/)
+[Schedule](/schedule/)

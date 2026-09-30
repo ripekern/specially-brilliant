@@ -20,4 +20,4 @@ In addition to the aesthetic and health benefits, window washing can also extend
 
 ## **Schedule a Visit**
 
-[Schedule](https://speciallybrilliant.com/schedule/)
+[Schedule](/schedule/)
