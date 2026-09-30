@@ -3,7 +3,7 @@ import "../styles/base.css";
 import "../styles/components.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { getSite } from "../lib/content";
+import { getSite, areaServedSchema, geoSchema, openingHoursSpecification, openingHours } from "../lib/content";
 import { withBase } from "../lib/urls";
 
 interface Props {
@@ -46,7 +46,10 @@ const orgSchema = {
   email: site.email,
   foundingDate: String(site.since),
   priceRange: "$$",
-  areaServed: site.area.map((place) => ({ "@type": "City", name: place })),
+  areaServed: areaServedSchema(site),
+  geo: geoSchema(site),
+  openingHours: openingHours(site),
+  openingHoursSpecification: openingHoursSpecification(site),
   founder: { "@type": "Person", name: site.owner },
   sameAs: site.social?.facebook ? [site.social.facebook] : undefined,
 };

@@ -2,7 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
 import SidebarCta from "../components/SidebarCta.astro";
-import { getSite } from "../lib/content";
+import { getSite, areaServedSchema } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
 
@@ -61,7 +61,7 @@ const schema = [
     image: new URL(withBase(meta.image), site.url).href,
     serviceType: label,
     provider: { "@type": "LocalBusiness", name: site.legalName, telephone: site.phone },
-    areaServed: site.area.map((place) => ({ "@type": "City", name: place })),
+    areaServed: areaServedSchema(site),
   },
   data.type === "post" && {
     "@type": "BlogPosting",

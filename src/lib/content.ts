@@ -12,6 +12,86 @@ export async function getSite() {
   return entry.data;
 }
 
+export type SiteConfig = Awaited<ReturnType<typeof getSite>>;
+
+export function areaServedSchema(site: SiteConfig) {
+  return [
+    ...site.serviceArea.map((name) => ({ "@type": "City", name })),
+    {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: site.geo.latitude,
+        longitude: site.geo.longitude,
+      },
+      geoRadius: String(site.serviceAreaRadius),
+    },
+  ];
+}
+
+export function geoSchema(site: SiteConfig) {
+  return {
+    "@type": "GeoCoordinates",
+    latitude: site.geo.latitude,
+    longitude: site.geo.longitude,
+  };
+}
+
+const DAY_ORDER = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+const DAY_ABBR: Record<string, string> = {
+  Sunday: "Su",
+  Monday: "Mo",
+  Tuesday: "Tu",
+  Wednesday: "We",
+  Thursday: "Th",
+  Friday: "Fr",
+  Saturday: "Sa",
+};
+
+function dayRange(days: string[]) {
+  const idx = days
+    .map((d) => DAY_ORDER.indexOf(d))
+    .filter((i) => i >= 0)
+    .sort((a, b) => a - b);
+  const runs: number[][] = [];
+  for (const i of idx) {
+    const last = runs[runs.length - 1];
+    if (last && i === last[last.length - 1] + 1) last.push(i);
+    else runs.push([i]);
+  }
+  return runs
+    .map((run) => {
+      const first = DAY_ABBR[DAY_ORDER[run[0]]];
+      const last = DAY_ABBR[DAY_ORDER[run[run.length - 1]]];
+      return run.length > 1 ? `${first}-${last}` : first;
+    })
+    .join(",");
+}
+
+export function openingHoursSpecification(site: SiteConfig) {
+  return site.hours.map((block) => ({
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: block.days,
+    opens: block.opens,
+    closes: block.closes,
+  }));
+}
+
+export function openingHours(site: SiteConfig) {
+  return site.hours
+    .map((block) => `${dayRange(block.days)} ${block.opens}-${block.closes}`)
+    .join(", ");
+}
+
 export type Doc = {
   id: string;
   data: {

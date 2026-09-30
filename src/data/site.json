@@ -8,7 +8,45 @@
     "phone": "+15099035116",
     "email": "sven@speciallybrilliant.com",
     "url": "https://speciallybrilliant.com",
-    "area": ["Spokane", "Spokane Valley", "Coeur d'Alene", "Liberty Lake", "Medical Lake"],
+    "area": ["Spokane", "Spokane Valley", "Airway Heights", "Coeur d'Alene", "Post Falls", "Sandpoint"],
+    "serviceArea": [
+      "Spokane",
+      "Spokane Valley",
+      "Airway Heights",
+      "Cheney",
+      "Four Lakes",
+      "Medical Lake",
+      "Liberty Lake",
+      "Mead",
+      "Deer Park",
+      "Coeur d'Alene",
+      "Post Falls",
+      "Hayden",
+      "Hayden Lake",
+      "Athol",
+      "Spirit Lake",
+      "Priest River",
+      "Newman Lake",
+      "Sandpoint",
+      "Ponderay"
+    ],
+    "geo": {
+      "latitude": 47.6571104,
+      "longitude": -117.2613936
+    },
+    "serviceAreaRadius": 95000,
+    "hours": [
+      {
+        "days": ["Sunday"],
+        "opens": "13:00",
+        "closes": "17:00"
+      },
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
     "since": 2012,
     "currency": "USD",
     "bookingUrl": "https://calendar.proton.me/bookings#kqhaJrYVSePagYuW_pmFqPAoyub9f4pgF9w4Ps5jiMA="

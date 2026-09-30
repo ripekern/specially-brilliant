@@ -4,7 +4,7 @@ import { glob, file } from "astro/loaders";
 /**
  * Pages and posts share a schema: they are the same kind of thing (a URL with prose),
  * differing only in `type`. The WordPress distinction (page vs post) carried no real
- * behaviour on this site, so the model drops it and keeps `type` for URL and menuing.
+ * behavior on this site, so the model drops it and keeps `type` for URL and menuing.
  */
 const documents = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
@@ -54,6 +54,41 @@ const config = defineCollection({
     email: z.string(),
     url: z.string().url(),
     area: z.array(z.string()),
+    serviceArea: z.array(z.string()),
+    geo: z.object({
+      latitude: z.number(),
+      longitude: z.number(),
+    }),
+    serviceAreaRadius: z.number(),
+    hours: z
+      .array(
+        z.object({
+          days: z.array(z.enum([
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ])),
+          opens: z.string().regex(/^\d{2}:\d{2}$/),
+          closes: z.string().regex(/^\d{2}:\d{2}$/),
+        }),
+      )
+      .refine(
+        (blocks) => {
+          const seen = new Set<string>();
+          for (const block of blocks) {
+            for (const day of block.days) {
+              if (seen.has(day)) return false;
+              seen.add(day);
+            }
+          }
+          return true;
+        },
+        { message: "a day may only appear in one hours block" },
+      ),
     since: z.number(),
     currency: z.string(),
     bookingUrl: z.string().url(),

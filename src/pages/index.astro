@@ -63,7 +63,7 @@ const services = await getServices();
         <h2>What we do</h2>
         <p>
           Six services, one local team. Most homes need two or three of them on a schedule rather
-          than all at once, and we will tell you which to prioritise so nothing gets missed.
+          than all at once, and we will tell you which to prioritize so nothing gets missed.
         </p>
       </div>
       <div class="grid grid--3">
@@ -87,7 +87,7 @@ const services = await getServices();
     <div class="container">
       <div class="section__head section__head--center">
         <h2>How it works</h2>
-        <p>No contracts, no pressure. Three steps and we are done.</p>
+        <p>No pressure. Three steps and we are done.</p>
       </div>
       <ol class="steps">
         <li>
@@ -124,7 +124,7 @@ const services = await getServices();
         <details>
           <summary>How much does window washing cost?</summary>
           <p>
-            It depends on size, storeys, and how long it has been since the last clean. You get a
+            It depends on size, height, and how long it has been since the last clean. You get a
             fixed price in writing before we start, so there are no surprises on the day.
           </p>
         </details>
@@ -145,8 +145,10 @@ const services = await getServices();
         <details>
           <summary>Do you cover areas outside Spokane?</summary>
           <p>
-            Yes. We work across {site.area.slice(0, -1).join(", ")} and {site.area.at(-1)}, and
-            further afield for larger jobs. Travel is included in the estimate.
+            Yes. We work across {site.area.slice(0, -1).join(", ")} and {site.area.at(-1)}, along
+            with the smaller communities between them, and further afield for larger jobs. Travel
+            is included in the estimate. The
+            <a href={withBase("/service-area/")}>full service area</a> lists every town we cover.
           </p>
         </details>
       </div>
