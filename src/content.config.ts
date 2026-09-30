@@ -21,6 +21,7 @@ const documents = defineCollection({
     order: z.number().default(100),
     draft: z.boolean().default(false),
     noindex: z.boolean().default(false),
+    showHours: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
   }),
 });

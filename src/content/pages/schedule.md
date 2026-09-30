@@ -9,6 +9,7 @@ source: "https://speciallybrilliant.com/schedule/"
 type: "core"
 order: 30
 noindex: false
+showHours: true
 tags: []
 ---
 

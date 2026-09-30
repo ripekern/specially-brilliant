@@ -2,7 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
 import SidebarCta from "../components/SidebarCta.astro";
-import { getSite, areaServedSchema } from "../lib/content";
+import { getSite, areaServedSchema, humanHours } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
 
@@ -28,6 +28,8 @@ const site = await getSite();
 const { data } = page;
 const isService = data.type === "service";
 const label = meta?.label ?? data.title;
+const hours = humanHours(site);
+const openDays = site.hours.flatMap((block) => block.days);
 
 // Service pages carry no description in their Markdown, so they used to fall
 // back to the site tagline -- the same sentence on all six, which reads as thin
@@ -102,6 +104,15 @@ const schema = [
       <Content />
     </article>
     <aside class="aside">
+      {data.showHours && (
+        <div class="panel">
+          <h2>Opening hours</h2>
+          <ul class="panel__list">
+            {hours.map((line) => <li>{line}</li>)}
+            {!openDays.includes("Saturday") && <li>Closed Saturdays</li>}
+          </ul>
+        </div>
+      )}
       <SidebarCta />
       {!isService && (
         <div class="panel">
