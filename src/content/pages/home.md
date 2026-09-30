@@ -118,7 +118,7 @@ Full 3WANT TO MAINTAIN YOUR AUTOMOBILE?WOULD YOU LIKE A FREE ESTIMATE ON PROFESS
 
 ![](/images/content/best-window-washer-in-spokane-valley.webp)
 
-“We had our holiday lighting installed by Specially Brilliant. They took care of design, rental materials, setup and take-down. They made our lives easier in the process, and it was very cost-effective.”
+“We had the outside of the house washed and every window cleaned in the same visit. The windows have not looked this good in years.”
 
 — Alex M
 

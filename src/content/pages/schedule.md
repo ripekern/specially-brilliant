@@ -20,6 +20,8 @@ confirmation straight away.
 
 ## 10% discount when paying with Bitcoin Cash
 
+<span class="bch-mark"><img src="/images/bitcoin-cash-logo.svg" alt="Bitcoin Cash" width="265" height="36"></span>
+
 Every job paid in Bitcoin Cash is discounted 10%. It is a real discount on the
 final invoice, not a promotion that expires.
 

@@ -32,4 +32,4 @@ If you neglect to clean your automobile, it will eventually become covered in di
 
 ### Conclusion
 
-Thankfully, cleaning services are available if you cannot do it yourself. We provide cleaning services in window washing, gutter cleaning and pressure washing. We also provide painting services, automobile detailing and to top it off we set up holiday/event lighting for your special events.
+Thankfully, cleaning services are available if you cannot do it yourself. We provide cleaning services in window washing, gutter cleaning and pressure washing. We also provide painting services, automobile detailing and roof moss removal.

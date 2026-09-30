@@ -799,3 +799,24 @@
   padding: var(--space-4) var(--space-5);
   margin-block: var(--space-5);
 }
+
+/* The Bitcoin Cash wordmark is dark grey lettering on a light ground, so it is
+   presented on its own light chip. Left bare it loses contrast the moment the
+   page flips to dark mode. */
+.bch-mark {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  margin-block: var(--space-4);
+  /* Removes the descender gap an inline image leaves in its line box. */
+  line-height: 0;
+}
+
+.bch-mark img {
+  height: 2.25rem;
+  width: auto;
+  border-radius: 0;
+  margin-block: 0;
+}

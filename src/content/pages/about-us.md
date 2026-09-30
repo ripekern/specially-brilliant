@@ -55,8 +55,6 @@ What happens if you fail to wash your windows? If you fail to wash your windows,
 
 January 18, 2023
 
-[![](/images/content/where-to-get-event-or-holiday-lighting-in-spokane.webp)](/services/)
-
 [![](/images/content/quality-house-painter-in-spokane-area-scaled.webp)](/house-painting/)
 
 [![](/images/content/best-auto-detailer-in-spokane-area-scaled.webp)](/automobile-detailing/)
