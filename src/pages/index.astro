@@ -17,8 +17,9 @@ const services = await getServices();
         <span class="hero__eyebrow">Serving Spokane &amp; Coeur d'Alene since {site.since}</span>
         <h1>A clearer view of your home.</h1>
         <p class="hero__lede">
-          Professional window washing, gutter cleaning, pressure washing, roof moss removal and
-          house painting. Owner-operated, free estimates, and no subcontractor on your property.
+          Professional window washing, gutter cleaning, pressure washing, auto detailing, house
+          painting and roof moss removal. Owner-operated, free estimates, and no subcontractor on
+          your property.
         </p>
         <div class="hero__actions">
           <BookingCta class="btn btn--accent btn--lg" label="Get a free estimate" />
@@ -141,8 +142,8 @@ const services = await getServices();
         <details>
           <summary>Do you cover areas outside Spokane?</summary>
           <p>
-            Yes. We work across {site.area.slice(0, 3).join(", ")}, and further afield for larger
-            jobs. Travel is included in the estimate.
+            Yes. We work across {site.area.slice(0, -1).join(", ")} and {site.area.at(-1)}, and
+            further afield for larger jobs. Travel is included in the estimate.
           </p>
         </details>
         <details>

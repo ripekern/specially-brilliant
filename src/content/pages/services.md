@@ -70,6 +70,6 @@ tags: []
 - **Save Time & Hassle** – Professional Experts Done Right
 - **Increase Curb Appeal** – Increase Resale Value
 
-[Prices Starting at $199](/fees/)
+[Get a free estimate](/moss-removal/)
 
 10% DISCOUNT WHEN PAYING WITH BITCOIN CASH
