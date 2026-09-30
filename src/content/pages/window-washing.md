@@ -1,10 +1,10 @@
 ---
 title: "Quality Window Washing Service in Spokane Area"
-description: "Professional window washing in Spokane, the Spokane Valley and Coeur d'Alene. Clean glass inside and out, up to three storeys, with a free written estimate."
+description: "Window washing in Spokane, the Spokane Valley and Coeur d'Alene. Clean glass inside and out on homes of any height where access allows. Free written estimate."
 slug: "window-washing"
 wpId: "47"
 date: "2023-01-11"
-modified: "2025-03-03"
+modified: "2026-09-30"
 source: "https://speciallybrilliant.com/window-washing/"
 type: "service"
 order: 10

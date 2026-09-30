@@ -764,7 +764,7 @@
 }
 
 /* The Bitcoin Cash merchant badge sits in the footer, which is a dark band in
-   both colour schemes, so one asset covers both and needs no dark-mode swap.
+   both color schemes, so one asset covers both and needs no dark-mode swap.
    It is a link to the payment page, so it carries the focus ring like any other
    link, but the badge is artwork rather than text and takes no underline. */
 .footer__bch {
@@ -789,7 +789,7 @@
 }
 
 /* The payment code and the address it encodes are read together, so they sit in
-   one centred card rather than as a floating image above a full-bleed <pre>.
+   one centered card rather than as a floating image above a full-bleed <pre>.
    The white field is fixed, not themed: scanners look for dark modules on a
    light background, and this page can be viewed in dark mode. */
 .pay-card {
@@ -899,7 +899,7 @@
   margin-block: var(--space-5);
 }
 
-/* The Bitcoin Cash wordmark is dark grey lettering on a light ground, so it is
+/* The Bitcoin Cash wordmark is dark gray lettering on a light ground, so it is
    presented on its own light chip. Left bare it loses contrast the moment the
    page flips to dark mode. It is a link to the payment page, so the chip is the
    hit area and it takes no underline -- the artwork is the affordance. */

@@ -1,6 +1,6 @@
 /*
   Design tokens.
-  One place to change colour, type scale, or spacing. Components reference these
+  One place to change color, type scale, or spacing. Components reference these
   variables only, so a rebrand is an edit here rather than a sweep through templates.
 */
 
@@ -37,8 +37,8 @@
   /*
    * Text-role brand tokens.
    *
-   * The brand scale above does double duty: it is both the surface colour for
-   * buttons and panels, and the text colour for links, headings and card titles.
+   * The brand scale above does double duty: it is both the surface color for
+   * buttons and panels, and the text color for links, headings and card titles.
    * A single token cannot invert for dark mode without turning every button
    * background light. These split the two roles, so dark mode can brighten the
    * text while the surfaces stay dark.

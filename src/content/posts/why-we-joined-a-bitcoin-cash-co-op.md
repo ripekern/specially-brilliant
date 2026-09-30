@@ -4,7 +4,7 @@ description: "Why a local window washer joined a Bitcoin Cash co-op instead of a
 slug: "why-we-joined-a-bitcoin-cash-co-op"
 wpId: "995"
 date: "2025-06-05"
-modified: "2025-09-09"
+modified: "2026-09-30"
 source: "https://speciallybrilliant.com/beyond-competition-join-the-cooperative-revolution-with-digital-cash/"
 type: "post"
 order: 100
@@ -39,7 +39,7 @@ We have in mind mission-driven businesses, artisans, tradespeople and service pr
 
 Let’s build a parallel economy—one that runs on collaboration, not competition; on Bitcoin Cash, not broken financial systems. We’re not just accepting Bitcoin Cash; we’re shaping a future around it.
 
-If you run a local business and want to work with—not against—your neighbours, [here is what we are putting together](/bitcoin-cash-co-op/).
+If you run a local business and want to work with—not against—your neighbors, [here is what we are putting together](/bitcoin-cash-co-op/).
 **[SpeciallyBrilliant.com](/)**
 **[discover.cash](http://discover.cash)**
 

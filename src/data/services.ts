@@ -16,7 +16,7 @@ export type ServiceMeta = {
 export const services: Record<string, ServiceMeta> = {
   "window-washing": {
     label: "Window washing",
-    blurb: "Streak-free glass inside and out, up to three storeys.",
+    blurb: "Streak-free glass inside and out, on homes of any height where access allows.",
     image: "/images/service-window-washing.webp",
     icon: "droplet",
   },

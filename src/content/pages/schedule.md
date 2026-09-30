@@ -1,10 +1,10 @@
 ---
 title: "Schedule"
-description: "Book a visit online or call and describe the job. Free written estimates, no contracts, and a local team that has worked in the Valley since 2012."
+description: "Book a visit online or call and describe the job. Free written estimates and a local team that has worked in the Valley since 2012."
 slug: "schedule"
 wpId: "30"
 date: "2023-01-06"
-modified: "2026-09-07"
+modified: "2026-09-30"
 source: "https://speciallybrilliant.com/schedule/"
 type: "core"
 order: 30
