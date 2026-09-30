@@ -92,6 +92,35 @@ export function openingHours(site: SiteConfig) {
     .join(", ");
 }
 
+const DAY_SHORT: Record<string, string> = {
+  Sunday: "Sun",
+  Monday: "Mon",
+  Tuesday: "Tue",
+  Wednesday: "Wed",
+  Thursday: "Thu",
+  Friday: "Fri",
+  Saturday: "Sat",
+};
+
+export function formatTime(hhmm: string) {
+  const [h, m] = hhmm.split(":").map(Number);
+  const period = h >= 12 ? "pm" : "am";
+  const hour = h % 12 === 0 ? 12 : h % 12;
+  return m === 0 ? `${hour}${period}` : `${hour}:${String(m).padStart(2, "0")}${period}`;
+}
+
+export function humanHours(site: SiteConfig) {
+  return site.hours.map((block) => {
+    const ordered = [...block.days].sort(
+      (a, b) => DAY_ORDER.indexOf(a) - DAY_ORDER.indexOf(b),
+    );
+    const labels = ordered.map((d) => DAY_SHORT[d]);
+    const days =
+      labels.length > 1 ? `${labels[0]}–${labels[labels.length - 1]}` : labels[0];
+    return `${days} ${formatTime(block.opens)}–${formatTime(block.closes)}`;
+  });
+}
+
 export type Doc = {
   id: string;
   data: {
