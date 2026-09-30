@@ -28,12 +28,62 @@ const site = await getSite();
 const { data } = page;
 const isService = data.type === "service";
 const label = meta?.label ?? data.title;
+
+// Service pages carry no description in their Markdown, so they used to fall
+// back to the site tagline -- the same sentence on all six, which reads as thin
+// or duplicated in results. The blurbs in services.ts are written per service
+// and are what the cards already show, so they double as the meta description.
+const metaDescription = data.description ?? meta?.blurb;
+
+const pageUrl = new URL(withBase(`/${data.slug}/`), site.url).href;
+
+// Per-page structured data. The LocalBusiness in Base covers the business, but
+// each of these pages is a distinct entity: a service the business offers, or a
+// post it published. Declaring them lets a result show a price, a rating hook or
+// an author rather than just a blue link.
+const crumbs = {
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+    ...(data.type === "post"
+      ? [{ "@type": "ListItem", position: 2, name: "Journal", item: new URL(withBase("/journal/"), site.url).href }]
+      : []),
+    { "@type": "ListItem", position: data.type === "post" ? 3 : 2, name: label, item: pageUrl },
+  ],
+};
+
+const schema = [
+  isService && {
+    "@type": "Service",
+    name: label,
+    description: metaDescription,
+    url: pageUrl,
+    image: new URL(withBase(meta.image), site.url).href,
+    serviceType: label,
+    provider: { "@type": "LocalBusiness", name: site.legalName, telephone: site.phone },
+    areaServed: site.area.map((place) => ({ "@type": "City", name: place })),
+  },
+  data.type === "post" && {
+    "@type": "BlogPosting",
+    headline: data.title,
+    description: metaDescription,
+    url: pageUrl,
+    datePublished: data.date,
+    dateModified: data.modified ?? data.date,
+    author: { "@type": "Person", name: site.owner },
+    publisher: { "@type": "Organization", name: site.legalName },
+    mainEntityOfPage: pageUrl,
+  },
+  crumbs,
+].filter(Boolean);
 ---
 
 <Base
   title={isService ? label : data.title}
-  description={data.description}
+  description={metaDescription}
   noindex={data.noindex}
+  type={data.type === "post" ? "article" : "website"}
+  schema={schema}
 >
   <div class="pagehead">
     <div class="container">

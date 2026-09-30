@@ -1,5 +1,6 @@
 ---
 title: "Schedule"
+description: "Book a visit online or call and describe the job. Free written estimates, no contracts, and 10% off any service paid in Bitcoin Cash."
 slug: "schedule"
 wpId: "30"
 date: "2023-01-06"

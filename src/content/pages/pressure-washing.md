@@ -1,5 +1,6 @@
 ---
 title: "Expert Quality Pressure Washing Service in Spokane Area"
+description: "Pressure washing for driveways, decks, siding and walkways across Spokane and Coeur d'Alene. Strips mould, algae and grime that shorten a surface's life."
 slug: "pressure-washing"
 wpId: "51"
 date: "2023-01-11"

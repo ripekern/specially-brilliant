@@ -1,5 +1,6 @@
 ---
 title: "Quality House Painting Service in Spokane Area"
+description: "House painting in Spokane and the Spokane Valley. Interior and exterior coats that protect the surface, lift the whole property and cost a fraction of a renovation."
 slug: "house-painting"
 wpId: "55"
 date: "2023-01-11"

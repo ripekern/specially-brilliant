@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# /pay-online/, /payment-success/ and /bitcoin-cash-co-op/ carry a noindex tag in
+# the page head. They are deliberately not disallowed here: a page blocked in
+# robots.txt is never fetched, so its noindex would never be read and it could
+# still surface as a bare URL in results. Letting the crawler through is what
+# makes the noindex take effect.
+
+Sitemap: https://speciallybrilliant.com/sitemap-index.xml

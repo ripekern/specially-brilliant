@@ -1,5 +1,6 @@
 ---
 title: "Quality Services For The Spokane Area"
+description: "Window washing, gutter cleaning, pressure washing, auto detailing, house painting and roof moss removal across Spokane, the Spokane Valley and Coeur d'Alene."
 slug: "services"
 wpId: "28"
 date: "2023-01-06"

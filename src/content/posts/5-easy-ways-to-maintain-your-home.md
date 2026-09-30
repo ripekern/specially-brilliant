@@ -1,5 +1,6 @@
 ---
 title: "Some easy ways to maintain your home"
+description: "Five cheap habits that keep a home in good shape: clean windows twice a year, clear gutters, wash the exterior, watch for moss and detail the car."
 slug: "5-easy-ways-to-maintain-your-home"
 wpId: "299"
 date: "2023-01-18"

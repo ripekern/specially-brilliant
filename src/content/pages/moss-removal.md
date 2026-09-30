@@ -1,5 +1,6 @@
 ---
 title: "Moss Removal In Spokane Area"
+description: "Roof moss removal in Spokane and the Spokane Valley. Moss holds moisture and rots shingles from underneath. Clearing it protects the roof you already have."
 slug: "moss-removal"
 wpId: "57"
 date: "2023-01-11"

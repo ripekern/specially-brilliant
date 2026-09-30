@@ -1,5 +1,6 @@
 ---
 title: "About Us – About Our Workers"
+description: "Sven has run Specially Brilliant out of the Spokane Valley since 2012. Owner-operated, insured, and the same person quotes the job and does the work."
 slug: "about-us"
 wpId: "26"
 date: "2023-01-06"

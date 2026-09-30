@@ -1,5 +1,6 @@
 ---
-title: "Beyond Competition: Join the Cooperative Revolution"
+title: "Why We Joined a Digital Cash Co-Op"
+description: "Why a local window washer joined a Bitcoin Cash co-op instead of a card network, and what it means for what customers pay."
 slug: "beyond-competition-join-the-cooperative-revolution-with-digital-cash"
 wpId: "995"
 date: "2025-06-05"

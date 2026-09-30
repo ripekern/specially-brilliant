@@ -1,5 +1,6 @@
 ---
 title: "Quality Car and Truck Detailing in Spokane Area"
+description: "Auto and truck detailing in Spokane. Interior and exterior cleaning, polish and wax that protect the paint and hold resale value, for a fraction of a new car."
 slug: "automobile-detailing"
 wpId: "53"
 date: "2023-01-11"

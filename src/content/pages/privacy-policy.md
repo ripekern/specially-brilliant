@@ -1,5 +1,6 @@
 ---
 title: "Legal Notice"
+description: "Legal notice, data handling and terms of use for Specially Brilliant Window Washing & More, serving Spokane, the Spokane Valley and Coeur d'Alene."
 slug: "privacy-policy"
 wpId: "3"
 date: "2023-01-06"

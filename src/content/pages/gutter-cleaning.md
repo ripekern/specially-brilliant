@@ -1,5 +1,6 @@
 ---
 title: "Quality Gutter Cleaning in Spokane"
+description: "Gutter cleaning across Spokane and the Spokane Valley. Cleared gutters stop overflow, ice dams and pest breeding, and the damage that follows them."
 slug: "gutter-cleaning"
 wpId: "49"
 date: "2023-01-11"

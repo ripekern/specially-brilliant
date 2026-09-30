@@ -1,5 +1,6 @@
 ---
 title: "What if you neglect to service your home?"
+description: "Deferred maintenance is how a repair turns into a replacement. What actually happens when windows, gutters, siding and the roof are left alone."
 slug: "what-if-you-neglect-to-service-your-home"
 wpId: "297"
 date: "2023-01-18"
