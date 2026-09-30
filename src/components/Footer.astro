@@ -47,14 +47,19 @@ const year = new Date().getFullYear();
           <li><BookingCta label="Book a visit" /></li>
           <li><a href={withBase("/about-us/")}>About {site.owner.split(" ")[0]}</a></li>
         </ul>
-        <img
+        <a
           class="footer__bch"
-          src={withBase("/images/bitcoin-cash-accepted-here.svg")}
-          alt="Bitcoin Cash accepted here"
-          width="200"
-          height="75"
-          loading="lazy"
-        />
+          href={withBase("/pay-online/")}
+          aria-label="Pay with Bitcoin Cash"
+        >
+          <img
+            src={withBase("/images/bitcoin-cash-accepted-here.svg")}
+            alt=""
+            width="200"
+            height="75"
+            loading="lazy"
+          />
+        </a>
       </div>
     </div>
 

@@ -764,13 +764,28 @@
 }
 
 /* The Bitcoin Cash merchant badge sits in the footer, which is a dark band in
-   both colour schemes, so one asset covers both and needs no dark-mode swap. */
+   both colour schemes, so one asset covers both and needs no dark-mode swap.
+   It is a link to the payment page, so it carries the focus ring like any other
+   link, but the badge is artwork rather than text and takes no underline. */
 .footer__bch {
   display: block;
   width: 12.5rem;
   height: auto;
   margin-block-start: var(--space-4);
   border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+.footer__bch img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.footer a.footer__bch:hover,
+.footer a.footer__bch:active {
+  text-decoration: none;
 }
 
 /* A payment QR needs a light quiet zone whatever the page background is doing:
@@ -845,7 +860,8 @@
 
 /* The Bitcoin Cash wordmark is dark grey lettering on a light ground, so it is
    presented on its own light chip. Left bare it loses contrast the moment the
-   page flips to dark mode. */
+   page flips to dark mode. It is a link to the payment page, so the chip is the
+   hit area and it takes no underline -- the artwork is the affordance. */
 .bch-mark {
   display: inline-block;
   background: #fff;
@@ -855,6 +871,14 @@
   margin-block: var(--space-4);
   /* Removes the descender gap an inline image leaves in its line box. */
   line-height: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bch-mark:hover,
+.bch-mark:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .bch-mark img {

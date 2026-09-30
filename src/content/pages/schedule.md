@@ -21,7 +21,7 @@ confirmation straight away.
 
 ## Paying with Bitcoin Cash
 
-<span class="bch-mark"><img src="/images/bitcoin-cash-logo.svg" alt="Bitcoin Cash" width="265" height="36"></span>
+<a class="bch-mark" href="/pay-online/" aria-label="Pay with Bitcoin Cash"><img src="/images/bitcoin-cash-logo.svg" alt="" width="265" height="36"></a>
 
 We accept Bitcoin Cash for any service, at the same price. The wallet address is
 on the pay online page.
