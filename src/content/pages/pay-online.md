@@ -10,15 +10,20 @@ order: 20
 noindex: true
 tags: []
 ---
-[![](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qr9uzk400z399gfkncmkzggwlxmlw46ra52qypvk8f)
+[![](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qzhp97jtvsnrqf0c9z94wga6uslc99p0xu42vgvtyq)
 
 ## Pay with Bitcoin Cash
 
-**PAY HERE** — scan the QR code, or send to:
+**Scan the code with any Bitcoin Cash wallet**, or send to the address below:
+
+<span class="qr-mark"><img src="/images/bitcoin-cash-qr.png" alt="QR code for the Bitcoin Cash address qzhp97jtvsnrqf0c9z94wga6uslc99p0xu42vgvtyq" width="410" height="410"></span>
 
 ```
-qr9uzk400z399gfkncmkzggwlxmlw46ra52qypvk8f
+qzhp97jtvsnrqf0c9z94wga6uslc99p0xu42vgvtyq
 ```
+
+Always check the address against the one shown in your wallet before sending.
+If the two do not match, do not send the payment and call us instead.
 
 Error? Get a supported wallet at [BitcoinCash.org](http://www.bitcoincash.org).
 

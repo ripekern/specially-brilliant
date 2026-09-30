@@ -773,6 +773,29 @@
   border-radius: var(--radius-sm);
 }
 
+/* A payment QR needs a light quiet zone whatever the page background is doing:
+   most scanners look for dark modules on a light field, and a dark-mode page
+   would otherwise leave the code sitting on near-black. The white panel is
+   therefore fixed rather than themed, with a hairline so it reads as a card. */
+.qr-mark {
+  display: block;
+  width: 16rem;
+  height: 16rem;
+  margin-block: var(--space-4);
+  padding: var(--space-3);
+  background: #fff;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  line-height: 0;
+}
+
+.qr-mark img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin-block: 0;
+}
+
 /* Repeats the header mark so the footer identifies the business on its own,
    for anyone who scrolls straight to the bottom. */
 .footer__logo {
