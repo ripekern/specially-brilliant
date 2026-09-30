@@ -788,27 +788,68 @@
   text-decoration: none;
 }
 
-/* A payment QR needs a light quiet zone whatever the page background is doing:
-   most scanners look for dark modules on a light field, and a dark-mode page
-   would otherwise leave the code sitting on near-black. The white panel is
-   therefore fixed rather than themed, with a hairline so it reads as a card. */
-.qr-mark {
-  display: block;
-  width: 16rem;
-  height: 16rem;
-  margin-block: var(--space-4);
-  padding: var(--space-3);
+/* The payment code and the address it encodes are read together, so they sit in
+   one centred card rather than as a floating image above a full-bleed <pre>.
+   The white field is fixed, not themed: scanners look for dark modules on a
+   light background, and this page can be viewed in dark mode. */
+.pay-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: fit-content;
+  /* fit-content alone leaves the card hard against the left margin. */
+  margin: var(--space-5) auto;
+  padding: var(--space-4);
   background: #fff;
   border: 1px solid var(--ink-200);
-  border-radius: var(--radius);
-  line-height: 0;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  /* The card's background is fixed white, so its text has to be fixed too. An
+     ink token would invert with the page and leave near-white text on white in
+     dark mode, which is what happened the first time. */
+  color: #0f172a;
 }
 
-.qr-mark img {
-  width: 100%;
-  height: 100%;
+.pay-card__qr {
+  display: block;
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
   border-radius: 0;
   margin-block: 0;
+}
+
+.pay-card__label {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #475569;
+}
+
+.pay-card__addr {
+  margin: 0;
+  color: #0f172a;
+}
+
+@media (max-width: 24rem) {
+  .pay-card {
+    padding-inline: var(--space-2);
+  }
+
+  .pay-card__qr {
+    width: 13rem;
+  }
+}
+
+.pay-card__addr code {
+  /* 42 monospace characters will not fit a 360px phone at body size, and the
+     address must not be broken across lines: a half-copied address is how
+     money goes missing. It scales down instead, with the floor set so it stays
+     legible. */
+  font-size: clamp(0.625rem, 3.2vw, var(--text-sm));
+  white-space: nowrap;
 }
 
 /* Repeats the header mark so the footer identifies the business on its own,
