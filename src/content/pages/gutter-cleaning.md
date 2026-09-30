@@ -10,9 +10,15 @@ order: 20
 noindex: false
 tags: ["service", "exterior"]
 ---
+## What happens when gutters overflow
+
 Regular cleaning of gutters by a professional is essential for several reasons. Firstly, clogged gutters can lead to water overflow, causing damage to your roof, walls, and foundation. This can result in costly repairs if left unchecked. 
 
+## Pests, and the health risk that follows
+
 Secondly, blocked gutters are a breeding ground for pests and insects, which can pose health risks to you and your family. By having your gutters cleaned regularly, you can prevent these issues and maintain a healthy environment in your home. 
+
+## Finding the damage early, while it is a repair
 
 Lastly, professional gutter cleaning ensures that any potential problems, such as loose or damaged gutters, are identified early and fixed promptly, saving you time and money in the long run. Trusting a professional to clean your gutters can give you peace of mind knowing that your home is well-maintained and protected from potential damage.
 

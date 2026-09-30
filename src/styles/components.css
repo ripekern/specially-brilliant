@@ -773,6 +773,16 @@
   border-radius: var(--radius-sm);
 }
 
+/* Repeats the header mark so the footer identifies the business on its own,
+   for anyone who scrolls straight to the bottom. */
+.footer__logo {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin-block-end: var(--space-3);
+  object-fit: contain;
+}
+
 .footer__legal {
   border-top: 1px solid color-mix(in srgb, var(--footer-text) 25%, transparent);
   padding-block-start: var(--space-4);

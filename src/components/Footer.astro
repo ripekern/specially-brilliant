@@ -13,6 +13,14 @@ const year = new Date().getFullYear();
   <div class="container">
     <div class="footer__grid">
       <div>
+        <img
+          class="footer__logo"
+          src={withBase("/logo.png")}
+          alt=""
+          width="48"
+          height="48"
+          loading="lazy"
+        />
         <h2>{site.legalName}</h2>
         <p class="footer__blurb">
           Owner-operated in the {site.area[0]} area since {site.since}. Window washing, gutter
