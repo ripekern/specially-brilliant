@@ -39,13 +39,21 @@ const year = new Date().getFullYear();
           <li><BookingCta label="Book a visit" /></li>
           <li><a href={withBase("/about-us/")}>About {site.owner.split(" ")[0]}</a></li>
         </ul>
+        <img
+          class="footer__bch"
+          src={withBase("/images/bitcoin-cash-accepted-here.svg")}
+          alt="Bitcoin Cash accepted here"
+          width="200"
+          height="75"
+          loading="lazy"
+        />
       </div>
     </div>
 
     <div class="footer__legal">
       <span>&copy; {year} {site.legalName}. All rights reserved.</span>
       <span>
-        Serving {site.area.slice(0, 3).join(", ")} and surrounding areas.
+        Serving {site.area.slice(0, -1).join(", ")} and {site.area.at(-1)}.{" "}
         <a href={withBase("/privacy-policy/")}>Legal notice</a>
       </span>
     </div>

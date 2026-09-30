@@ -763,6 +763,16 @@
   margin-block-start: var(--space-3);
 }
 
+/* The Bitcoin Cash merchant badge sits in the footer, which is a dark band in
+   both colour schemes, so one asset covers both and needs no dark-mode swap. */
+.footer__bch {
+  display: block;
+  width: 12.5rem;
+  height: auto;
+  margin-block-start: var(--space-4);
+  border-radius: var(--radius-sm);
+}
+
 .footer__legal {
   border-top: 1px solid color-mix(in srgb, var(--footer-text) 25%, transparent);
   padding-block-start: var(--space-4);
