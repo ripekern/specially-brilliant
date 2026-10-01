@@ -13,6 +13,15 @@ const documents = defineCollection({
     slug: z.string(),
     wpId: z.coerce.number().optional(),
     description: z.string().optional(),
+    // Search copy, used verbatim for <title> and the description meta when present.
+    // `title` stays the visible H1 so the on-page headline and the search result
+    // can differ. The brand suffix is appended by Base.astro, so do not include it.
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+    // Lead image, reused as og:image. Should be 1200x630 (og:imageWidth/Height).
+    image: z.string().optional(),
+    ogImageWidth: z.number().optional(),
+    ogImageHeight: z.number().optional(),
     date: z.string().optional(),
     modified: z.string().optional(),
     source: z.string().url().optional(),
@@ -23,6 +32,15 @@ const documents = defineCollection({
     noindex: z.boolean().default(false),
     showHours: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
+    /**
+     * Questions the page answers in prose. Held as data rather than Markdown so
+     * the visible list and the FAQPage JSON-LD are rendered from one source and
+     * cannot drift apart -- a schema claim the page does not visibly support is
+     * the kind of thing that gets a rich result revoked.
+     */
+    faq: z
+      .array(z.object({ q: z.string(), a: z.string() }))
+      .default([]),
   }),
 });
 
@@ -33,6 +51,11 @@ const posts = defineCollection({
     slug: z.string(),
     wpId: z.coerce.number().optional(),
     description: z.string().optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+    image: z.string().optional(),
+    ogImageWidth: z.number().optional(),
+    ogImageHeight: z.number().optional(),
     date: z.string().optional(),
     modified: z.string().optional(),
     source: z.string().url().optional(),

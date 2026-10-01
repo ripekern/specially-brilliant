@@ -11,14 +11,37 @@ interface Props {
   description?: string;
   noindex?: boolean;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageAlt?: string;
   type?: "website" | "article";
+  /** Article-only OG properties. Ignored unless type="article". */
+  publishedTime?: string;
+  modifiedTime?: string;
+  authorName?: string;
   /** Extra JSON-LD nodes, merged into the same @graph as the LocalBusiness. */
   schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, noindex = false, image, type = "website", schema } = Astro.props;
+const {
+  title,
+  description,
+  noindex = false,
+  image,
+  imageWidth = 1200,
+  imageHeight = 630,
+  imageAlt,
+  type = "website",
+  publishedTime,
+  modifiedTime,
+  authorName,
+  schema,
+} = Astro.props;
 const site = await getSite();
 
+// The brand suffix is added here and only here. A `seoTitle` is the page-name
+// half of the tag, not the whole tag: appending to it twice is the one way this
+// file can produce a title over the ~60 characters a search result shows.
 const pageTitle =
   title === site.name ? `${site.name} — ${site.tagline}` : `${title} | ${site.name}`;
 const metaDescription = description ?? site.tagline;
@@ -33,8 +56,11 @@ const canonical = new URL(path, site.url).href;
 // Every page gets a share image. Without one, a link pasted into a text thread
 // or a chat renders as a bare URL, which is the most common way a local business
 // gets found. The card is 1200x630, the size Facebook, LinkedIn and Slack expect.
+// A per-page image must declare its real size: platforms reserve layout space from
+// these tags, and a wrong pair leaves a letterboxed card or a cropped preview.
 const ogImagePath = image ?? "/images/og-default.png";
 const ogImage = new URL(ogImagePath, site.url).href;
+const ogImageAlt = imageAlt ?? `${site.name} — ${site.tagline}`;
 
 const orgSchema = {
   "@context": "https://schema.org",
@@ -82,13 +108,19 @@ const ldJson = JSON.stringify({
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content={`${site.name} — ${site.tagline}`} />
+    <meta property="og:image:width" content={String(imageWidth)} />
+    <meta property="og:image:height" content={String(imageHeight)} />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={ogImage} />
+
+    {/* article:* let Facebook, LinkedIn and Slack show a date and byline on a
+        shared post, which measurably lifts clicks over a bare card. */}
+    {type === "article" && publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {type === "article" && modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {type === "article" && authorName && <meta property="article:author" content={authorName} />}
 
     <meta name="theme-color" content="#0f3a5c" />
 

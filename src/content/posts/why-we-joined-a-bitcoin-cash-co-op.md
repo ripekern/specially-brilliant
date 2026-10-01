@@ -2,6 +2,10 @@
 title: "Why We Joined a Bitcoin Cash Co-Op"
 description: "Why a local window washer joined a Bitcoin Cash co-op instead of a card network, and what it means for what customers pay."
 slug: "why-we-joined-a-bitcoin-cash-co-op"
+seoTitle: "Why We Joined a Bitcoin Cash Co-Op"
+image: "/images/og-journal-co-op.jpg"
+ogImageWidth: 1200
+ogImageHeight: 630
 wpId: "995"
 date: "2025-06-05"
 modified: "2026-09-30"
@@ -40,7 +44,10 @@ We have in mind mission-driven businesses, artisans, tradespeople and service pr
 Let’s build a parallel economy—one that runs on collaboration, not competition; on Bitcoin Cash, not broken financial systems. We’re not just accepting Bitcoin Cash; we’re shaping a future around it.
 
 If you run a local business and want to work with—not against—your neighbors, [here is what we are putting together](/bitcoin-cash-co-op/).
+
+We’re a home maintenance business in the Spokane Valley: [window washing](/window-washing/), [gutter cleaning](/gutter-cleaning/), [pressure washing](/pressure-washing/), [house painting](/house-painting/), [car detailing](/automobile-detailing/) and [roof moss removal](/moss-removal/). We accept Bitcoin Cash for all of it, and we’d rather build this alongside other local businesses than compete with them.
+
 **[SpeciallyBrilliant.com](/)**
-**[discover.cash](http://discover.cash)**
+**[discover.cash](https://discover.cash)**
 
 #CooperationOverCompetition #BitcoinCash #LocalFirst #BitcoinCashForBusiness #SmallBusinessRevolution #BuildTogether #JoinTheCoop

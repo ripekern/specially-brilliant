@@ -127,6 +127,11 @@ export type Doc = {
     title: string;
     slug: string;
     description?: string;
+    seoTitle?: string;
+    seoDescription?: string;
+    image?: string;
+    ogImageWidth?: number;
+    ogImageHeight?: number;
     date?: string;
     type: "service" | "core" | "transactional" | "side-project" | "post";
     order: number;

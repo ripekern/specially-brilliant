@@ -928,3 +928,20 @@
   border-radius: 0;
   margin-block: 0;
 }
+
+/* FAQ heading and placement
+ *
+ * The accordion itself is styled by the shared `.faq` block above, which covers
+ * the homepage FAQ and the per-page one identically. Only the heading and the
+ * placement differ: the homepage hoists its h2 into `section__head`, while a
+ * page with a sidebar puts it inside the accordion, which the .with-aside grid
+ * places in the row below the prose. */
+
+.faq > h2 {
+  font-size: var(--text-2xl);
+  margin-block-end: var(--space-4);
+}
+
+.with-aside .faq {
+  margin-block-start: var(--space-6);
+}

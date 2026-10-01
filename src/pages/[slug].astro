@@ -35,7 +35,7 @@ const openDays = site.hours.flatMap((block) => block.days);
 // back to the site tagline -- the same sentence on all six, which reads as thin
 // or duplicated in results. The blurbs in services.ts are written per service
 // and are what the cards already show, so they double as the meta description.
-const metaDescription = data.description ?? meta?.blurb;
+const metaDescription = data.seoDescription ?? data.description ?? meta?.blurb;
 
 const pageUrl = new URL(withBase(`/${data.slug}/`), site.url).href;
 
@@ -77,15 +77,33 @@ const schema = [
     mainEntityOfPage: pageUrl,
   },
   crumbs,
+  // FAQPage is emitted only where the questions are visible on the page, which
+  // is what earns the accordion result. The answers come from the same array the
+  // template renders, so a question can never be marked up without being shown.
+  data.faq.length > 0 && {
+    "@type": "FAQPage",
+    mainEntity: data.faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  },
 ].filter(Boolean);
 ---
 
 <Base
-  title={isService ? label : data.title}
+  title={data.seoTitle ?? (isService ? label : data.title)}
   description={metaDescription}
   noindex={data.noindex}
   type={data.type === "post" ? "article" : "website"}
   schema={schema}
+  image={data.image}
+  imageWidth={data.ogImageWidth}
+  imageHeight={data.ogImageHeight}
+  imageAlt={data.title}
+  publishedTime={data.date}
+  modifiedTime={data.modified ?? data.date}
+  authorName={site.owner}
 >
   <div class="pagehead">
     <div class="container">
@@ -103,6 +121,19 @@ const schema = [
     <article class="prose">
       <Content />
     </article>
+
+    {data.faq.length > 0 && (
+      <section class="faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Common questions</h2>
+        {data.faq.map((item) => (
+          <details>
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </section>
+    )}
+
     <aside class="aside">
       {data.showHours && (
         <div class="panel">

@@ -36,7 +36,7 @@ Sven [Pronounced Se-Ven]
 
 ## Outside the work
 
-Sven has a passion for outdoor activities such as skiing, boating, swimming, and hiking, along with a strong commitment to maintaining an active lifestyle. Regular visits to the fitness center keep him engaged with sports like basketball, volleyball, racquetball, and running, complemented by dedicated time for stretching and recovery. He also follows a fully plant-based diet, reflecting his focus on health and wellness.
+Sven has a passion for outdoor activities such as skiing, boating, swimming, and hiking, along with a strong commitment to maintaining an active lifestyle. Regular visits to the fitness center keep him engaged with sports like basketball, volleyball, racquetball, and running, complemented by dedicated time for stretching and recovery. He also follows a clean diet, reflecting his focus on health and wellness.
 
 ## Bitcoin Cash
 
