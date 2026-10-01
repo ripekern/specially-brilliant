@@ -71,7 +71,10 @@ const orgSchema = {
   telephone: site.phone,
   email: site.email,
   foundingDate: String(site.since),
-  priceRange: "$$",
+  // "$" rather than "$$": the published averages sit well under what comparable
+  // operators charge, and a schema claiming mid-market pricing would contradict
+  // what the page says. Google reads this alongside the visible prices.
+  priceRange: "$",
   areaServed: areaServedSchema(site),
   geo: geoSchema(site),
   openingHours: openingHours(site),
