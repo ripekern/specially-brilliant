@@ -93,6 +93,25 @@ Whichever you pick, install it and open it once. The tap links on this page work
 straight away afterwards. You do not need to understand how the network works for
 it to function.
 
+### I do not have any Bitcoin Cash
+
+Then a wallet alone will not do it — the app is how you *hold* Bitcoin Cash, not
+a supply of it. You need some of the currency before you can send any, and this
+page cannot provide it.
+
+**You can get some.** Bitcoin Cash can be bought outright, or you can be paid in
+it by someone who already holds some. Either way, once it is in your wallet the
+code at the top of this page works exactly as it does for anyone else.
+
+**Or you do not have to use Bitcoin Cash at all.** That is a perfectly reasonable
+choice — it is a payment method, not a requirement, and we would rather you paid
+in whatever is convenient than not paid. Call us at **(509) 903-5116** and we
+will sort it out.
+
+If you were expecting to be able to pay by card, we should be straight with you:
+this page is Bitcoin Cash only. There is no card form here, and we would rather
+tell you that now than let you look for one.
+
 ### Can I send Bitcoin (BTC) instead?
 
 **No.** Bitcoin Cash and Bitcoin are two separate networks. They are not
