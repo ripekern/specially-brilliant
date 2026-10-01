@@ -10,55 +10,6 @@ order: 20
 noindex: true
 tags: []
 ---
-[![](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2)
-
-## Pay with Bitcoin Cash
-
-You can pay us in Bitcoin Cash. If you have never done it before, this page
-explains each step, and the short version is at the bottom.
-
-**Never sent Bitcoin Cash before?** Start with
-[Get a wallet first](#get-a-wallet-first) below, then come back. You cannot
-pay with a photo of a code, and you cannot pay without an app that holds the
-currency — so that app is the first thing you need, not an optional extra.
-
-## Paying from a phone
-
-There are two ways, and which one you use depends on whether you already have
-a Bitcoin Cash wallet installed.
-
-**If you have a wallet app** — tap the QR code or the address below. The link
-opens your wallet with the address already filled in, and you only have to enter
-the amount and confirm. Nothing is typed out by hand.
-
-**If you do not have a wallet app yet**, tapping the code will do nothing at
-all. The link is an instruction to an app that is not there. So either install a
-wallet first, or use the copy button and paste the address into a wallet you
-already use.
-
-## Get a wallet first
-
-A wallet is a free app that holds your Bitcoin Cash. It does not cost anything
-to create one, and creating one does not buy anything — you are only setting up
-the ability to send and receive.
-
-We recommend [**Selene Wallet**](https://selene.cash/) — a free, open-source
-Bitcoin Cash wallet for iOS, Android and the browser, built specifically for
-Bitcoin Cash rather than bolted onto a multi-coin app. Get it from the
-[App Store](https://apps.apple.com/app/selene-wallet-bitcoin-cash/id6449441422)
-or [Google Play](https://play.google.com/store/apps/details?id=cash.selene.app),
-or [try it in a browser](https://app.selene.cash/) without installing anything.
-
-Selene registers itself to handle `bitcoincash:` links, which is what makes the
-taps on this page work.
-
-[Paytaca](https://www.paytaca.com/) is another Bitcoin Cash-only wallet for iOS
-and Android, if you would rather use that one.
-
-**Once the app is installed,** open it, and you are done — the tap links on this
-page will now work. You do not need to know anything about how the network
-works for it to function.
-
 <div class="pay-card">
   <a
     class="pay-card__qrlink"
@@ -74,105 +25,132 @@ works for it to function.
       href="bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2"
     ><code>qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2</code></a>
   </p>
-  <p class="pay-card__hint" data-pay-hint>Tap the code or the address to open your wallet</p>
+  <p class="pay-card__hint" data-pay-hint>Tap the code or the address to pay</p>
   <button class="pay-card__copy" type="button" data-copy-address="qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2">
     <span data-copy-label>Copy address</span>
   </button>
   <p class="pay-card__fallback">
     <strong>No wallet app?</strong> Copy the address and paste it into a wallet you
-    already have. Or send the money later — this address does not expire.
+    already use, or send the money later. This address does not expire.
   </p>
 </div>
 
-## Bitcoin Cash is not Bitcoin, and cannot be sent as Bitcoin
+## Pay with Bitcoin Cash
 
-This is the one mistake that can cost you the money, so it is worth being
-blunt about it.
+**Scan or tap the code above.** If you have a Bitcoin Cash wallet, that is the
+whole job — the address is filled in for you and you only enter the amount.
 
-Bitcoin Cash and Bitcoin are **two separate networks**. They are not versions of
-each other, and there is no automatic conversion between them. If you send Bitcoin
-to a Bitcoin Cash address, the Bitcoin stays on the Bitcoin network. We never
-receive it. Nothing arrives, nothing is credited to your account, and no
+If you have never used Bitcoin Cash, or you are not sure what any of this means,
+the questions below cover it. Nothing on this page is required reading first.
+
+[![](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2)
+
+## Questions
+
+### I am on a phone. How do I scan a code that is already on my screen?
+
+You do not scan it — **you tap it.** The code and the address are both live
+links, and a tap opens your wallet with our address already filled in.
+
+Scanning a QR code is only for when the code is on a *different* screen from
+your phone: if you are reading this on a laptop or desktop, open your phone's
+camera over the code and it will scan. On the phone itself, tap.
+
+Either way you end up in the same place, with the same address, ready to enter
+an amount.
+
+### I tapped it and nothing happened
+
+That means no app on your phone is set up to handle Bitcoin Cash links. This is
+normal if you have never used Bitcoin Cash — the link is an instruction to an
+app that is not installed yet, and tapping it produces no error, it just does
+nothing.
+
+Two ways forward:
+
+- **Copy address** above, then paste it into any wallet you already have.
+- **Install a wallet** (the next question) and tap again.
+
+### I do not have a wallet. What is one?
+
+A wallet is a free app that holds your Bitcoin Cash. Creating one costs nothing
+and does not involve buying anything — you are only setting up the ability to
+send and receive.
+
+We recommend [**Selene Wallet**](https://selene.cash/) — a free, open-source
+Bitcoin Cash wallet for iOS, Android and the browser, built for Bitcoin Cash
+alone rather than bolted onto a multi-coin app. Get it from the
+[App Store](https://apps.apple.com/app/selene-wallet-bitcoin-cash/id6449441422)
+or [Google Play](https://play.google.com/store/apps/details?id=cash.selene.app).
+
+Not ready to install an app? You can
+[try Selene in a browser](https://app.selene.cash/) and pay from there instead.
+
+[Paytaca](https://www.paytaca.com/) is another Bitcoin Cash-only wallet for iOS
+and Android, if you would rather use that one.
+
+Whichever you pick, install it and open it once. The tap links on this page work
+straight away afterwards. You do not need to understand how the network works for
+it to function.
+
+### Can I send Bitcoin (BTC) instead?
+
+**No.** Bitcoin Cash and Bitcoin are two separate networks. They are not
+versions of each other, and there is no automatic conversion between them.
+
+If you send Bitcoin to a Bitcoin Cash address, the Bitcoin stays on the Bitcoin
+network. We never receive it, nothing is credited to your account, and no
 notification will come from us — because from our side, no payment happened.
+Sending Bitcoin here is the same as sending nothing.
 
-**Sending Bitcoin here is the same as sending nothing.** The two currencies are
-not interchangeable, and we only accept Bitcoin Cash.
-
-### Why people get this wrong
-
-Bitcoin Cash started as a fork of Bitcoin, so for a long time the two used the
-same kind of address. An older Bitcoin Cash address looks like a Bitcoin address
-and can start with the same characters, which is exactly how this mistake
-happens: the address looks right, the currency is wrong, and the money goes onto
-a chain nobody is watching.
-
-Bitcoin Cash introduced a different address format to close that gap. The address
-on this page is in that newer format, and it always begins with **q** or **p**,
-never with a **1** or **3**:
+This catches people because Bitcoin Cash began as a fork of Bitcoin, so for years
+the two used near-identical addresses. Bitcoin Cash now uses a different format
+that cannot be confused with a Bitcoin one: it always begins with **q** or **p**,
+never with a **1** or **3**.
 
 ```
 bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2
 ```
 
-If what you are about to send begins with `q` or `p`, you are on the right
-network and the right currency.
+So before you confirm, check that:
 
-### Before you confirm
-
-- Your wallet is set to **Bitcoin Cash (BCH)**, not Bitcoin (BTC).
-- The address you are sending to begins with **q** or **p**, as shown above.
-- The amount is in **BCH**. Bitcoin is worth far more per coin, so a
-  copy-and-paste slip from a BTC balance can send a very large amount by
-  mistake.
+- Your wallet is set to **Bitcoin Cash (BCH)**, not Bitcoin (BTC)
+- The address begins with **q** or **p**, as shown above
+- The amount is in **BCH** — Bitcoin is worth far more per coin, so a slip from
+  a BTC balance can send a very large amount by mistake
 - The address in your confirmation matches the one on this page, character for
-  character.
+  character
 
-**If you have already sent Bitcoin by mistake, contact us.** We cannot recover it
-— the coins are on a different chain and no longer exist as far as our address is
-concerned — but telling us is still worth doing, and an exchange or wallet
-provider may be able to help. Do not send a second payment trying to make up for
-the first; that is how one mistake becomes two.
+**If you have already sent Bitcoin by mistake, contact us.** We cannot recover
+it — the coins are on a different chain — but telling us is still worth doing,
+and an exchange or wallet provider may be able to help. Please do not send a
+second payment trying to make up for the first; that is how one mistake becomes
+two.
 
-Always check the address against the one shown in your wallet before sending.
-If the two do not match, do not send the payment and call us instead.
+### What does it cost, and how long does it take?
 
-## Short version
+A fraction of a cent either way, and usually confirmed in a matter of seconds.
+There is no reason to wait for a cheaper rate — the network does not get cheaper
+at quiet times, and sending earlier does not save anything.
 
-1. Install a wallet if you do not have one — we recommend
-   [Selene Wallet](https://selene.cash/), which is free.
-2. Come back to this page and tap the QR code or the address.
-3. Enter the amount, check the address your wallet shows matches, and send.
+If you have sent the payment and it has not shown up, check your wallet's own
+pending list first; payments sometimes sit there before appearing in the balance.
 
-**Tapping does nothing?** That means no app on your phone is set up to handle
-Bitcoin Cash links, which is normal if you have never used it. Use **Copy
-address** above, paste it into your wallet's send screen, and continue from
-there. Or send it later — the address stays the same.
+### Something went wrong
 
-## What to expect once it is sent
+Call us at **(509) 903-5116** and we will check from our side before you try
+anything else. If the address in your wallet does not match the one on this page,
+do not send the payment — call instead.
 
-Bitcoin Cash transactions are usually confirmed in a matter of seconds, and the
-fee is a fraction of a cent either way, so there is nothing to wait out and no
-reason to send early in the hope of a cheaper rate. The network does not get
-cheaper at quiet times.
+### Is it safe to send to an address on a public page?
 
-If you have sent the payment and it has not appeared, check with your wallet
-first — payments sometimes sit in a wallet's own pending list before showing in
-the balance. If it is genuinely not there, call us at
-**(509) 903-5116** and we will confirm from our side before you do anything
-else.
-
-## Keeping the address safe
-
-The address on this page is public and it is fine for it to be. It is a
-receiving address, not a secret: anyone can send to it, and nobody can take
-anything from it by knowing it.
+Yes. The address is a receiving address, not a secret: anyone can send to it, and
+nobody can take anything from it by knowing it.
 
 What must stay private is your **recovery phrase or seed phrase**. Nobody from
-Specially Brilliant will ever ask you for it, and no legitimate reason exists
-for anyone to. A message claiming to be from us and asking for those words is a
-scam, and the correct response to it is to ignore it and tell us.
-
-
+Specially Brilliant will ever ask you for it, and no legitimate reason exists for
+anyone to. A message claiming to be from us and asking for those words is a
+scam — ignore it and tell us.
 
 <script>
   // Progressive enhancement for the copy button. Without JavaScript the address
@@ -229,7 +207,7 @@ scam, and the correct response to it is to ignore it and tell us.
     // rather than leaving the visitor to work it out.
     if (hint) {
       hint.textContent =
-        "Tap to open your wallet, or copy the address if you have no wallet app";
+        "Tap to pay with your wallet, or copy the address if you have no wallet app";
     }
 
     button.addEventListener("click", async () => {
