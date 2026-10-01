@@ -14,7 +14,49 @@ tags: []
 
 ## Pay with Bitcoin Cash
 
-**Scan the code with any Bitcoin Cash wallet**, or send to the address below.
+You can pay us in Bitcoin Cash. If you have never done it before, this page
+explains each step, and the short version is at the bottom.
+
+**Never sent Bitcoin Cash before?** Start with
+[Get a wallet first](#get-a-wallet-first) below, then come back. You cannot
+pay with a photo of a code, and you cannot pay without an app that holds the
+currency — so that app is the first thing you need, not an optional extra.
+
+## Paying from a phone
+
+There are two ways, and which one you use depends on whether you already have
+a Bitcoin Cash wallet installed.
+
+**If you have a wallet app** — tap the QR code or the address below. The link
+opens your wallet with the address already filled in, and you only have to enter
+the amount and confirm. Nothing is typed out by hand.
+
+**If you do not have a wallet app yet**, tapping the code will do nothing at
+all. The link is an instruction to an app that is not there. So either install a
+wallet first, or use the copy button and paste the address into a wallet you
+already use.
+
+## Get a wallet first
+
+A wallet is a free app that holds your Bitcoin Cash. It does not cost anything
+to create one, and creating one does not buy anything — you are only setting up
+the ability to send and receive.
+
+Two widely used options, both free:
+
+- [**Bitcoin.com Wallet**](https://bitcoin.com/wallet/) — iOS and Android.
+  Supports Bitcoin Cash along with other coins in the same app.
+- [**Paytaca**](https://www.paytaca.com/) — iOS, Android and as a browser
+  extension. Bitcoin Cash only, and built specifically for it.
+
+[Electron Cash](https://electroncash.org/) is also widely used, mainly on
+desktop. If you install it on Windows, use the installer build rather than the
+standalone file: only the installer registers itself to handle `bitcoincash:`
+links, so on the standalone build a tap will do nothing.
+
+**Once the app is installed,** open it, and you are done — the tap links on this
+page will now work. You do not need to know anything about how the network
+works for it to function.
 
 <div class="pay-card">
   <a
@@ -31,10 +73,130 @@ tags: []
       href="bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2"
     ><code>qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2</code></a>
   </p>
-  <p class="pay-card__hint">Tap the code or the address to open your wallet</p>
+  <p class="pay-card__hint" data-pay-hint>Tap the code or the address to open your wallet</p>
+  <button class="pay-card__copy" type="button" data-copy-address="qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2">
+    <span data-copy-label>Copy address</span>
+  </button>
+  <p class="pay-card__fallback">
+    <strong>No wallet app?</strong> Copy the address and paste it into a wallet you
+    already have. Or send the money later — this address does not expire.
+  </p>
 </div>
 
 Always check the address against the one shown in your wallet before sending.
 If the two do not match, do not send the payment and call us instead.
 
-Error? Get a supported wallet at [BitcoinCash.org](http://www.bitcoincash.org).
+## Short version
+
+1. Install a wallet if you do not have one —
+   [Bitcoin.com Wallet](https://bitcoin.com/wallet/) or
+   [Paytaca](https://www.paytaca.com/). Both are free.
+2. Come back to this page and tap the QR code or the address.
+3. Enter the amount, check the address your wallet shows matches, and send.
+
+**Tapping does nothing?** That means no app on your phone is set up to handle
+Bitcoin Cash links, which is normal if you have never used it. Use **Copy
+address** above, paste it into your wallet's send screen, and continue from
+there. Or send it later — the address stays the same.
+
+## What to expect once it is sent
+
+Bitcoin Cash transactions are usually confirmed in a matter of seconds, and the
+fee is a fraction of a cent either way, so there is nothing to wait out and no
+reason to send early in the hope of a cheaper rate. The network does not get
+cheaper at quiet times.
+
+If you have sent the payment and it has not appeared, check with your wallet
+first — payments sometimes sit in a wallet's own pending list before showing in
+the balance. If it is genuinely not there, call us at
+**(509) 903-5116** and we will confirm from our side before you do anything
+else.
+
+## Keeping the address safe
+
+The address on this page is public and it is fine for it to be. It is a
+receiving address, not a secret: anyone can send to it, and nobody can take
+anything from it by knowing it.
+
+What must stay private is your **recovery phrase or seed phrase**. Nobody from
+Specially Brilliant will ever ask you for it, and no legitimate reason exists
+for anyone to. A message claiming to be from us and asking for those words is a
+scam, and the correct response to it is to ignore it and tell us.
+
+## Error? Get a supported wallet at [BitcoinCash.org](https://bitcoincash.org/).
+
+<script>
+  // Progressive enhancement for the copy button. Without JavaScript the address
+  // is still visible and selectable, so the page never depends on this.
+  const ADDRESS = "qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2";
+
+  const flash = (button, label) => {
+    button.dataset.copied = "";
+    label.textContent = "Copied";
+    window.setTimeout(() => {
+      delete button.dataset.copied;
+      label.textContent = "Copy address";
+    }, 2400);
+  };
+
+  // The async clipboard API is unavailable over http:// and in older iOS Safari,
+  // so fall back to a hidden field and execCommand.
+  const legacyCopy = (text) => {
+    const field = document.createElement("textarea");
+    field.value = text;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.opacity = "0";
+    document.body.appendChild(field);
+    field.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch {
+      ok = false;
+    }
+    document.body.removeChild(field);
+    return ok;
+  };
+
+  const copy = async (text) => {
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch {
+        // Permission denied, or a scheme the browser refuses: fall through.
+      }
+    }
+    return legacyCopy(text);
+  };
+
+  for (const button of document.querySelectorAll("[data-copy-address]")) {
+    const address = button.dataset.copyAddress || ADDRESS;
+    const label = button.querySelector("[data-copy-label]") || button;
+    const hint = document.querySelector("[data-pay-hint]");
+
+    // A tap that did nothing is the case this page exists to handle, so say why
+    // rather than leaving the visitor to work it out.
+    if (hint) {
+      hint.textContent =
+        "Tap to open your wallet, or copy the address if you have no wallet app";
+    }
+
+    button.addEventListener("click", async () => {
+      if (await copy(address)) {
+        flash(button, label);
+        return;
+      }
+      label.textContent = "Select and copy";
+      const range = document.createRange();
+      const addr = document.querySelector(".pay-card__addr");
+      if (addr) {
+        range.selectNodeContents(addr);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    });
+  }
+</script>

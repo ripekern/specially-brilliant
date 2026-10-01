@@ -862,6 +862,48 @@
   color: #64748b;
 }
 
+/* The copy button is the path that works when a tap cannot: no wallet app means
+   nothing on the device handles a bitcoincash: link, but text can always be
+   copied. Styled as a button because it is one, and given a visible pressed
+   state because the confirmation is the only feedback it produces. */
+.pay-card__copy {
+  margin-block-start: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  min-height: 2.75rem;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: #0f172a;
+  background: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  /* A finger, not a mouse: stop iOS firing a synthetic click on double tap. */
+  touch-action: manipulation;
+}
+
+.pay-card__copy:hover {
+  background: #cbd5e1;
+}
+
+.pay-card__copy:active {
+  background: #94a3b8;
+}
+
+.pay-card__copy[data-copied] {
+  color: #fff;
+  background: #15803d;
+  border-color: #15803d;
+}
+
+.pay-card__fallback {
+  margin: var(--space-3) 0 0;
+  max-width: 32ch;
+  font-size: var(--text-xs);
+  color: #475569;
+  text-align: center;
+}
+
 .pay-card__label {
   margin: var(--space-2) 0 0;
   font-size: var(--text-xs);
