@@ -945,3 +945,101 @@
 .with-aside .faq {
   margin-block-start: var(--space-6);
 }
+
+/* Co-op member directory
+ *
+ * Rendered from the `members` frontmatter array, so a business is added in
+ * content rather than in a template. The card is a list item because the
+ * directory is a set of equal entries, not a feature grid.
+ */
+
+.members {
+  max-width: var(--container-narrow);
+  margin-block-start: var(--space-7);
+}
+
+.members h2 {
+  font-size: var(--text-2xl);
+  margin-block-end: var(--space-4);
+}
+
+.memberlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.member {
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.member__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
+}
+
+.member__name {
+  font-size: var(--text-xl);
+  margin: 0;
+}
+
+.member__name a {
+  color: var(--text-brand-strong);
+  text-decoration-color: var(--brand-300);
+  text-underline-offset: 0.15em;
+}
+
+.member__name a:hover {
+  text-decoration-color: currentColor;
+}
+
+.member__trade {
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-brand-muted);
+}
+
+.member__note {
+  margin-block: var(--space-3) 0;
+  color: var(--ink-700);
+}
+
+.member__meta {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  font-size: var(--text-sm);
+  color: var(--ink-600);
+}
+
+.member__phone {
+  color: var(--text-brand);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.member__phone:hover {
+  text-decoration: underline;
+}
+
+.members__foot {
+  margin-block-start: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--ink-500);
+}
+
+.members__foot code {
+  font-size: 0.95em;
+}

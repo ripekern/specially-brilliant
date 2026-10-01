@@ -2,7 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
 import SidebarCta from "../components/SidebarCta.astro";
-import { getSite, areaServedSchema, humanHours } from "../lib/content";
+import { getSite, areaServedSchema, humanHours, formatPhone } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
 
@@ -77,6 +77,22 @@ const schema = [
     mainEntityOfPage: pageUrl,
   },
   crumbs,
+  // The co-op is a real group of real businesses, so declaring it as an
+  // Organization with member relationships is what lets a search engine read
+  // the directory as a set of linked entities rather than as loose names in
+  // prose. Only emitted where the members are visibly listed on the page.
+  data.members.length > 0 && {
+    "@type": "Organization",
+    name: "Bitcoin Cash Co-Op",
+    url: pageUrl,
+    description: metaDescription,
+    member: data.members.map((m) => ({
+      "@type": "Organization",
+      name: m.name,
+      url: m.url,
+      telephone: m.phone,
+    })),
+  },
   // FAQPage is emitted only where the questions are visible on the page, which
   // is what earns the accordion result. The answers come from the same array the
   // template renders, so a question can never be marked up without being shown.
@@ -121,6 +137,40 @@ const schema = [
     <article class="prose">
       <Content />
     </article>
+
+    {data.members.length > 0 && (
+      <section class="members container" aria-labelledby="members-heading">
+        <h2 id="members-heading">Who is in it</h2>
+        <ul class="memberlist">
+          {data.members.map((m) => (
+            <li class="member">
+              <div class="member__head">
+                <h3 class="member__name">
+                  {m.url ? <a href={m.url} rel="noopener">{m.name}</a> : m.name}
+                </h3>
+                {m.trade && <p class="member__trade">{m.trade}</p>}
+              </div>
+              {m.note && <p class="member__note">{m.note}</p>}
+              <ul class="member__meta">
+                {m.area && <li class="member__area">{m.area}</li>}
+                {m.phone && (
+                  <li>
+                    <a href={`tel:${m.phone}`} class="member__phone">
+                      {formatPhone(m.phone)}
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </li>
+          ))}
+        </ul>
+        <p class="members__foot">
+          Adding a business is a frontmatter edit &mdash; see <code>members</code> in
+          <code>src/content.config.ts</code>. Listed businesses accept Bitcoin Cash and have
+          been contacted by us; this is not an open directory.
+        </p>
+      </section>
+    )}
 
     {data.faq.length > 0 && (
       <section class="faq" aria-labelledby="faq-heading">

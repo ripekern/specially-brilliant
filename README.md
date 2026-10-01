@@ -80,6 +80,12 @@ so the visible accordion and the `FAQPage` JSON-LD render from one array and
 cannot drift — marking up a question that is not visible on the page is how a
 rich result gets revoked.
 
+`members` lists the businesses in the Bitcoin Cash co-op. Same reasoning: the
+template renders the card, the `tel:` link and the `Organization` JSON-LD from
+one array, so a member cannot be listed visibly without being declared, or the
+reverse. Adding a business is a frontmatter edit on
+`src/content/pages/bitcoin-cash-co-op.md`.
+
 ### Placeholders for facts the owner has not supplied
 
 Service pages carry the structure and the reasoning, but the business facts —

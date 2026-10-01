@@ -33,6 +33,23 @@ const documents = defineCollection({
     showHours: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
     /**
+     * Businesses in the Bitcoin Cash co-op. Data rather than prose so the
+     * template can render a name, a trade, a working tel: link and a service
+     * area consistently, and so adding a member is a frontmatter edit.
+     */
+    members: z
+      .array(
+        z.object({
+          name: z.string(),
+          trade: z.string().optional(),
+          url: z.string().url().optional(),
+          phone: z.string().optional(),
+          area: z.string().optional(),
+          note: z.string().optional(),
+        }),
+      )
+      .default([]),
+    /**
      * Questions the page answers in prose. Held as data rather than Markdown so
      * the visible list and the FAQPage JSON-LD are rendered from one source and
      * cannot drift apart -- a schema claim the page does not visibly support is
