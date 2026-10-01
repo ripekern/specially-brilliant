@@ -31,15 +31,19 @@ Cooperation, not competition, is the true engine of lasting economic health. Whe
 
 That’s why we’re building a new kind of cooperative—one where local businesses work together instead of against each other, and where financial tools match our principles of freedom, transparency, and fairness.
 
-## **The Currency of Cooperation**
+## **Bitcoin Cash as a Liquidity Tool**
 
-At the heart of our cooperative is Bitcoin Cash—a decentralized, peer-to-peer payment system that embodies the values we stand for. Bitcoin Cash enables fast, low-fee payments that let customers pay you directly, without banks or middlemen. It offers financial sovereignty, empowering businesses to keep more of what they earn. Its borderless, censorship-resistant nature aligns with our belief in economic freedom for all.
+At the heart of this is Bitcoin Cash, and the reason we use it is not ideological decoration. It is a high-efficiency liquidity tool.
 
-Unlike the centralized fiat system that props up corporate giants and extracts value through fees and inflation, Bitcoin Cash puts power back in the hands of small businesses and communities.
+Two businesses that both hold Bitcoin Cash can trade with each other directly. No bank sits between them, so no bank takes a cut, no processor takes a percentage, and nobody has to wait on an approval or a settlement window. Staying inside the Bitcoin Cash network is what makes that possible: payments between participants in it are fast and cost a fraction of a cent, so small-value trades stay worth making at all. Strip the intermediaries out and the cost of transacting stops being the reason a trade does not happen.
+
+Here is the simplest version, and it needs nothing more than two people. Say someone pays their rent in Bitcoin Cash. That tenant could also work for that landlord's maintenance, invoiced in Bitcoin Cash. Money moves back and forth between them, and neither payment needs a bank to authorise, hold, or extract from it. That is the entire mechanism.
+
+Two people is a small example, and it scales. Every additional participant in the same network is another party you can settle with directly rather than through an institution, and the same rent-for-labor logic applies to any pair of them. The group does not need to be large to prove the point — it only needs to exist outside the banking system to show that the banking system is optional.
 
 ## **Building It Together**
 
-We have in mind mission-driven businesses, artisans, tradespeople and service providers who would want to work together this way. Together, we can pool resources for marketing, logistics, and shared services. We can offer Bitcoin Cash incentives to customers who support local, cooperative-aligned businesses. We can educate the public about Bitcoin Cash and economic freedom. And we can strengthen our resilience by supporting each other rather than competing.
+We have in mind mission-driven businesses, artisans, tradespeople and service providers who would want to work together this way. Together, we can pool resources for marketing, logistics, and shared services. We can settle with each other directly instead of routing every payment through an institution. We can educate the public about Bitcoin Cash and economic freedom. And we can strengthen our resilience by supporting each other rather than competing.
 
 Let’s build a parallel economy—one that runs on collaboration, not competition; on Bitcoin Cash, not broken financial systems. We’re not just accepting Bitcoin Cash; we’re shaping a future around it.
 
