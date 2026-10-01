@@ -102,6 +102,39 @@ Run it before calling a page finished. It reports rather than gates, so an
 unfilled placeholder will not break a deploy — but a page can otherwise look
 complete while missing a number.
 
+### Adding a photo to a service page
+
+`/house-painting/` and `/moss-removal/` are the two pages without one. The other
+four use real work photos, and matching them with stock images of other people's
+contractors would misrepresent the business, so these two want new shots.
+
+Take them on a phone and let the tool do the sizing:
+
+```bash
+npm run content:photo -- --name house-painting-exterior painting.jpg
+npm run content:photo -- --name roof-moss-removal --og moss.jpg
+```
+
+The tool keeps landscape photos, centre-crops portrait to 4:3 so they do not fill
+the whole prose column, writes WebP at 1200px, and prints the Markdown to paste in
+plus the frontmatter for a share card. Add `--og` for a page that should also get
+its own share image; the dimensions it prints are the ones it actually wrote,
+which is not always exactly 1200x630.
+
+**Shot list**
+
+- `house-painting-exterior` — a finished exterior wall or trim run, with enough
+  context to read as a house. Straight-on, daylight, no ladder or scaffold in shot.
+- `roof-moss-removal` — the roof surface with the mat still on it, or mid-job
+  with cleared shingles showing next to it. The contrast between the two is the
+  whole argument the page makes, so a shot showing both is worth more than a
+  close-up.
+- Both: landscape if possible, nothing identifying in frame (no house numbers, no
+  client faces, no street names), and no competitor branding.
+- Alt text must describe what is actually in the frame, not what the service is.
+  `verify_build.py` fails on an empty `alt`, and a screen reader should hear what a
+  sighted visitor sees.
+
 `type` drives real behaviour, not just labels:
 
 - **`service`** — gets a card, a header nav slot, and a sidebar CTA.
