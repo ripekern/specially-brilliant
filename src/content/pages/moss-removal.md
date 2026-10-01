@@ -1,6 +1,9 @@
 ---
 title: "Quality Moss Removal In Spokane Area"
 seoTitle: "Roof Moss Removal in Spokane, WA"
+image: "/images/content/roof-moss-on-tiles-og.jpg"
+ogImageWidth: 1200
+ogImageHeight: 630
 description: "Roof moss removal in Spokane and the Spokane Valley. Moss holds moisture and rots shingles from underneath. Clearing it protects the roof you already have."
 slug: "moss-removal"
 wpId: "51"
@@ -31,6 +34,10 @@ faq:
 Moss is a parasite. It clings to your roof, trapping moisture, rotting your shingles, and shortening the lifespan of your greatest investment. If you let it spread, you aren't just looking at an eyesore; you're looking at premature structural failure and a massive repair bill. Stop the rot before it starts.
 
 This is one of the clearest cases on any house where waiting is more expensive than acting. Moss does not sit there looking untidy. It holds water against the shingles, and water held against shingles gets underneath them and rots the deck from below — where you will not see it, and where the repair is a full roof replacement rather than a cleaning.
+
+![Thick clumps of green moss growing between the tiles of a roof](/images/content/roof-moss-on-tiles.webp)
+
+*Photo: OliBac, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)*
 
 As the mat thickens it also grows over and lifts the tabs. Those are the parts that keep water out. A roof that has been under moss for a few seasons is a roof losing its weatherproofing, quietly, from the bottom up.
 

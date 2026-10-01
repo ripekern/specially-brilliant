@@ -104,11 +104,22 @@ complete while missing a number.
 
 ### Adding a photo to a service page
 
-`/house-painting/` and `/moss-removal/` are the two pages without one. The other
-four use real work photos, and matching them with stock images of other people's
-contractors would misrepresent the business, so these two want new shots.
+Six of the eight content photos are real shots of this business's own work. Two are
+not, and are credited under the image on the page they appear on:
 
-Take them on a phone and let the tool do the sizing:
+| File | Page | Credit |
+| --- | --- | --- |
+| `roof-moss-on-tiles.webp` | `/moss-removal/` | OliBac, CC BY 2.0 |
+| `interior-wall-painting.webp` | `/house-painting/` | abbybatchelder, CC BY 2.0 |
+
+Both are CC BY, which requires visible attribution, so the credit line under each
+image is not optional — do not remove it. They were the best commercially-usable
+option available; Openverse, Pexels and Unsplash were searched, and the CC-BY
+corpus has almost no professional house-painting photography, because trades
+photograph their work for their own marketing rather than publishing it. Replace
+either with a real photo when there is one, and drop the credit line with it.
+
+Take a new photo on a phone and let the tool do the sizing:
 
 ```bash
 npm run content:photo -- --name house-painting-exterior painting.jpg
@@ -118,8 +129,9 @@ npm run content:photo -- --name roof-moss-removal --og moss.jpg
 The tool keeps landscape photos, centre-crops portrait to 4:3 so they do not fill
 the whole prose column, writes WebP at 1200px, and prints the Markdown to paste in
 plus the frontmatter for a share card. Add `--og` for a page that should also get
-its own share image; the dimensions it prints are the ones it actually wrote,
-which is not always exactly 1200x630.
+its own share image; `--og` always produces an exact 1200x630, cover-cropped
+rather than letterboxed, and the dimensions it prints are the ones it actually
+wrote.
 
 **Shot list**
 

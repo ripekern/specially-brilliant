@@ -46,6 +46,7 @@ QUALITY = 78
 # A share card needs 1200x630 to avoid being letterboxed by the platforms, so a
 # crop that already happens to be close to that is left alone.
 OG_RATIO = Fraction(1200, 630)
+OG_W, OG_H = 1200, 630
 OG_TOLERANCE = 0.06
 
 
@@ -98,6 +99,24 @@ def convert(src: Path, dest: Path, ratio: Fraction | None) -> tuple[int, int]:
     return ow, oh
 
 
+def convert_og(src: Path, dest: Path, width: int, height: int) -> tuple[int, int]:
+    """Write an exact-width share card, cover-cropped rather than letterboxed.
+
+    The prose crop deliberately leaves a landscape photo's ratio alone, which is
+    wrong here: a share card is a fixed canvas, and padding or stretching it to
+    1200x630 looks broken. Resize-to-fill then centre-extent guarantees the
+    exact size platforms reserve layout space for.
+    """
+    args = [str(src), "-resize", f"{width}x{height}^", "-gravity", "center",
+            "-extent", f"{width}x{height}", "-quality", "82", "-strip", str(dest)]
+    run_magick(args)
+    with Image.open(dest) as im:
+        ow, oh = im.size
+    kb = dest.stat().st_size / 1024
+    print(f"  {dest.relative_to(ROOT)}  {ow}x{oh}, {kb:.0f} KB")
+    return ow, oh
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("source", type=Path, help="photo to convert (a phone photo is fine)")
@@ -120,21 +139,17 @@ def main() -> int:
     convert(args.source, OUT_DIR / f"{name}.webp", ratio)
 
     og_name = None
-    og_size = None
+    og_size = (OG_W, OG_H)
     if args.og:
         with Image.open(args.source) as im:
             w, h = im.size
         current = ratio_of((w, h))
-        if abs(current - float(OG_RATIO)) / float(OG_RATIO) < OG_TOLERANCE:
-            print("\n  photo is already close to 1200x630; using it for both")
-            og_name = name
-        else:
-            og_name = f"{name}-og"
-            print("\nShare card (1200x630):")
-            og_size = convert(args.source, OUT_DIR / f"{og_name}.jpg", OG_RATIO)
+        og_name = name if abs(current - float(OG_RATIO)) / float(OG_RATIO) < OG_TOLERANCE else f"{name}-og"
+        print("\nShare card:")
+        og_size = convert_og(args.source, OUT_DIR / f"{og_name}.jpg", OG_W, OG_H)
 
     print(f"\nPaste into the page:\n\n  ![describe what is actually shown](/images/content/{name}.webp)\n")
-    if og_name and og_name != name and og_size:
+    if og_name != name:
         print("And add to the page frontmatter, with the dimensions it actually wrote:")
         print(f'\n  image: "/images/content/{og_name}.jpg"')
         print(f"  ogImageWidth: {og_size[0]}")
