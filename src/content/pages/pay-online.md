@@ -84,6 +84,55 @@ works for it to function.
   </p>
 </div>
 
+## Bitcoin Cash is not Bitcoin, and cannot be sent as Bitcoin
+
+This is the one mistake that can cost you the money, so it is worth being
+blunt about it.
+
+Bitcoin Cash and Bitcoin are **two separate networks**. They are not versions of
+each other, and there is no automatic conversion between them. If you send Bitcoin
+to a Bitcoin Cash address, the Bitcoin stays on the Bitcoin network. We never
+receive it. Nothing arrives, nothing is credited to your account, and no
+notification will come from us — because from our side, no payment happened.
+
+**Sending Bitcoin here is the same as sending nothing.** The two currencies are
+not interchangeable, and we only accept Bitcoin Cash.
+
+### Why people get this wrong
+
+Bitcoin Cash started as a fork of Bitcoin, so for a long time the two used the
+same kind of address. An older Bitcoin Cash address looks like a Bitcoin address
+and can start with the same characters, which is exactly how this mistake
+happens: the address looks right, the currency is wrong, and the money goes onto
+a chain nobody is watching.
+
+Bitcoin Cash introduced a different address format to close that gap. The address
+on this page is in that newer format, and it always begins with **q** or **p**,
+never with a **1** or **3**:
+
+```
+bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2
+```
+
+If what you are about to send begins with `q` or `p`, you are on the right
+network and the right currency.
+
+### Before you confirm
+
+- Your wallet is set to **Bitcoin Cash (BCH)**, not Bitcoin (BTC).
+- The address you are sending to begins with **q** or **p**, as shown above.
+- The amount is in **BCH**. Bitcoin is worth far more per coin, so a
+  copy-and-paste slip from a BTC balance can send a very large amount by
+  mistake.
+- The address in your confirmation matches the one on this page, character for
+  character.
+
+**If you have already sent Bitcoin by mistake, contact us.** We cannot recover it
+— the coins are on a different chain and no longer exist as far as our address is
+concerned — but telling us is still worth doing, and an exchange or wallet
+provider may be able to help. Do not send a second payment trying to make up for
+the first; that is how one mistake becomes two.
+
 Always check the address against the one shown in your wallet before sending.
 If the two do not match, do not send the payment and call us instead.
 
@@ -123,7 +172,7 @@ Specially Brilliant will ever ask you for it, and no legitimate reason exists
 for anyone to. A message claiming to be from us and asking for those words is a
 scam, and the correct response to it is to ignore it and tell us.
 
-## Error? Get a supported wallet at [BitcoinCash.org](https://bitcoincash.org/).
+
 
 <script>
   // Progressive enhancement for the copy button. Without JavaScript the address

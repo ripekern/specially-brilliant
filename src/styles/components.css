@@ -474,6 +474,15 @@
   padding-block: var(--space-7);
 }
 
+/* A grid item is min-width:auto by default, so one wide child -- a long
+   unbreakable string, a pre, a table -- widens the whole track and puts the
+   entire page into sideways scroll. The single column below 64rem has no
+   explicit track width, so the same default applies there. Zero lets the
+   children scroll inside their own box instead. */
+.with-aside > * {
+  min-width: 0;
+}
+
 @media (min-width: 64rem) {
   .with-aside {
     grid-template-columns: minmax(0, 1fr) 20rem;
@@ -973,6 +982,27 @@
 .prose img {
   border-radius: var(--radius);
   margin-block: var(--space-5);
+}
+
+/* A code block in prose. It scrolls rather than wraps, and the box is capped to
+   the column so a long line cannot widen the whole article: a `pre` with no
+   width constraint is what pushes a narrow screen into sideways scrolling. */
+.prose pre {
+  margin-block: var(--space-4);
+  padding: var(--space-4);
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--ink-900);
+  color: var(--ink-100);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+}
+
+.prose pre code {
+  /* Wrapping a 42-character address mid-string is how a payment is mis-typed,
+     so the block scrolls instead. Same reasoning as .pay-card__addr code. */
+  white-space: pre;
 }
 
 .prose h2 strong,
