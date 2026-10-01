@@ -42,17 +42,18 @@ A wallet is a free app that holds your Bitcoin Cash. It does not cost anything
 to create one, and creating one does not buy anything — you are only setting up
 the ability to send and receive.
 
-Two widely used options, both free:
+We recommend [**Selene Wallet**](https://selene.cash/) — a free, open-source
+Bitcoin Cash wallet for iOS, Android and the browser, built specifically for
+Bitcoin Cash rather than bolted onto a multi-coin app. Get it from the
+[App Store](https://apps.apple.com/app/selene-wallet-bitcoin-cash/id6449441422)
+or [Google Play](https://play.google.com/store/apps/details?id=cash.selene.app),
+or [try it in a browser](https://app.selene.cash/) without installing anything.
 
-- [**Bitcoin.com Wallet**](https://bitcoin.com/wallet/) — iOS and Android.
-  Supports Bitcoin Cash along with other coins in the same app.
-- [**Paytaca**](https://www.paytaca.com/) — iOS, Android and as a browser
-  extension. Bitcoin Cash only, and built specifically for it.
+Selene registers itself to handle `bitcoincash:` links, which is what makes the
+taps on this page work.
 
-[Electron Cash](https://electroncash.org/) is also widely used, mainly on
-desktop. If you install it on Windows, use the installer build rather than the
-standalone file: only the installer registers itself to handle `bitcoincash:`
-links, so on the standalone build a tap will do nothing.
+[Paytaca](https://www.paytaca.com/) is another Bitcoin Cash-only wallet for iOS
+and Android, if you would rather use that one.
 
 **Once the app is installed,** open it, and you are done — the tap links on this
 page will now work. You do not need to know anything about how the network
@@ -88,9 +89,8 @@ If the two do not match, do not send the payment and call us instead.
 
 ## Short version
 
-1. Install a wallet if you do not have one —
-   [Bitcoin.com Wallet](https://bitcoin.com/wallet/) or
-   [Paytaca](https://www.paytaca.com/). Both are free.
+1. Install a wallet if you do not have one — we recommend
+   [Selene Wallet](https://selene.cash/), which is free.
 2. Come back to this page and tap the QR code or the address.
 3. Enter the amount, check the address your wallet shows matches, and send.
 
