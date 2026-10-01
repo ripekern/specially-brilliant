@@ -22,28 +22,9 @@ faq:
     a: Yes. We use eco-friendly, biodegradable detergents, and we pre-wet and rinse all surrounding landscaping so nothing is left that could harm a plant or an animal once it has dried.
   - q: What does window washing cost?
     a: Window washing on a typical single-family home averages around $119. The exact figure depends on the number of panes, the height of your home and how dirty the glass is. We give a free written estimate before any work starts.
-  - q: Do your prices go up?
-    a: No. We price a job once and hold that price — our prices are locked for several years rather than rising with inflation. A quote you get this year is the quote you are working to for the next several years, at the same scope of work.
   - q: How long does it take?
     a: Most single-story homes are done in a few hours. We will tell you what to expect for your specific home when we write the estimate.
 ---
-
-## Our price lock
-
-We price a job once, and we keep that price for several years.
-
-Most companies raise prices every year or two and call it unavoidable. We went the other way, because a customer who is planning maintenance on a schedule needs to know the number they budgeted for is still the number they pay three winters from now. That is the difference between setting a calendar and reacting to an emergency every time something streaks or breaks.
-
-The estimate we write you is a real number, not a placeholder that moves once we are up the ladder.
-
-## What deferred window washing costs you
-
-Glass does not fail all at once. It goes cloudy a pane at a time, and by the time you notice it properly, the damage has usually already started. Grit and dust sit on the surface, grind into the glass every time the wind moves, and etch it. That is not a cleaning issue any more — it is a replacement issue, and replacement is the single most expensive thing that can happen to a window.
-
-Until then, dirty glass quietly takes the light out of your house. Rooms that get daylight feel brighter and larger with clean glass and flatter and darker without it. Dust and pollen that has been sitting on an exterior pane for two seasons is finding its way inside every time that window opens, and it collects on the sills and frames where you cannot see it.
-
-Cleaning windows is not cosmetic upkeep. It is the cheapest way to extend the life of the most expensive glass in your house.
-
 ## What our window washing includes
 
 - Glass cleaned inside and out, on every accessible window
@@ -51,11 +32,11 @@ Cleaning windows is not cosmetic upkeep. It is the cheapest way to extend the li
 - Screens removed, rinsed and refitted so they let air through properly again
 - Eco-friendly, biodegradable detergents
 - Landscaping pre-wet before we start and rinsed afterward, so plants are safe once it has dried
-- A fixed price in writing before the work starts, held for several years
+- A fixed price in writing before the work starts
 
 ![A window washer cleaning a window screen with a water-fed pole brush](/images/content/window-washing-in-progress.webp)
 
-A typical single-family home averages **around $119**. Your written estimate carries the exact figure for your house, and it is the figure we hold.
+A typical single-family home averages **around $119**. Your written estimate carries the exact figure for your house.
 
 We work on homes of any height where access allows, using water-fed pole systems and proper safety equipment where a roof walk is needed.
 

@@ -27,7 +27,7 @@ faq:
   - q: What paint do you use?
     a: Sherwin-Williams and Benjamin Moore. Both are the professional-grade brands that hold up to freeze-thaw cycles and hard UV, and we specify the product by name in your contract so you know exactly what is going on your walls.
   - q: Do your prices go up?
-    a: The total on your contract is the total. Painting is quoted on a written contract with a full scope and a fixed price agreed before any work starts, and that figure does not move once it is signed — no mid-job invoices, no increase while the work is underway. Across the rest of our services we go further and hold our prices for years rather than raising them with inflation.
+    a: The total on your contract is the total. Painting is quoted on a written contract with a full scope and a fixed price agreed before any work starts, and that figure does not move once it is signed — no mid-job invoices, no increase while the work is underway.
   - q: Can painting fix problems that are not paint?
     a: No, and we will say so. If a wall needs repair, a window is leaking or siding is rotting, that needs fixing first. Painting over it is how you end up paying to do the same job twice.
   - q: How much does house painting cost?

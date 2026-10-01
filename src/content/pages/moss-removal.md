@@ -24,8 +24,6 @@ faq:
     a: It depends on the roof, how much moss is on it and how accessible it is. That is covered in the written estimate before any work starts.
   - q: How often does roof moss need treating?
     a: The standard recommendation is an inspection every year, with treatment as growth comes back — typically every 12 to 24 months for a roof in partial sun, and closer to every 12 for a shaded or tree-covered roof. The fastest roofs to watch are the north-facing and low-pitch slopes that stay damp longest.
-  - q: Do your prices go up?
-    a: No. We price a job once and hold that price — our prices are locked for several years rather than rising with inflation. A quote you get this year is the quote you are working to for the next several years, at the same scope of work.
 ---
 
 ## What moss does to a roof
@@ -47,12 +45,6 @@ Check the shaded and north-facing slopes once a year — that is where it starts
 Moss will come back, because it grows wherever a roof stays damp and shaded. That means this is a maintenance item with a rhythm, not a one-time fix, and treating it that way is far cheaper than treating the roof it destroys.
 
 The standard recommendation is to inspect once a year and treat as growth returns — typically somewhere in the 12-to-24-month range for a roof in partial sun, and closer to every 12 months for a shaded or tree-covered roof. Roofs sitting under heavy canopy, and the north-facing and low-pitch slopes that stay damp longest, are the ones that come back first.
-
-## Our price lock
-
-We price the job once and hold it for several years.
-
-Because moss comes back on a schedule, this is exactly the kind of work you want to be able to re-book at a known price. If the number moves every time you call, you stop calling on a schedule — and the moss wins by default.
 
 ## Where we work
 

@@ -24,33 +24,16 @@ faq:
     a: Yes — cars and trucks, interiors and exteriors.
   - q: How much does auto detailing cost?
     a: A full detail averages around $180. The exact figure depends on the size of the vehicle, its condition and how much work the interior needs. We will give you the price before we start.
-  - q: Do your prices go up?
-    a: No. We price a job once and hold that price — our prices are locked for several years rather than rising with inflation. A quote you get this year is the quote you are working to for the next several years, at the same scope of work.
   - q: How long does a detail take?
     a: A full detail is a proper job rather than a quick one, and how long depends on the vehicle and its condition. That is covered in the estimate before we begin.
 ---
-
-## Our price lock
-
-We price a detail once and hold that price for several years.
-
-Detailing is a scheduled job, not a breakdown — nobody's car fails because it went six months without a wax. That is exactly why a price that creeps up every year is worse here than anywhere else: you cannot keep a vehicle on a maintenance schedule when the budget for it keeps changing. Locking the price is what makes the schedule realistic.
-
-## What deferred detailing costs you
-
-The paint on a car does not fail from driving. It fails from sitting. Salt, pollen, road film and bird droppings land on the clear coat, and on a horizontal panel — hood, roof, trunk — that debris stays there for months at a time and works at the finish underneath it. Bugs baked on by a warm engine bay become part of the surface.
-
-Once that is happening, a wax job stops being cosmetic. A detail is the cheapest protection you can put between that accumulation and your clear coat, and it is a fraction of what a repaint costs.
-
-It is the same story on the resale side. A car that has been detailed inside and out presents cleaner than one that has not, and presentation is what a buyer is actually reacting to when they make an offer.
-
 ## What our auto detailing includes
 
 - Exterior wash, polish and wax to protect the clear coat
 - Interior vacuuming and cleaning, including dash and trim care
 - Wheels cleaned, not just wiped
 - Cars and trucks, interiors and exteriors
-- A fixed price in writing before the work starts, held for several years
+- A fixed price in writing before the work starts
 
 ![The leather interior of a car being cleaned with a detailing extractor](/images/content/auto-detailing-interior.webp)
 
