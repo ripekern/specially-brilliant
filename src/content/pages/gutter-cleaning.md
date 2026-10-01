@@ -22,16 +22,43 @@ faq:
     a: Every job goes ahead on a fixed price in writing, agreed before the work starts.
   - q: What does gutter cleaning cost?
     a: Gutter cleaning on a typical single-family home averages around $150. The exact figure depends on the number of linear feet, how many levels the gutters are on, and how badly they are packed. We give a free written estimate before any work starts.
-  - q: Do you clean downspouts and gutters at the same time?
+  - q: Do we clear the downspouts too?
     a: Yes. Clearing the gutter while leaving the downspout packed does nothing, so both are done as part of the same job.
   - q: Will you tell me if my gutters need repair?
     a: Yes. Cleaning is when the damage is easiest to see, and we will point out loose hangers, separated sections and sagging runs while it is still a repair rather than a replacement.
 ---
+
+## What happens when gutters overflow
+
+A clogged gutter is not a nuisance. It is water with nowhere to go, and it will find somewhere — usually behind your fascia, under your shingles, and down the foundation. The stain on the ceiling is the visible end of a chain that started with one packed downspout.
+
+In this part of the country the second failure mode is worse. Water sitting in a frozen gutter forms an ice dam, which works its way back under the shingles and backs up into the roof deck. By the time you see it, the repair is a roof repair, not a gutter repair. Spring is when that bill arrives.
+
+Gutters are also a housing estate for rodents and insects. Blocked gutters hold water and shelter, and what moves in there moves into your attic.
+
+None of this is expensive to prevent and all of it is expensive to fix. Gutter cleaning is the cheapest line item on your house.
+
+## What our gutter cleaning includes
+
+- Gutters emptied and flushed through, including the downspouts
+- Downspout discharge cleared so water actually leaves the property
+- Blockages removed from gutters that have packed solid
+- Loose hangers, separated joints and sagging runs reported while they are still fixable
+- A fixed price in writing before the work starts
+
+![A metal gutter and downspout running along the edge of a roof](/images/content/gutter-and-downspout.webp)
+
+Typical cost on a single-family home is around **$150**. Your written estimate carries the exact figure for your house.
+
+## When it needs doing
+
+Twice a year: before spring growth fills them with catkins and seed, and again in late autumn once the leaves are down and before the first freeze. If you have heavy tree cover, add a late-summer clean. After any storm that brings branches onto the roof, get it looked at — a gutter bent by a limb holds far more water than one that is intact.
+
 ## Where we work
 
 Spokane, the Spokane Valley, Airway Heights, Cheney, Medical Lake, Liberty Lake, Mead, Deer Park, Coeur d'Alene, Post Falls and Sandpoint. See our full [service area](/service-area/).
 
-## What happens when gutters overflow
+## What overflow actually costs you
 
 Regular cleaning of gutters by a professional is essential for several reasons. Firstly, clogged gutters can lead to water overflow, causing damage to your roof, walls, and foundation. This can result in costly repairs if left unchecked.
 

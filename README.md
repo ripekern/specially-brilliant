@@ -104,22 +104,19 @@ complete while missing a number.
 
 ### Adding a photo to a service page
 
-Six of the eight content photos are real shots of this business's own work. Two are
-not, and are credited under the image on the page they appear on:
+Six of the eight content photos are real shots of this business's own work.
+`/house-painting/` and `/moss-removal/` have none.
 
-| File | Page | Credit |
-| --- | --- | --- |
-| `roof-moss-on-tiles.webp` | `/moss-removal/` | OliBac, CC BY 2.0 |
-| `interior-wall-painting.webp` | `/house-painting/` | abbybatchelder, CC BY 2.0 |
+Stock was tried and rejected. Openverse, Pexels and Unsplash were all searched
+under commercial-use licences, and what is available is either snapshot-quality
+interior DIY or Habitat for Humanity volunteer crews — a group on ladders with
+buckets, on a site for a solo owner-operator. Scrappy photos read worse than no
+photo, so these two pages stay imageless rather than carry something that
+undercuts the four services that do have good ones. Free-licence photography of
+this trade is thin because trades photograph their own work for their own
+marketing rather than publishing it.
 
-Both are CC BY, which requires visible attribution, so the credit line under each
-image is not optional — do not remove it. They were the best commercially-usable
-option available; Openverse, Pexels and Unsplash were searched, and the CC-BY
-corpus has almost no professional house-painting photography, because trades
-photograph their work for their own marketing rather than publishing it. Replace
-either with a real photo when there is one, and drop the credit line with it.
-
-Take a new photo on a phone and let the tool do the sizing:
+Take a photo on a phone and let the tool do the sizing:
 
 ```bash
 npm run content:photo -- --name house-painting-exterior painting.jpg

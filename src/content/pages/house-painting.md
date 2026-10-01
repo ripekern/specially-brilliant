@@ -1,9 +1,6 @@
 ---
 title: "Quality House Painting Service in Spokane Area"
 seoTitle: "House Painting in Spokane, WA"
-image: "/images/content/interior-wall-painting-og.jpg"
-ogImageWidth: 1200
-ogImageHeight: 630
 description: "House painting in Spokane and the Spokane Valley. Interior and exterior coats that protect the surface, lift the property, and cost a fraction of a renovation."
 slug: "house-painting"
 wpId: "52"
@@ -44,10 +41,6 @@ Paint is not decoration. It is a sacrificial coating that takes the ultraviolet,
 That is why the timing of exterior repainting matters more than most people expect. A coating that has gone chalky and open is letting water into siding and trim, and it is doing that all through every freeze-thaw cycle you get between now and the job. The paint is not simply looking tired; it has stopped working.
 
 Inside, it is a different problem with the same answer. Walls that have been patched, scuffed and repainted over the years hold a film of older paint under the new one, and that film is what makes a room feel flat no matter how good the colour is.
-
-![A painter cutting in along taped edges on an interior wall](/images/content/interior-wall-painting.webp)
-
-*Photo: abbybatchelder, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)*
 
 ## What our painting includes
 
