@@ -28,6 +28,19 @@ const openDays = site.hours.flatMap((block) => block.days);
           Owner-operated in the {site.area[0]} area since {site.since}. Window washing, gutter
           cleaning, pressure washing, detailing, painting and roof moss removal.
         </p>
+        <a
+          class="footer__bch"
+          href={withBase("/bitcoin-cash-co-op/")}
+          aria-label="Bitcoin Cash accepted here, and the Bitcoin Cash Co-Op"
+        >
+          <img
+            src={withBase("/images/bitcoin-cash-accepted-here.svg")}
+            alt=""
+            width="200"
+            height="75"
+            loading="lazy"
+          />
+        </a>
       </div>
 
       <div>
@@ -51,20 +64,8 @@ const openDays = site.hours.flatMap((block) => block.days);
           <li><BookingCta label="Book a visit" /></li>
           <li><a href={withBase("/about-us/")}>About {site.owner.split(" ")[0]}</a></li>
           <li><a href={withBase("/service-area/")}>Service area</a></li>
+          <li><a href={withBase("/pay-online/")}>Pay with Bitcoin Cash</a></li>
         </ul>
-        <a
-          class="footer__bch"
-          href={withBase("/pay-online/")}
-          aria-label="Pay with Bitcoin Cash"
-        >
-          <img
-            src={withBase("/images/bitcoin-cash-accepted-here.svg")}
-            alt=""
-            width="200"
-            height="75"
-            loading="lazy"
-          />
-        </a>
       </div>
     </div>
 

@@ -765,8 +765,8 @@
 
 /* The Bitcoin Cash merchant badge sits in the footer, which is a dark band in
    both color schemes, so one asset covers both and needs no dark-mode swap.
-   It is a link to the payment page, so it carries the focus ring like any other
-   link, but the badge is artwork rather than text and takes no underline. */
+   It is a link to the co-op, so it carries the focus ring like any other link,
+   but the badge is artwork rather than text and takes no underline. */
 .footer__bch {
   display: block;
   width: 12.5rem;
@@ -774,6 +774,13 @@
   margin-block-start: var(--space-4);
   border-radius: var(--radius-sm);
   text-decoration: none;
+}
+
+/* The left column is the wider one and already carries the logo, business name
+   and blurb, so the badge needs to sit clear of the blurb rather than flush
+   against it. */
+.footer__blurb + .footer__bch {
+  margin-block-start: var(--space-5);
 }
 
 .footer__bch img {
@@ -1038,8 +1045,4 @@
   margin-block-start: var(--space-4);
   font-size: var(--text-sm);
   color: var(--ink-500);
-}
-
-.members__foot code {
-  font-size: 0.95em;
 }
