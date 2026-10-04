@@ -1,0 +1,245 @@
+---
+/**
+ * Renders the `reviews` array from a page's frontmatter, optionally capped to
+ * the first few for a shorter page.
+ *
+ * The average and the count are computed from the array rather than written by
+ * hand, so the headline can never disagree with the cards below it. That matters
+ * more than usual here: these reviews are republished on our own site, and a
+ * count that drifts from what is actually shown is the kind of small
+ * dishonesty that costs more than the social proof is worth.
+ *
+ * When `limit` hides some of them, the average and count still describe every
+ * review, because a shortened page should not understate the total.
+ *
+ * The link out to Google is the important part. Showing three good reviews and
+ * nowhere to see the rest reads as curation; the same three with a route to the
+ * full set reads as confidence.
+ */
+import { getSite } from "../lib/content";
+import { withBase } from "../lib/urls";
+import { services as serviceMeta } from "../data/services";
+
+interface Review {
+  author: string;
+  rating: number;
+  text?: string;
+  when?: number;
+  service?: string;
+}
+
+interface Props {
+  reviews: Review[];
+  /** Show only the first N. Omit to show all of them. */
+  limit?: number;
+  heading?: string;
+  headingId?: string;
+}
+
+const { reviews, limit, heading = "What people say", headingId = "reviews-heading" } =
+  Astro.props;
+
+const site = await getSite();
+const shown = typeof limit === "number" ? reviews.slice(0, limit) : reviews;
+// Averaged and counted over every review, not just the ones on display. The
+// homepage shows the first three but must still describe the whole set, or it
+// claims there are three reviews when there are four.
+const average = reviews.length
+  ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
+  : 0;
+
+/**
+ * A row of five stars. Built as a string and injected with set:html rather than
+ * returned into an expression, because Astro escapes the latter -- which renders
+ * the markup as visible text rather than as icons.
+ */
+const starRow = (rating: number) =>
+  [1, 2, 3, 4, 5]
+    .map((n) =>
+      n <= Math.round(rating)
+        ? `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg>`
+        : `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="is-empty"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg>`,
+    )
+    .join("");
+---
+
+{
+  shown.length > 0 && (
+    <section class="reviews" aria-labelledby={headingId}>
+      <div class="reviews__head">
+        <h2 id={headingId}>{heading}</h2>
+        <p class="reviews__score">
+          <span
+            class="reviews__stars"
+            aria-hidden="true"
+            set:html={starRow(average)}
+          />
+          <span class="reviews__count">
+            {average.toFixed(1)} out of 5 &middot; {reviews.length}{" "}
+            {reviews.length === 1 ? "review" : "reviews"} on Google
+          </span>
+        </p>
+      </div>
+
+      <ul class="reviewlist">
+        {shown.map((r) => (
+          <li class="review">
+            <p class="review__stars" aria-label={`${r.rating} out of 5 stars`}>
+              <span aria-hidden="true" set:html={starRow(r.rating)} />
+            </p>
+            {r.text ? (
+              <blockquote class="review__quote">
+                <p>{r.text}</p>
+              </blockquote>
+            ) : (
+              /* A rating left without a comment. It still counts towards the
+                 average, and saying so is honest -- inventing a quote to fill
+                 the space would not be. */
+              <p class="review__quote review__quote--bare">
+                Rated us {r.rating} stars.
+              </p>
+            )}
+            <p class="review__by">
+              <span class="review__author">{r.author}</span>
+              {r.when && (
+                <time class="review__when" datetime={String(r.when)}>
+                  {r.when}
+                </time>
+              )}
+              {r.service && (
+                <a class="review__service" href={withBase(`/${r.service}/`)}>
+                  {serviceMeta[r.service]?.label ?? "the service they had"}
+                </a>
+              )}
+            </p>
+          </li>
+        ))}
+      </ul>
+
+      {site.googleProfile && (
+        <p class="reviews__foot">
+          <a
+            class="btn btn--ghost"
+            href={site.googleProfile}
+            rel="noopener nofollow"
+            target="_blank"
+          >
+            Read every review on Google
+          </a>
+        </p>
+      )}
+    </section>
+  )
+}
+
+<style>
+  .reviews {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .reviews__head {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .reviews__score {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .reviews__stars {
+    display: inline-flex;
+    gap: 2px;
+    color: var(--accent-600);
+  }
+
+  .reviews__stars svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: currentColor;
+  }
+
+  /* An unearned star is still drawn, in outline, so the row reads as five
+     stars rather than as however many happened to be filled. */
+  .reviews__stars svg.is-empty {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    opacity: 0.35;
+  }
+
+  .reviews__count {
+    color: var(--ink-600);
+    font-size: var(--text-sm);
+  }
+
+  .reviewlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+
+  .review {
+    display: grid;
+    gap: var(--space-3);
+    align-content: start;
+    background: var(--white);
+    border: 1px solid var(--ink-200);
+    border-radius: var(--radius);
+    padding: var(--space-5);
+  }
+
+  .review__stars {
+    margin: 0;
+  }
+
+  .review__quote {
+    margin: 0;
+  }
+
+  .review__quote p {
+    margin: 0;
+    font-size: var(--text-lg);
+    line-height: 1.5;
+  }
+
+  /* Set at body size rather than quote size: this is our description of what the
+     reviewer did, not a quotation of them. */
+  .review__quote--bare {
+    margin: 0;
+    color: var(--ink-600);
+  }
+
+  .review__when {
+    color: var(--ink-500);
+  }
+
+  .review__by {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    font-size: var(--text-sm);
+  }
+
+  .review__author {
+    font-weight: 600;
+    color: var(--ink-700);
+  }
+
+  .review__service {
+    color: var(--text-brand-muted);
+  }
+
+  .reviews__foot {
+    margin: 0;
+  }
+</style>

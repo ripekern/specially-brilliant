@@ -141,6 +141,17 @@ export type Doc = {
   };
 };
 
+/**
+ * The reviews declared on the reviews page.
+ *
+ * Read from that page rather than kept separately so /reviews/ and the homepage
+ * excerpt cannot disagree: there is one array, and both render from it.
+ */
+export async function getReviews() {
+  const entry = await getEntry("documents", "reviews");
+  return entry?.data.reviews ?? [];
+}
+
 /** All pages, excluding drafts, in editorial order. */
 export async function getPages(): Promise<Doc[]> {
   const pages = await getCollection("documents", ({ data }) => !data.draft);

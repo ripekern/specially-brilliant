@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
 import SidebarCta from "../components/SidebarCta.astro";
+import Reviews from "../components/Reviews.astro";
 import { getSite, areaServedSchema, humanHours, formatPhone } from "../lib/content";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
@@ -117,6 +118,14 @@ const schema = [
   </div>
 
   <div class="container with-aside">
+    {data.reviews.length > 0 && (
+      <Reviews
+        reviews={data.reviews}
+        heading="What people say"
+        headingId="reviews-heading"
+      />
+    )}
+
     <article class="prose">
       <Content />
     </article>

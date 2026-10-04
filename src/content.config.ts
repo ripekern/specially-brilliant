@@ -50,6 +50,40 @@ const documents = defineCollection({
       )
       .default([]),
     /**
+     * Google reviews, republished by hand rather than pulled from the Places API.
+     * That API forbids caching its content, and a static site has nowhere to keep
+     * a key that would not be exposed, so the reviews are entered here and the
+     * page links out to Google for the authoritative, complete set.
+     *
+     * Held as data for the same reason as `members`: the visible cards, the
+     * average and the count all render from this one array, so a review cannot be
+     * listed without being counted or shown.
+     */
+    reviews: z
+      .array(
+        z.object({
+          /** First name and last initial only, e.g. "Deb A." */
+          author: z.string(),
+          rating: z.number().min(1).max(5),
+          /**
+           * The reviewer's own words, verbatim. Not edited, not trimmed.
+           * Optional because a rating can be left without a comment, and those
+           * still count -- they are shown as a rating rather than a quote, never
+           * as words the reviewer did not write.
+           */
+          text: z.string().optional(),
+          /**
+           * Year of the review, derived from the relative date Google shows
+           * ("a year ago"), which is the only precision available. Held as a year
+           * rather than a full date so it is never more specific than the source.
+           */
+          when: z.number().optional(),
+          /** Slug of a service page this review mentions, if any. */
+          service: z.string().optional(),
+        }),
+      )
+      .default([]),
+    /**
      * Questions the page answers in prose. Held as data rather than Markdown so
      * the visible list and the FAQPage JSON-LD are rendered from one source and
      * cannot drift apart -- a schema claim the page does not visibly support is
@@ -132,6 +166,12 @@ const config = defineCollection({
       ),
     since: z.number(),
     currency: z.string(),
+    /**
+     * The Google Business Profile. Optional because the reviews section is
+     * useful without it, but it is what lets a visitor see the complete set of
+     * reviews rather than only the ones republished here -- so it should be set.
+     */
+    googleProfile: z.string().url().optional(),
     bookingUrl: z.string().url(),
     social: z.object({
       facebook: z.string().url().optional(),

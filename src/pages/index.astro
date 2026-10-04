@@ -1,13 +1,15 @@
 ---
 import Base from "../layouts/Base.astro";
-import { getSite, getServices, formatPhone } from "../lib/content";
+import { getSite, getServices, getReviews, formatPhone } from "../lib/content";
 import ServiceCard from "../components/ServiceCard.astro";
 import { services as serviceMeta } from "../data/services";
 import { withBase } from "../lib/urls";
 import BookingCta from "../components/BookingCta.astro";
+import Reviews from "../components/Reviews.astro";
 
 const site = await getSite();
 const services = await getServices();
+const reviews = await getReviews();
 ---
 
 <Base
@@ -114,6 +116,14 @@ const services = await getServices();
       </ol>
     </div>
   </section>
+
+{reviews.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <Reviews reviews={reviews} limit={3} heading="What people say" />
+      </div>
+    </section>
+  )}
 
   <section class="section">
     <div class="container">
