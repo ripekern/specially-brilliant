@@ -21,7 +21,7 @@ faq:
   - q: Do you use chemicals, and are they included?
     a: Not by default. We do not add chemicals unless you ask for one, and if you do it is quoted on the estimate rather than assumed to be part of the price.
   - q: Do you clear the gutters too?
-    a: Yes. Gutters and downspouts are cleared as part of the moss job, since we are already up there and packed gutters hold the moisture that grows it.
+    a: Along the stretches we treated, yes — we clear the gutter and downspout there, since we are already up there and packed gutters hold the moisture that grows moss. We do not clean the gutters on the sides of the house that had no moss, and a full gutter clean is quoted as its own job.
   - q: Will you work on my roof if it is steep?
     a: If we cannot reach it safely we will tell you before we start, and we decline the job rather than attempt it. Moss removal is not worth a fall.
   - q: Is the work guaranteed?
@@ -50,7 +50,7 @@ We do not add chemicals by default. If you want one applied to slow the growth c
 
 ## What our moss removal includes
 
-- Gutters and downspouts cleared while we are already up there
+- Gutters and downspouts cleared along the stretches we treated — not the sides of the house that had no moss on them
 - Moss removed by the method that species calls for — brushed and blown off where it is manageable, pressure washed where it has rooted in
 - A written estimate before the work starts
 - An honest answer up front on roofs we will not work, because we cannot reach them safely

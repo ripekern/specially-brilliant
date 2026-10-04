@@ -43,7 +43,7 @@ whole job — the address is filled in for you and you only enter the amount.
 If you have never used Bitcoin Cash, or you are not sure what any of this means,
 the common questions below cover it. Nothing on this page is required reading first.
 
-[![](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2)
+[![Bitcoin Cash accepted here — tap to pay with your wallet](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2)
 
 <div class="faq">
 

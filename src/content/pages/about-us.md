@@ -27,12 +27,12 @@ Under his father’s guidance, he developed a strong work ethic while assisting 
 
 Today, Sven is dedicated to growing his local small business while pursuing studies in biblical law and government. This unique combination of entrepreneurship and lifelong learning reflects his commitment to both professional excellence and meaningful service.
 
-![](/images/content/window-washer-in-spokane.webp)
+![A man in a striped shirt and tie, holding a notepad and pen and smiling at the camera](/images/content/window-washer-in-spokane.webp)
 Sven [Pronounced Se-Ven]
 
-![](/images/content/expert-home-services-in-spokane.webp)
+![The same man seated, looking down as he writes in a notepad](/images/content/expert-home-services-in-spokane.webp)
 
-![](/images/content/free-estimate-home-services-spokane.webp)
+![A close crop of a notepad and a hand writing in it, with a striped sleeve and blue tie in view](/images/content/free-estimate-home-services-spokane.webp)
 
 ## Outside the work
 
@@ -67,26 +67,6 @@ January 18, 2023
 What happens if you fail to wash your windows? If you fail to wash your windows, dirt and grime will build up on the glass, making it difficult to see through. The build-up will also block out sunlight, making your home feel dark and dreary. In addition, the dirt and grime can damage the window,… 
 
 January 18, 2023
-
-[![](/images/content/quality-house-painter-in-spokane-area-scaled.webp)](/house-painting/)
-
-[![](/images/content/best-auto-detailer-in-spokane-area-scaled.webp)](/automobile-detailing/)
-
-[![](/images/content/quality-pressure-washing-service-to-make-my-home-clean-scaled.webp)](/pressure-washing/)
-
-[![](/images/content/hire-to-clean-gutters-in-spokane-scaled.webp)](/gutter-cleaning/)
-
-[![](/images/content/schedule-a-free-estimate-for-cleaning-scaled.webp)](/schedule/)
-
-[![](/images/content/how-can-cleaning-windows-improve-mood-scaled.webp)](/window-washing/)
-
-[![where to get auto detailing in Spokane](/images/content/automobile-detailing-in-spokane.webp)](/automobile-detailing/)
-
-[![Can having clean windows leave an impression on your friends and family?](/images/content/window-washer-in-spokane-valley.webp)](/window-washing/)
-
-[![home cleaning near Spokane](/images/content/window-washer-spokane-scaled.webp)](/window-washing/)
-
-[![Having a great window washer makes me happy](/images/content/where-to-get-a-window-washer-for-spokane-scaled.webp)](/window-washing/)
 
 **GET IN TOUCH**
 

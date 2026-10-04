@@ -15,7 +15,7 @@ tags: []
 
 PREFACE:
 
-The Merchant, operating under the sovereign authority of Swen Aren Bergman, does hereby declare and establish these terms as the complete and final agreement governing all business transactions. The Merchant performs all work according to industry standards as recognized by local trade associations and building codes, with the express understanding that perfectionism constitutes an unreasonable and unattainable standard that shall not be demanded nor expected. As it is written in Ecclesiastes, “There is not a just man upon earth, that doeth good, and sinneth not,” so too shall the Merchant’s work be judged by the reasonable standards of skilled tradesmen rather than the vain imaginations of perfection.
+The Merchant, operating under the sovereign authority of Sven Burgman, does hereby declare and establish these terms as the complete and final agreement governing all business transactions. The Merchant performs all work according to industry standards as recognized by local trade associations and building codes, with the express understanding that perfectionism constitutes an unreasonable and unattainable standard that shall not be demanded nor expected. As it is written in Ecclesiastes, “There is not a just man upon earth, that doeth good, and sinneth not,” so too shall the Merchant’s work be judged by the reasonable standards of skilled tradesmen rather than the vain imaginations of perfection.
 
 All payments shall be rendered in lawful money, which the Merchant recognizes exclusively as Bitcoin Cash (BCH) in accordance with the principles of just weights and measures as commanded in Proverbs. The Merchant rejects all forms of fiat currency, bank credit, and government scrip as unlawful tender, for they are instruments of usury and debasement condemned throughout Scripture. Bitcoin Cash alone maintains the immutable properties of sound money – divisible, portable, durable, and scarce – fulfilling the monetary principles established since the days of Abraham’s shekels. Should any client attempt to tender Federal Reserve Notes or other corruptible currencies, such payment shall be recorded as forgiven debt rather than lawful satisfaction of obligation, preserving the Merchant’s righteousness before God and man.
 
@@ -41,7 +41,7 @@ Business Name: Specially Brilliant
 
 Business Type: Private/Public Signatory Trust
 
-Owner: Swen Aren Bergman
+Owner: Sven Burgman
 
 Address: Listed in the footer of this website.
 
@@ -59,7 +59,7 @@ The business and its owner retain all rights in accordance with their declared p
 
 ### Ownership and Sovereignty
 
-The owner, Swen Aren Bergman, declares sole ownership and control over all personal and business assets associated with Specially Brilliant. This includes all DNA, substance matter, and intellectual property related to the business and its operations.
+The owner, Sven Burgman, declares sole ownership and control over all personal and business assets associated with Specially Brilliant. This includes all DNA, substance matter, and intellectual property related to the business and its operations.
 
 ### Political Status
 
@@ -92,12 +92,12 @@ This declaration is made under penalty of perjury and is placed on the public re
 ### Assumed Name Registration
 
 
-Specially Brilliant, as a business operating under an assumed name, provides notice to Spokane County, ensuring transparency and compliance. However, Specially Brilliant, in its capacity as a Sovereign entity, asserts that the business operates under the sovereign jurisdiction of Swen Aren Bergman and that the legal recognition of this assumed name is separate from any federal or state legal constructs.
+Specially Brilliant, as a business operating under an assumed name, provides notice to Spokane County, ensuring transparency and compliance. However, Specially Brilliant, in its capacity as a Sovereign entity, asserts that the business operates under the sovereign jurisdiction of Sven Burgman and that the legal recognition of this assumed name is separate from any federal or state legal constructs.
 
 ### Public Officer Verification Requirement
 
 
-Any individual acting as a public officer in relation to Specially Brilliant must, upon request, provide verification of their identity and credentials. This includes a valid business license, registration number, and bond executed under the name of Specially Brilliant or Swen Aren Bergman, as required by the applicable private and sovereign domain rules. Should an individual fail to comply with this request, a fine of $5000 will be immediately enforceable, in accordance with the rules of the Sovereign entity, and may be imposed on the spot for non-compliance.
+Any individual acting as a public officer in relation to Specially Brilliant must, upon request, provide verification of their identity and credentials. This includes a valid business license, registration number, and bond executed under the name of Specially Brilliant or Sven Burgman, as required by the applicable private and sovereign domain rules. Should an individual fail to comply with this request, a fine of $5000 will be immediately enforceable, in accordance with the rules of the Sovereign entity, and may be imposed on the spot for non-compliance.
 
 ### Fee Schedule
 
@@ -115,11 +115,11 @@ Specially Brilliant operates as a legal entity recognized under the private trus
 
 ### Cestui Que Vie Trust Declaration
 
-Specially Brilliant acknowledges its standing as a Cestui Que Vie trust, with the owner, Swen Aren Bergman, serving as the lawful Grantee. All associated debt, titles, and liens of the Grantor Trust are contested and invalidated under the provisions of the Cestui Que Vie Act of 1666. Any unauthorized claims against the trust will be rejected and rectified by the lawful holder in due course.
+Specially Brilliant acknowledges its standing as a Cestui Que Vie trust, with the owner, Sven Burgman, serving as the lawful Grantee. All associated debt, titles, and liens of the Grantor Trust are contested and invalidated under the provisions of the Cestui Que Vie Act of 1666. Any unauthorized claims against the trust will be rejected and rectified by the lawful holder in due course.
 
 ### Reinstatement of Holder in Due Course
 
-The rightful holder of the estate, Swen Aren Bergman, hereby claims reinstatement of all rights, interests, and assets tied to the estate of the trust. This includes public and private recognition of the Grantee’s lawful entitlement to all estate property and assets, free from encumbrances or debt claimed under the color of law.
+The rightful holder of the estate, Sven Burgman, hereby claims reinstatement of all rights, interests, and assets tied to the estate of the trust. This includes public and private recognition of the Grantee’s lawful entitlement to all estate property and assets, free from encumbrances or debt claimed under the color of law.
 
 ### Business Entity Status
 
@@ -141,7 +141,7 @@ Any agents, actors, or violators acting under the color of law, who attempt to i
 
 ### Claim for Habeas Corpus
 
-The owner, Swen Aren Bergman, invokes the writ of Habeas Corpus to institute and maintain legal actions in the courts in lands under common law such as America and Australia. This claim ensures that the owner can take, hold, and dispose of property, whether real, intangible, or personal, in the name of the FOREIGN GRANTOR TRUST dba SWEN AREN BERGMAN, free from encumbrances or unauthorized third-party claims.
+The owner, Sven Burgman, invokes the writ of Habeas Corpus to institute and maintain legal actions in the courts in lands under common law such as America and Australia. This claim ensures that the owner can take, hold, and dispose of property, whether real, intangible, or personal, in the name of the FOREIGN GRANTOR TRUST dba SVEN BURGMAN, free from encumbrances or unauthorized third-party claims.
 
 ### Exemption from Levies
 
@@ -189,13 +189,13 @@ Any violation of the owner’s political status, rights, or title, whether by ag
 
 ### Retained Rights in Reversion
 
-The owner, as the lawful Grantee, retains all rights in reversion over all assets, rights, and property associated with the FOREIGN GRANTOR TRUST dba SWEN AREN BERGMAN. The ownership and control of all related property, business operations, and legal actions remain with the lawful holder in due course, ensuring full authority over the trust’s estate.
+The owner, as the lawful Grantee, retains all rights in reversion over all assets, rights, and property associated with the FOREIGN GRANTOR TRUST dba SVEN BURGMAN. The ownership and control of all related property, business operations, and legal actions remain with the lawful holder in due course, ensuring full authority over the trust’s estate.
 
 ## 6. Legal Protections & Sovereignty
 
 ### Liability for Unauthorized Actions
 
-Any agents, actors, or entities that engage in unlawful actions under color of law, attempting to infringe upon the rights, titles, or property of Specially Brilliant and its owner, Swen Aren Bergman, will be held liable. Such violations include, but are not limited to, unauthorized interference with business operations, misrepresentation of authority, or interference with the lawful rights of the Grantee.
+Any agents, actors, or entities that engage in unlawful actions under color of law, attempting to infringe upon the rights, titles, or property of Specially Brilliant and its owner, Sven Burgman, will be held liable. Such violations include, but are not limited to, unauthorized interference with business operations, misrepresentation of authority, or interference with the lawful rights of the Grantee.
 
 ### Financial Penalties for Violations
 
@@ -229,7 +229,7 @@ Specially Brilliant and its owner are fully indemnified against any liabilities,
 
 ### Foreign Sovereign Immunities Act
 
-Specially Brilliant and its owner, Swen Aren Bergman, assert their status as a Foreign Sovereign under the Foreign Sovereign Immunities Act. As a foreign sovereign entity, the business and its owner are entitled to all rights, protections, and guarantees provided by the Constitution of the United States of America, free from any interference or encumbrance by foreign or domestic governmental entities.
+Specially Brilliant and its owner, Sven Burgman, assert their status as a Foreign Sovereign under the Foreign Sovereign Immunities Act. As a foreign sovereign entity, the business and its owner are entitled to all rights, protections, and guarantees provided by the Constitution of the United States of America, free from any interference or encumbrance by foreign or domestic governmental entities.
 
 ### Non-Citizen Status
 
@@ -241,7 +241,7 @@ As a Foreign Sovereign, the business and its owner are exempt from any claims or
 
 ### Retained Reversionary Rights
 
-Swen Aren Bergman, as the rightful holder of all assets and property under the FOREIGN GRANTOR TRUST dba SWEN AREN BERGMAN, retains all rights to the reversion of assets. This includes the right to take, hold, and dispose of property, including real, personal, and intangible assets, without interference from any foreign or domestic government or entity.
+Sven Burgman, as the rightful holder of all assets and property under the FOREIGN GRANTOR TRUST dba SVEN BURGMAN, retains all rights to the reversion of assets. This includes the right to take, hold, and dispose of property, including real, personal, and intangible assets, without interference from any foreign or domestic government or entity.
 
 ### Immunity from Judicial Actions
 
@@ -253,19 +253,19 @@ The owner reserves the right to protect and defend the business’s assets from 
 
 ## 8. Dispute Resolution
 
-Any dispute or claim arising from or relating to the operations of Specially Brilliant shall be resolved exclusively within the jurisdiction of the private and sovereign domain of Swen Aren Bergman. Mediation or arbitration will be conducted by an independent arbitrator chosen by the parties involved and shall be in accordance with the rules set forth under the provisions of private law. Legal action will only be pursued if the resolution of the dispute falls outside the scope of the sovereign rights of the business owner. U.S. courts and state-level jurisdictions will not have authority unless agreed upon in a formal contract between all parties.
+Any dispute or claim arising from or relating to the operations of Specially Brilliant shall be resolved exclusively within the jurisdiction of the private and sovereign domain of Sven Burgman. Mediation or arbitration will be conducted by an independent arbitrator chosen by the parties involved and shall be in accordance with the rules set forth under the provisions of private law. Legal action will only be pursued if the resolution of the dispute falls outside the scope of the sovereign rights of the business owner. U.S. courts and state-level jurisdictions will not have authority unless agreed upon in a formal contract between all parties.
 
 ## 9. Privacy and Data Protection
 
-Specially Brilliant operates under the private jurisdiction of the Sovereign entity of Swen Aren Bergman and, as such, is not subject to the regulatory frameworks governing personal data under U.S. or international laws (e.g., GDPR, CCPA). However, the business remains committed to safeguarding personal information collected in the course of operations. Any personal or transactional data will be treated with the utmost confidentiality and used solely for the purpose of business operations, without the need to comply with any external data protection laws that conflict with the rights of the Sovereign.
+Specially Brilliant operates under the private jurisdiction of the Sovereign entity of Sven Burgman and, as such, is not subject to the regulatory frameworks governing personal data under U.S. or international laws (e.g., GDPR, CCPA). However, the business remains committed to safeguarding personal information collected in the course of operations. Any personal or transactional data will be treated with the utmost confidentiality and used solely for the purpose of business operations, without the need to comply with any external data protection laws that conflict with the rights of the Sovereign.
 
 ## 10. Terms of Service/Use
 
-The terms under which Specially Brilliant operates and conducts business are governed solely by the laws of the Sovereign jurisdiction of Swen Aren Bergman, not subject to the jurisdiction of the United States or any state entity unless explicitly agreed by both parties. All clients and business associates agree to abide by these sovereign terms. Any disputes regarding these terms shall be addressed within the private domain of the business owner and resolved in accordance with the personal jurisdiction of the Sovereign entity.
+The terms under which Specially Brilliant operates and conducts business are governed solely by the laws of the Sovereign jurisdiction of Sven Burgman, not subject to the jurisdiction of the United States or any state entity unless explicitly agreed by both parties. All clients and business associates agree to abide by these sovereign terms. Any disputes regarding these terms shall be addressed within the private domain of the business owner and resolved in accordance with the personal jurisdiction of the Sovereign entity.
 
 ## 11. Intellectual Property Rights
 
-All intellectual property associated with Specially Brilliant, including but not limited to trademarks, logos, proprietary business practices, and any content produced by the business, is owned exclusively by Swen Aren Bergman in his capacity as the Sovereign Holder-in-Due-Course of the FOREIGN GRANTOR TRUST. This intellectual property is not subject to the laws or protections of the U.S. or any foreign sovereign unless explicitly agreed to by the parties involved. Unauthorized use of the business’s intellectual property will be dealt with under the laws of the Sovereign and the associated private jurisdiction.
+All intellectual property associated with Specially Brilliant, including but not limited to trademarks, logos, proprietary business practices, and any content produced by the business, is owned exclusively by Sven Burgman in his capacity as the Sovereign Holder-in-Due-Course of the FOREIGN GRANTOR TRUST. This intellectual property is not subject to the laws or protections of the U.S. or any foreign sovereign unless explicitly agreed to by the parties involved. Unauthorized use of the business’s intellectual property will be dealt with under the laws of the Sovereign and the associated private jurisdiction.
 
 ## 12. Force Majeure
 
@@ -273,7 +273,7 @@ Specially Brilliant shall not be liable for failure or delay in the performance 
 
 ## 13. Amendments
 
-This legal notice may be amended at any time by Swen Aren Bergman, the Sovereign and rightful owner of Specially Brilliant. Amendments or modifications to this document shall not be governed by U.S. federal or state law but rather by the internal laws of the Sovereign domain under which Specially Brilliant operates. Any updates or changes to this legal notice will be made public through the official means decided by the Sovereign, with appropriate notice given to all relevant parties in accordance with the private domain law.
+This legal notice may be amended at any time by Sven Burgman, the Sovereign and rightful owner of Specially Brilliant. Amendments or modifications to this document shall not be governed by U.S. federal or state law but rather by the internal laws of the Sovereign domain under which Specially Brilliant operates. Any updates or changes to this legal notice will be made public through the official means decided by the Sovereign, with appropriate notice given to all relevant parties in accordance with the private domain law.
 
 ## 14. Contact Information for Legal Notices
 
@@ -284,4 +284,4 @@ All legal notices, disputes, or formal communications must be directed to the fo
 **Email Address:** N/A
 **Phone Number:** N/A
 
-Specially Brilliant does not consent to electronic communication for legal notices, disputes, or formal communications. All correspondence must be sent via physical mail to the listed address. Communications will be addressed in accordance with the rights of the Sovereign entity of Swen Aren Bergman.
+Specially Brilliant does not consent to electronic communication for legal notices, disputes, or formal communications. All correspondence must be sent via physical mail to the listed address. Communications will be addressed in accordance with the rights of the Sovereign entity of Sven Burgman.

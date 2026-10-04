@@ -25,7 +25,7 @@ faq:
   - q: What is not included in a detail?
     a: Pet hair removal, odor and steam treatment, headlight restore, ceramic or sealant coating, and engine bay cleaning are all add-ons. They are quoted separately rather than assumed to be part of the tier price.
   - q: How much does auto detailing cost?
-    a: It depends on which tier the vehicle needs and its size and condition. We give you the price in writing before we start.
+    a: Express averages around $119, Detail around $150 and Full Detail around $180. Those are averages for an already well-maintained vehicle — one that has not been detailed in a long time, or that has pet hair in the carpets, is priced above the average. We give you the price in writing before we start.
   - q: How long does a detail take?
     a: A full detail is a proper job rather than a quick one, and how long depends on the vehicle and its condition. That is covered in the estimate before we begin.
 ---
@@ -34,6 +34,14 @@ faq:
 Detailing runs in three tiers — **Express**, **Detail** and **Full Detail** — so you pay for the level you actually want rather than for a package that over- or under-shoots. Cars and trucks, and we come to you.
 
 The **Full Detail** is the complete job: exterior work plus interior vacuuming and cleaning, with dash and trim care. Wheels are cleaned, not just wiped.
+
+| Tier | Average price |
+| --- | --- |
+| Express | around $119 |
+| Detail | around $150 |
+| Full Detail | around $180 |
+
+Those are averages for an already well-maintained vehicle. One that has not been detailed in a long time, or that has pet hair worked into the carpets, is priced above the average rather than quietly absorbing it.
 
 We will tell you which tier suits your vehicle before anything starts, and the price is agreed in writing first.
 
@@ -49,7 +57,7 @@ Quoted separately from whichever tier you book, not assumed to be included:
 
 ![The leather interior of a car being cleaned with a detailing extractor](/images/content/auto-detailing-interior.webp)
 
-Price depends on the tier and the size and condition of the vehicle. Your written estimate carries the exact figure.
+Price depends on the tier and the size and condition of the vehicle — from around $119 for an Express to around $180 for a Full Detail. Your written estimate carries the exact figure.
 
 ## When it needs doing
 
