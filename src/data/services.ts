@@ -16,7 +16,7 @@ export type ServiceMeta = {
 export const services: Record<string, ServiceMeta> = {
   "window-washing": {
     label: "Window washing",
-    blurb: "Streak-free glass inside and out, on homes of any height where access allows.",
+    blurb: "Outside glass and sills, on homes of any height where access allows.",
     image: "/images/service-window-washing.webp",
     icon: "droplet",
   },
@@ -34,7 +34,7 @@ export const services: Record<string, ServiceMeta> = {
   },
   "automobile-detailing": {
     label: "Auto detailing",
-    blurb: "Interior and exterior detail for cars and trucks.",
+    blurb: "Mobile detailing in three tiers, for cars and trucks.",
     image: "/images/service-detailing.webp",
     icon: "car",
   },

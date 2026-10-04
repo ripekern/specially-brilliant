@@ -1,7 +1,7 @@
 ---
 title: "Quality Window Washing Service in Spokane Area"
 seoTitle: "Window Washing in Spokane, WA"
-description: "Window washing in Spokane, the Spokane Valley and Coeur d'Alene. Clean glass inside and out on homes of any height where access allows. Free written estimate."
+description: "Window washing in Spokane, the Spokane Valley and Coeur d'Alene. Outside glass and sills on homes of any height where access allows. Free written estimate."
 slug: "window-washing"
 wpId: "47"
 date: "2023-01-11"
@@ -14,31 +14,38 @@ tags: ["service", "exterior"]
 faq:
   - q: How often should windows be washed?
     a: Most homes in this area need their windows washed twice a year — once in spring after the pollen and road salt season, and again in autumn before winter. If you have pets, a lot of trees against the house, or hard water, that can shorten the interval.
-  - q: Do you clean windows on the inside as well as the outside?
-    a: Yes. We clean glass inside and out, along with the frames and sills, so the light coming in is as clean as the view out.
+  - q: Do you clean the inside of the windows as well as the outside?
+    a: The outside glass and the sills are part of a standard visit. Interior glass, screen cleaning, track cleaning and a full frame detail are all add-ons — real jobs we do, but quoted separately on your written estimate rather than assumed to be included.
   - q: Can you reach second-story and third-story windows?
-    a: Yes. We work on homes of any height where access allows, using water-fed pole systems and, where a roof walk is required, proper safety equipment. If we cannot reach a pane safely on your home, we will tell you before we start rather than after.
+    a: Yes. We work on any height we can reach, cleaning the glass by hand with a squeegee and bucket rather than pole systems. Where a roof walk is the only way to reach a pane, we will use one. If we cannot reach a pane safely on your home, we will tell you before we start rather than after.
   - q: Is it safe for my plants and pets?
-    a: Yes. We use eco-friendly, biodegradable detergents, and we pre-wet and rinse all surrounding landscaping so nothing is left that could harm a plant or an animal once it has dried.
+    a: Yes. We use eco-friendly, biodegradable detergents, which are safe for plants and pets once the glass is rinsed and dry.
   - q: What does window washing cost?
     a: Window washing on a typical single-family home averages around $119. The exact figure depends on the number of panes, the height of your home and how dirty the glass is. We give a free written estimate before any work starts.
   - q: How long does it take?
     a: Most single-story homes are done in a few hours. We will tell you what to expect for your specific home when we write the estimate.
 ---
-## What our window washing includes
+## What a standard window washing includes
 
-- Glass cleaned inside and out, on every accessible window
-- Frames, sills and tracks detailed, not just the pane
-- Screens removed, rinsed and refitted so they let air through properly again
+- Outside glass cleaned on every accessible window, by hand with a squeegee and bucket
+- Sills wiped down
 - Eco-friendly, biodegradable detergents
-- Landscaping pre-wet before we start and rinsed afterward, so plants are safe once it has dried
 - A fixed price in writing before the work starts
 
-![A window washer cleaning a window screen with a water-fed pole brush](/images/content/window-washing-in-progress.webp)
+## What is an add-on
+
+We do all of these, but none of them are part of a standard visit and none of them are assumed to be included in the price. Each is quoted on your written estimate:
+
+- **Track cleaning** — the window tracks vacuumed and brushed out by hand
+- **Full frame detail** — the frame faces detailed, not just the sill
+- **Interior glass** — the inside of the panes
+- **Screen cleaning** — screens removed, rinsed and refitted
+
+![A gloved hand drawing a squeegee down a window, cleaning solution still on the glass and frame](/images/content/window-washing-in-progress.webp)
 
 A typical single-family home averages **around $119**. Your written estimate carries the exact figure for your house.
 
-We work on homes of any height where access allows, using water-fed pole systems and proper safety equipment where a roof walk is needed.
+We work on any height we can reach, cleaning the glass by hand. Where a roof walk is the only way to reach a pane, that is part of the job rather than an extra.
 
 ## How often it needs doing
 

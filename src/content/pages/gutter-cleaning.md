@@ -23,9 +23,9 @@ faq:
   - q: What does gutter cleaning cost?
     a: Gutter cleaning on a typical single-family home averages around $150. The exact figure depends on the number of linear feet, how many levels the gutters are on, and how badly they are packed. We give a free written estimate before any work starts.
   - q: Do we clear the downspouts too?
-    a: Yes. Clearing the gutter while leaving the downspout packed does nothing, so both are done as part of the same job.
+    a: Yes, and we clear them by hand in the same visit. Debris is lifted out of the gutters rather than hosed through, so it never becomes a slurry running down the pipe and onto the ground.
   - q: Will you tell me if my gutters need repair?
-    a: Yes. Cleaning is when the damage is easiest to see, and we will point out loose hangers, separated sections and sagging runs while it is still a repair rather than a replacement.
+    a: Yes. Cleaning is when the damage is easiest to see, and we will point out loose hangers, separated sections and sagging runs while it is still a repair rather than a replacement. The repair itself is a separate job with its own price — we will scope it for you, but it is not included in the cleaning.
 ---
 
 ## What happens when gutters overflow
@@ -38,13 +38,18 @@ Gutters are also a housing estate for rodents and insects. Blocked gutters hold 
 
 None of this is expensive to prevent and all of it is expensive to fix. Gutter cleaning is the cheapest line item on your house.
 
-## What our gutter cleaning includes
+## What a standard gutter cleaning includes
 
-- Gutters emptied and flushed through, including the downspouts
-- Downspout discharge cleared so water actually leaves the property
+- Gutters emptied by hand, debris lifted out rather than washed down — we do not hose them, because water plus packed debris just turns into mud and sends it down the downspout and across the ground
+- Downspouts cleared by hand as part of the same job
 - Blockages removed from gutters that have packed solid
 - Loose hangers, separated joints and sagging runs reported while they are still fixable
 - A fixed price in writing before the work starts
+
+## What is an add-on
+
+- **Gutter guard or mesh removal** — guards have to come off to get the gutters cleaned properly underneath, and refitting them is quoted separately
+- **Gutter repair** — repairs are their own job with their own scope and price. A clean reports what it finds; it does not quietly fold the fix into the cleaning price
 
 ![A metal gutter and downspout running along the edge of a roof](/images/content/gutter-and-downspout.webp)
 

@@ -21,7 +21,7 @@ tags: []
 - **Save Time & Money** – Efficient service that fits your budget and lifestyle.
 - **Create a Welcoming Space** – Impress guests and customers instantly.
 
-[Prices Starting at $119](/window-washing/)
+[Average Cost $119](/window-washing/)
 
 ## **Gutter Cleaning**
 
@@ -31,25 +31,30 @@ tags: []
 - **Save Time & Risk** – Skip the ladder—let us handle the mess. We are professionals with heights and quick service.
 - **Year-Round Peace of Mind** – Clean gutters mean worry-free weather.
 
-[Prices Starting at $119](/gutter-cleaning/)
+[Average Cost $150](/gutter-cleaning/)
 
-## **House Washing** Package
+## **Pressure Washing**
 
 **Expert** Service for Removing Tough Dirt
 
 - **Restore Curb Appeal** – Make surfaces look like new again.
 - **Prevent Long-Term Damage** – Remove mold, grime, and buildup.
-- **Includes Window Cleaning** – Every house wash finishes with an exterior window cleaning to ensure both your home and windows are spotless.
+- **Any Surface** – Siding, decks, driveways, walkways, fences and roofs.
 
-[Prices Starting at $249](/pressure-washing/)
+Window cleaning is a separate service and is not part of a wash.
 
-## **House Painting** Package
+[Average Cost $119](/pressure-washing/)
+
+## **House Painting**
 
 **Expert Service for Painting Application**
 
-- **Includes House Wash** – Proper surface preparation.
 - **Protect Surfaces** – Seal out weather, wear, and damage.
-- **Includes Window Cleaning** – Comes with exterior window cleaning to ensure windows are free of paint and dirt.
+- **Preparation Built In** – Basic prep is part of the price; repair work is quoted separately.
+- **Wash Included on Whole-House Jobs** – A full exterior wash comes with painting the whole exterior, because that is the preparation. A patch job does not include it.
+- **Windows at the Painted Surfaces** – Glass is cleaned where we paint. That is not a full window wash.
+
+Surfaces, preparation and total price are all set out in a written contract before work starts.
 
 [Schedule Your Free Estimate](/house-painting/)
 
@@ -61,7 +66,7 @@ tags: []
 - **Protect Your Investment** – Guard paint and interiors from wear.
 - **Boost Resale Value** – A spotless car sells faster and for more money.
 
-[Prices Starting at $149](/automobile-detailing/)
+[Get a free estimate](/automobile-detailing/)
 
 ## **Moss Removal**
 

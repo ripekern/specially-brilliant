@@ -13,17 +13,19 @@ noindex: false
 tags: ["service", "exterior"]
 faq:
   - q: What surfaces can be pressure washed?
-    a: Driveways, sidewalks, decks, walkways, fences and building exteriors. We will tell you before we start if a surface is one that should not take pressure, and what should be done to it instead.
+    a: Driveways, sidewalks, decks, walkways, fences, building exteriors and roofs. We will tell you before we start if a surface is one that should not take pressure, and what should be done to it instead.
   - q: Will pressure washing damage my siding or deck?
-    a: Not if the right pressure and detergent are used for the surface. We pre-wet, wash and rinse each surface properly rather than hitting it with the highest pressure available.
+    a: Not if the right pressure is used for the surface, and that is not the same on every material. High pressure has its place — it is how rooted-in growth comes off a roof — but it is the wrong tool on a surface that cannot take it. We will tell you before we start what we are using and why.
   - q: Is it safe for my plants and pets?
-    a: Yes. We use eco-friendly, biodegradable detergents and pre-wet and rinse all surrounding landscaping so it is completely safe for plants and pets once dry.
+    a: Yes. We use eco-friendly, biodegradable detergents, which are safe for plants and pets once the surface has been rinsed and dry.
   - q: How long does it take?
     a: It depends entirely on the surface and how much build-up is on it. You will have a realistic answer in the written estimate, before the work starts.
   - q: Do you wash siding as well as hard surfaces?
-    a: Yes. Siding, decks, driveways, walkways and fences are all things we regularly wash.
+    a: Yes. Siding, decks, driveways, walkways, fences and roofs are all things we regularly wash.
+  - q: Does a house wash include window cleaning?
+    a: No. Window washing is a separate service with its own scope and its own add-ons, and it is quoted separately. It is never folded into the price of a wash.
   - q: How much does pressure washing cost?
-    a: Priced by surface area and the condition of the surface. We give a free written estimate first, so the price is agreed before any work begins.
+    a: A pressure wash averages around $119, priced by surface area and the condition of the surface. We give a free written estimate first, so the price is agreed before any work begins.
 ---
 
 ## The surface keeps its condition, right up until it doesn't
@@ -36,13 +38,16 @@ Cleaning the exterior is not about how it looks. It is about keeping water and o
 
 ## What our pressure washing includes
 
-- Pre-wet, wash and rinse on every surface — no pressure blasting at whatever is nearest
-- Driveways, sidewalks, decks, walkways, fences and building exteriors
-- Eco-friendly, biodegradable detergents
-- Landscaping pre-wet before we start and rinsed afterward, safe for plants and pets once dry
+- Pressure matched to the surface — enough to shift the grime, not a figure picked without looking at what we are washing
+- Driveways, sidewalks, decks, walkways, fences, building exteriors and roofs
+- Eco-friendly, biodegradable detergents, safe for plants and pets once dry
 - A fixed price in writing before the work starts
 
+Window cleaning is not part of a wash. It is a separate service, quoted on its own estimate.
+
 ![A worker pressure washing the exterior siding of a house](/images/content/pressure-washing-exterior.webp)
+
+A typical pressure wash averages **around $119**. Your written estimate carries the exact figure for your house.
 
 ## When it needs doing
 

@@ -1,7 +1,7 @@
 ---
 title: "Quality Car and Truck Detailing in Spokane Area"
 seoTitle: "Auto & Truck Detailing in Spokane"
-description: "Auto and truck detailing in Spokane. Interior and exterior cleaning, polish and wax that protect the paint and hold resale value, for a fraction of a new car."
+description: "Mobile auto and truck detailing in Spokane. Express, Detail and Full Detail tiers with interior and exterior cleaning, wax and ceramic protection. Free written estimate."
 slug: "automobile-detailing"
 wpId: "53"
 date: "2023-01-11"
@@ -13,31 +13,43 @@ noindex: false
 tags: ["service", "vehicle"]
 faq:
   - q: Do you detail interiors as well as exteriors?
-    a: Yes. Interior cleaning, vacuuming and dash and trim care, alongside exterior wash, polish and wax.
+    a: Interior work is part of the Full Detail — vacuuming and cleaning with dash and trim care, alongside the exterior. The Express and Detail tiers are exterior-focused, so if you want the inside done, the Full Detail is the tier you want.
   - q: How often should I have my car detailed?
     a: A full detail once or twice a year is reasonable for daily-driven vehicles in this climate. If a car sits outside through a Spokane winter, the salt and road grime argue for more often.
   - q: Does detailing actually protect the paint?
-    a: Yes. Dirt, pollen, road salt and bird droppings sit on the clear coat and work at it, and on a horizontal panel they sit there for months. Wax is the barrier that keeps them off.
-  - q: How much does auto detailing cost?
-    a: It depends on the size of the vehicle, its condition and what you want done. We will give you a price before we start.
+    a: Yes. Dirt, pollen, road salt and bird droppings sit on the clear coat and work at it, and on a horizontal panel they sit there for months. Wax is the barrier that keeps them off, and a ceramic or sealant coating outlasts wax where you want the longer protection.
+  - q: Do you come to me, or do I bring the car to you?
+    a: We come to you. The service is mobile, so the vehicle does not have to go anywhere.
   - q: Do you detail trucks and SUVs as well as cars?
-    a: Yes — cars and trucks, interiors and exteriors.
+    a: Yes — cars and trucks, across every tier.
+  - q: What is not included in a detail?
+    a: Pet hair removal, odor and steam treatment, headlight restore, ceramic or sealant coating, and engine bay cleaning are all add-ons. They are quoted separately rather than assumed to be part of the tier price.
   - q: How much does auto detailing cost?
-    a: A full detail averages around $180. The exact figure depends on the size of the vehicle, its condition and how much work the interior needs. We will give you the price before we start.
+    a: It depends on which tier the vehicle needs and its size and condition. We give you the price in writing before we start.
   - q: How long does a detail take?
     a: A full detail is a proper job rather than a quick one, and how long depends on the vehicle and its condition. That is covered in the estimate before we begin.
 ---
 ## What our auto detailing includes
 
-- Exterior wash, polish and wax to protect the clear coat
-- Interior vacuuming and cleaning, including dash and trim care
-- Wheels cleaned, not just wiped
-- Cars and trucks, interiors and exteriors
-- A fixed price in writing before the work starts
+Detailing runs in three tiers — **Express**, **Detail** and **Full Detail** — so you pay for the level you actually want rather than for a package that over- or under-shoots. Cars and trucks, and we come to you.
+
+The **Full Detail** is the complete job: exterior work plus interior vacuuming and cleaning, with dash and trim care. Wheels are cleaned, not just wiped.
+
+We will tell you which tier suits your vehicle before anything starts, and the price is agreed in writing first.
+
+## What is an add-on
+
+Quoted separately from whichever tier you book, not assumed to be included:
+
+- **Pet hair removal** — extra extraction for hair worked into carpets and upholstery
+- **Odor and steam treatment** — for smoke, mildew or food odours
+- **Headlight restore** — hazed or yellowed lenses made clear again
+- **Ceramic or sealant coating** — longer-lasting protection than wax alone
+- **Engine bay cleaning** — degreased and dressed
 
 ![The leather interior of a car being cleaned with a detailing extractor](/images/content/auto-detailing-interior.webp)
 
-A full detail averages **around $180**, depending on vehicle size and condition.
+Price depends on the tier and the size and condition of the vehicle. Your written estimate carries the exact figure.
 
 ## When it needs doing
 

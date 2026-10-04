@@ -17,9 +17,15 @@ faq:
   - q: Is roof moss actually damaging?
     a: Yes. Moss is a parasite. It holds moisture against the shingles, and that moisture gets under them and rots the deck from underneath — where you cannot see it. It also lifts shingles as it thickens, and those are the tiles that seal the roof.
   - q: Can moss be removed without damaging the roof?
-    a: Yes, if it is done properly. We strip moss using professional-grade, safe methods that protect the roof's integrity rather than damaging it with brute force.
-  - q: Will the moss come back?
-    a: It will try. Moss regrows wherever a roof stays damp and shaded, so expect to monitor it and clean it again as it returns.
+    a: It depends on what the moss is. Where the mat is manageable we brush it off and blow it clear. Where it has rooted into the surface, brushing will not shift it and it has to come off under high pressure. We will tell you which your roof is before we start.
+  - q: Do you use chemicals, and are they included?
+    a: Not by default. We do not add chemicals unless you ask for one, and if you do it is quoted on the estimate rather than assumed to be part of the price.
+  - q: Do you clear the gutters too?
+    a: Yes. Gutters and downspouts are cleared as part of the moss job, since we are already up there and packed gutters hold the moisture that grows it.
+  - q: Will you work on my roof if it is steep?
+    a: If we cannot reach it safely we will tell you before we start, and we decline the job rather than attempt it. Moss removal is not worth a fall.
+  - q: Is the work guaranteed?
+    a: No. Moss regrows wherever a roof stays damp and shaded, so there is no guarantee that it will not come back. What you get is the removal of what is there now and an honest read on how long you have.
   - q: How long does roof moss removal take?
     a: It depends on the roof, how much moss is on it and how accessible it is. That is covered in the written estimate before any work starts.
   - q: How often does roof moss need treating?
@@ -34,15 +40,34 @@ This is one of the clearest cases on any house where waiting is more expensive t
 
 As the mat thickens it also grows over and lifts the tabs. Those are the parts that keep water out. A roof that has been under moss for a few seasons is a roof losing its weatherproofing, quietly, from the bottom up.
 
-## How we clear it without damaging the roof
+## How we clear it
 
-Why trust us to clear it? Because we don't gamble with your property. We strip the moss away using professional-grade, safe methods that protect your roof's integrity rather than damaging it with brute force. We value precision and craftsmanship, and we treat your home with the same focus we use to defend our own sovereignty.
+It depends on what the moss actually is, which is why we do not quote a method before we have looked at it.
+
+Where the mat is manageable, we brush it off and blow it clear. Where it has genuinely rooted into the surface, brushing will not move it and it comes off under high-pressure instead. We will tell you which of those your roof is before we start, not after.
+
+We do not add chemicals by default. If you want one applied to slow the growth coming back, ask and we will quote it — but it is not something we slip in and assume you wanted.
+
+## What our moss removal includes
+
+- Gutters and downspouts cleared while we are already up there
+- Moss removed by the method that species calls for — brushed and blown off where it is manageable, pressure washed where it has rooted in
+- A written estimate before the work starts
+- An honest answer up front on roofs we will not work, because we cannot reach them safely
+
+## What is an add-on
+
+- **Chemical treatment** — quoted separately, and only if you ask for it
+
+There is no guarantee on moss removal, and there is not going to be one. Moss regrows wherever a roof stays damp and shaded. What you are buying is the removal of what is there now, and an honest read on how long you have before it needs doing again.
+
+Roofs that are too steep to work safely are declined rather than attempted.
 
 ## When it needs doing
 
 Check the shaded and north-facing slopes once a year — that is where it starts. Moss spreads, so the first time you notice a patch is not when it appeared; it is when it became visible from the ground. Early on it is a cleaning. Left for seasons it is a roof.
 
-Moss will come back, because it grows wherever a roof stays damp and shaded. That means this is a maintenance item with a rhythm, not a one-time fix, and treating it that way is far cheaper than treating the roof it destroys.
+Moss will come back, because it grows wherever a roof stays damp and shaded. That means this is a maintenance item with a rhythm, not a one-time fix, and treating it that way is far cheaper than treating the roof it destroys. We will not put a guarantee on it, because anyone who does is either lying about the chemistry or coming back at their own cost.
 
 The standard recommendation is to inspect once a year and treat as growth returns — typically somewhere in the 12-to-24-month range for a roof in partial sun, and closer to every 12 months for a shaded or tree-covered roof. Roofs sitting under heavy canopy, and the north-facing and low-pitch slopes that stay damp longest, are the ones that come back first.
 
