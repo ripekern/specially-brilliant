@@ -32,7 +32,9 @@ const stars = [1, 2, 3, 4, 5];
   .stars {
     display: inline-flex;
     gap: 2px;
-    color: var(--accent-600);
+    /* accent-500 rather than accent-600: the reference graphic this matches is
+       #ffb600, and #f59e0b reads noticeably more orange beside it. */
+    color: var(--accent-500);
   }
 
   .stars--sm svg {

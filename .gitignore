@@ -22,3 +22,7 @@ npm-debug.log*
 # Python bytecode from the content and audit tools
 __pycache__/
 *.pyc
+
+# Scratch images waiting to be processed into public/ -- source photos, phone
+# snaps, reference downloads. Not part of the site.
+userImages/
