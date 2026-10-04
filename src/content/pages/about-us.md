@@ -4,7 +4,7 @@ description: "Sven has run Specially Brilliant out of the Spokane Valley since 2
 slug: "about-us"
 wpId: "26"
 date: "2023-01-06"
-modified: "2025-05-28"
+modified: "2026-10-04"
 source: "https://speciallybrilliant.com/about-us/"
 type: "core"
 order: 20
@@ -12,6 +12,8 @@ noindex: false
 tags: []
 ---
 ## Hello THERE! Would you like to know more about me?
+
+![A man in a striped shirt and tie, holding a notepad and pen and smiling at the camera](/images/content/window-washer-in-spokane.webp)
 
 **I’m Your Home Service Professional-Sven.**
 
@@ -25,14 +27,9 @@ Under his father’s guidance, he developed a strong work ethic while assisting 
 
 ## Running Specially Brilliant
 
-Today, Sven is dedicated to growing his local small business while pursuing studies in biblical law and government. This unique combination of entrepreneurship and lifelong learning reflects his commitment to both professional excellence and meaningful service.
-
-![A man in a striped shirt and tie, holding a notepad and pen and smiling at the camera](/images/content/window-washer-in-spokane.webp)
-Sven [Pronounced Se-Ven]
-
 ![The same man seated, looking down as he writes in a notepad](/images/content/expert-home-services-in-spokane.webp)
 
-![A close crop of a notepad and a hand writing in it, with a striped sleeve and blue tie in view](/images/content/free-estimate-home-services-spokane.webp)
+Today, Sven is dedicated to growing his local small business while pursuing studies in biblical law and government. This unique combination of entrepreneurship and lifelong learning reflects his commitment to both professional excellence and meaningful service.
 
 ## Outside the work
 
@@ -49,6 +46,8 @@ Sven is deeply motivated by a desire to foster peace and serve as a steady, upli
 He looks forward to collaborating with you on your next project. Feel free to explore his blog for more insights and updates.
 
 ## Serving the Spokane Valley since 2012
+
+![A close crop of a notepad and a hand writing in it, with a striped sleeve and blue tie in view](/images/content/free-estimate-home-services-spokane.webp)
 
 We are proud to have been meeting the needs of residential maintenance customers since 2012. Our goal is to provide the best possible service to our customers, and we are always looking for ways to improve. We appreciate the feedback we have received from our customers over the years, and we are constantly striving to make our service even better. Thank you for being a part of our company, and we look forward to continuing to serve you in the future.
 
