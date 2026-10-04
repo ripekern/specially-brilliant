@@ -41,13 +41,16 @@ tags: []
 whole job — the address is filled in for you and you only enter the amount.
 
 If you have never used Bitcoin Cash, or you are not sure what any of this means,
-the questions below cover it. Nothing on this page is required reading first.
+the common questions below cover it. Nothing on this page is required reading first.
 
 [![](/images/content/bitcoin-cash-accepted-here-1.webp)](bitcoincash:qqz4ru4ewkn8edttrlm4faex7f0r0tvfhvfn4jlmg2)
 
-## Questions
+<div class="faq">
 
-### I am on a phone. How do I scan a code that is already on my screen?
+## Common questions
+
+<details>
+<summary>I am on a phone. How do I scan a code that is already on my screen?</summary>
 
 You do not scan it — **you tap it.** The code and the address are both live
 links, and a tap opens your wallet with our address already filled in.
@@ -59,7 +62,10 @@ camera over the code and it will scan. On the phone itself, tap.
 Either way you end up in the same place, with the same address, ready to enter
 an amount.
 
-### I tapped it and nothing happened
+</details>
+
+<details>
+<summary>I tapped it and nothing happened</summary>
 
 That means no app on your phone is set up to handle Bitcoin Cash links. This is
 normal if you have never used Bitcoin Cash — the link is an instruction to an
@@ -71,7 +77,10 @@ Two ways forward:
 - **Copy address** above, then paste it into any wallet you already have.
 - **Install a wallet** (the next question) and tap again.
 
-### I do not have a wallet. What is one?
+</details>
+
+<details>
+<summary>I do not have a wallet. What is one?</summary>
 
 A wallet is a free app that holds your Bitcoin Cash. Creating one costs nothing
 and does not involve buying anything — you are only setting up the ability to
@@ -93,7 +102,10 @@ Whichever you pick, install it and open it once. The tap links on this page work
 straight away afterwards. You do not need to understand how the network works for
 it to function.
 
-### I do not have any Bitcoin Cash
+</details>
+
+<details>
+<summary>I do not have any Bitcoin Cash</summary>
 
 Then a wallet alone will not do it — the app is how you *hold* Bitcoin Cash, not
 a supply of it. You need some of the currency before you can send any, and this
@@ -112,7 +124,10 @@ If you were expecting to be able to pay by card, we should be straight with you:
 this page is Bitcoin Cash only. There is no card form here, and we would rather
 tell you that now than let you look for one.
 
-### Can I send Bitcoin (BTC) instead?
+</details>
+
+<details>
+<summary>Can I send Bitcoin (BTC) instead?</summary>
 
 **No.** Bitcoin Cash and Bitcoin are two separate networks. They are not
 versions of each other, and there is no automatic conversion between them.
@@ -146,7 +161,10 @@ and an exchange or wallet provider may be able to help. Please do not send a
 second payment trying to make up for the first; that is how one mistake becomes
 two.
 
-### What does it cost, and how long does it take?
+</details>
+
+<details>
+<summary>What does it cost, and how long does it take?</summary>
 
 A fraction of a cent either way, and usually confirmed in a matter of seconds.
 There is no reason to wait for a cheaper rate — the network does not get cheaper
@@ -155,13 +173,19 @@ at quiet times, and sending earlier does not save anything.
 If you have sent the payment and it has not shown up, check your wallet's own
 pending list first; payments sometimes sit there before appearing in the balance.
 
-### Something went wrong
+</details>
+
+<details>
+<summary>Something went wrong</summary>
 
 Call us at **(509) 903-5116** and we will check from our side before you try
 anything else. If the address in your wallet does not match the one on this page,
 do not send the payment — call instead.
 
-### Is it safe to send to an address on a public page?
+</details>
+
+<details>
+<summary>Is it safe to send to an address on a public page?</summary>
 
 Yes. The address is a receiving address, not a secret: anyone can send to it, and
 nobody can take anything from it by knowing it.
@@ -170,6 +194,10 @@ What must stay private is your **recovery phrase or seed phrase**. Nobody from
 Specially Brilliant will ever ask you for it, and no legitimate reason exists for
 anyone to. A message claiming to be from us and asking for those words is a
 scam — ignore it and tell us.
+
+</details>
+
+</div>
 
 <script>
   // Progressive enhancement for the copy button. Without JavaScript the address
