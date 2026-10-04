@@ -118,17 +118,23 @@ const schema = [
   </div>
 
   <div class="container with-aside">
-    {data.reviews.length > 0 && (
-      <Reviews
-        reviews={data.reviews}
-        heading="What people say"
-        headingId="reviews-heading"
-      />
-    )}
+    {/* One grid item for the whole main column. Reviews sit above the prose
+        because the prose talks about them, but adding them as a sibling would
+        make them a third grid child of a two-column grid, and the prose would
+        land in the sidebar column. */}
+    <div>
+      {data.reviews.length > 0 && (
+        <Reviews
+          reviews={data.reviews}
+          heading="What people say"
+          headingId="reviews-heading"
+        />
+      )}
 
-    <article class="prose">
-      <Content />
-    </article>
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
 
     {data.members.length > 0 && (
       <section class="members container" aria-labelledby="members-heading">

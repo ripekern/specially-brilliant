@@ -1,8 +1,5 @@
 ---
 /**
- * Renders the `reviews` array from a page's frontmatter, optionally capped to
- * the first few for a shorter page.
- *
  * The average and the count are computed from the array rather than written by
  * hand, so the headline can never disagree with the cards below it. That matters
  * more than usual here: these reviews are republished on our own site, and a
@@ -19,6 +16,7 @@
 import { getSite } from "../lib/content";
 import { withBase } from "../lib/urls";
 import { services as serviceMeta } from "../data/services";
+import Stars from "./Stars.astro";
 
 interface Review {
   author: string;
@@ -47,20 +45,6 @@ const shown = typeof limit === "number" ? reviews.slice(0, limit) : reviews;
 const average = reviews.length
   ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
   : 0;
-
-/**
- * A row of five stars. Built as a string and injected with set:html rather than
- * returned into an expression, because Astro escapes the latter -- which renders
- * the markup as visible text rather than as icons.
- */
-const starRow = (rating: number) =>
-  [1, 2, 3, 4, 5]
-    .map((n) =>
-      n <= Math.round(rating)
-        ? `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg>`
-        : `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="is-empty"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg>`,
-    )
-    .join("");
 ---
 
 {
@@ -69,11 +53,7 @@ const starRow = (rating: number) =>
       <div class="reviews__head">
         <h2 id={headingId}>{heading}</h2>
         <p class="reviews__score">
-          <span
-            class="reviews__stars"
-            aria-hidden="true"
-            set:html={starRow(average)}
-          />
+          <Stars rating={average} size="md" />
           <span class="reviews__count">
             {average.toFixed(1)} out of 5 &middot; {reviews.length}{" "}
             {reviews.length === 1 ? "review" : "reviews"} on Google
@@ -85,7 +65,7 @@ const starRow = (rating: number) =>
         {shown.map((r) => (
           <li class="review">
             <p class="review__stars" aria-label={`${r.rating} out of 5 stars`}>
-              <span aria-hidden="true" set:html={starRow(r.rating)} />
+              <Stars rating={r.rating} />
             </p>
             {r.text ? (
               <blockquote class="review__quote">
@@ -136,6 +116,9 @@ const starRow = (rating: number) =>
   .reviews {
     display: grid;
     gap: var(--space-5);
+    /* Separates the cards from whatever follows. The page template wraps these
+       in the main column, where `.with-aside`'s own gap no longer applies. */
+    margin-block-end: var(--space-6);
   }
 
   .reviews__head {
@@ -149,27 +132,6 @@ const starRow = (rating: number) =>
     gap: var(--space-3);
     margin: 0;
     flex-wrap: wrap;
-  }
-
-  .reviews__stars {
-    display: inline-flex;
-    gap: 2px;
-    color: var(--accent-600);
-  }
-
-  .reviews__stars svg {
-    width: 1.1rem;
-    height: 1.1rem;
-    fill: currentColor;
-  }
-
-  /* An unearned star is still drawn, in outline, so the row reads as five
-     stars rather than as however many happened to be filled. */
-  .reviews__stars svg.is-empty {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.5;
-    opacity: 0.35;
   }
 
   .reviews__count {

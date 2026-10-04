@@ -1,0 +1,61 @@
+---
+/**
+ * A row of five stars, filled up to `rating`.
+ *
+ * Written as a component rather than a string injected with set:html because
+ * Astro only adds its style-scoping attribute to elements it renders itself.
+ * Injected HTML gets none, so the sizing and fill rules silently stopped matching
+ * and the stars fell back to their default size and black fill.
+ */
+interface Props {
+  rating: number;
+  /** How large. "sm" fits inside a card, "md" suits a page heading. */
+  size?: "sm" | "md";
+  class?: string;
+}
+
+const { rating, size = "sm", class: className } = Astro.props;
+const stars = [1, 2, 3, 4, 5];
+---
+
+<span class:list={["stars", `stars--${size}`, className]} aria-hidden="true">
+  {
+    stars.map((n) => (
+      <svg viewBox="0 0 24 24" focusable="false" class={n <= rating ? "is-full" : "is-empty"}>
+        <path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z" />
+      </svg>
+    ))
+  }
+</span>
+
+<style>
+  .stars {
+    display: inline-flex;
+    gap: 2px;
+    color: var(--accent-600);
+  }
+
+  .stars--sm svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+
+  .stars--md svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .stars svg {
+    fill: currentColor;
+    flex: none;
+  }
+
+  /* An unearned star is still drawn, in outline, so the row always reads as five
+     stars rather than as however many happened to be filled. */
+  .stars svg.is-empty {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    opacity: 0.4;
+  }
+</style>
