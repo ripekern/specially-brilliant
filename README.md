@@ -147,8 +147,10 @@ wrote.
 - Both: landscape if possible, nothing identifying in frame (no house numbers, no
   client faces, no street names), and no competitor branding.
 - Alt text must describe what is actually in the frame, not what the service is.
-  `verify_build.py` fails on an empty `alt`, and a screen reader should hear what a
-  sighted visitor sees.
+  `verify_build.py` fails when an `alt` is missing altogether, and lists images
+  carrying `alt=""` for review — that is correct for a decorative image whose
+  meaning is already in nearby text or an `aria-label`, so it is not a failure.
+  A screen reader should hear what a sighted visitor sees.
 
 `type` drives real behaviour, not just labels:
 
@@ -158,6 +160,33 @@ wrote.
   from the sitemap. Payment and lending pages.
 - **`side-project`** — unrelated ventures kept for completeness.
 - **`post`** — appears under `/journal/`, excluded from the header nav.
+
+## Checks
+
+`npm run check` type-checks the templates. It cannot see the things that only
+break once a page is rendered, so `npm run verify` covers those:
+
+```bash
+npm run check    # astro check — templates and types
+npm run verify   # build, then check the rendered result against the rules below
+```
+
+`npm run verify` runs `tools/verify_build.py`, which crawls `dist/` the way a
+browser would and fails on a dead internal link, a missing asset, an image with
+no `alt`, or a page without exactly one `h1`. It also checks three things the
+built HTML cannot disprove: a `slug` that disagrees with its filename, a custom
+share image with no `ogImageWidth`/`ogImageHeight` declared alongside it, and a
+`noindex` page listed in the sitemap.
+
+A subpath deploy is the easy thing to get quietly wrong — absolute links build
+fine and only 404 once served. Pass the base prefix to check that build:
+
+```bash
+BASE_PATH=/specially-brilliant npm run build
+python3 tools/verify_build.py specially-brilliant
+```
+
+Unlike `content:todos` this gates: a non-zero exit is a real defect.
 
 ## Content pipeline
 

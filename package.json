@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
+    "verify": "npm run build && python3 tools/verify_build.py",
     "content:convert": "python3 tools/convert.py",
     "content:classify": "python3 tools/classify.py",
     "content:media": "python3 tools/localize_media.py",
@@ -23,7 +24,9 @@
     "astro": "^7.3.5"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.10",
     "axe-core": "^4.11.1",
-    "puppeteer-core": "^24.28.0"
+    "puppeteer-core": "^24.28.0",
+    "typescript": "^6.0.3"
   }
 }

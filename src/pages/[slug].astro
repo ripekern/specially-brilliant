@@ -41,16 +41,15 @@ const pageUrl = new URL(withBase(`/${data.slug}/`), site.url).href;
 
 // Per-page structured data. The LocalBusiness in Base covers the business, but
 // each of these pages is a distinct entity: a service the business offers, or a
-// post it published. Declaring them lets a result show a price, a rating hook or
-// an author rather than just a blue link.
+// page that has its own place in the hierarchy.
+// Journal posts are not handled here -- they live in their own collection and are
+// served by /journal/[slug].astro -- so there is no BlogPosting branch below, and
+// no "post" case in the documents `type` enum to compare against.
 const crumbs = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: site.url },
-    ...(data.type === "post"
-      ? [{ "@type": "ListItem", position: 2, name: "Journal", item: new URL(withBase("/journal/"), site.url).href }]
-      : []),
-    { "@type": "ListItem", position: data.type === "post" ? 3 : 2, name: label, item: pageUrl },
+    { "@type": "ListItem", position: 2, name: label, item: pageUrl },
   ],
 };
 
@@ -64,17 +63,6 @@ const schema = [
     serviceType: label,
     provider: { "@type": "LocalBusiness", name: site.legalName, telephone: site.phone },
     areaServed: areaServedSchema(site),
-  },
-  data.type === "post" && {
-    "@type": "BlogPosting",
-    headline: data.title,
-    description: metaDescription,
-    url: pageUrl,
-    datePublished: data.date,
-    dateModified: data.modified ?? data.date,
-    author: { "@type": "Person", name: site.owner },
-    publisher: { "@type": "Organization", name: site.legalName },
-    mainEntityOfPage: pageUrl,
   },
   crumbs,
   // The co-op is a real group of real businesses, so declaring it as an
@@ -104,14 +92,14 @@ const schema = [
       acceptedAnswer: { "@type": "Answer", text: item.a },
     })),
   },
-].filter(Boolean);
+].filter((entry) => entry !== false);
 ---
 
 <Base
   title={data.seoTitle ?? (isService ? label : data.title)}
   description={metaDescription}
   noindex={data.noindex}
-  type={data.type === "post" ? "article" : "website"}
+  type="website"
   schema={schema}
   image={data.image}
   imageWidth={data.ogImageWidth}
@@ -123,11 +111,6 @@ const schema = [
 >
   <div class="pagehead">
     <div class="container">
-      {data.type === "post" && (
-        <p class="breadcrumb">
-          <a href={withBase("/")}>Home</a> &rsaquo; Journal
-        </p>
-      )}
       <h1>{isService ? label : data.title}</h1>
       {data.description && <p class="pagehead__lede">{data.description}</p>}
     </div>
