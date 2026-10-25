@@ -39,7 +39,7 @@ const schema = [
     image: ogImageUrl,
     datePublished: post.data.date,
     dateModified: post.data.modified ?? post.data.date,
-    author: { "@type": "Person", name: site.owner },
+    author: { "@type": "Organization", name: site.name },
     publisher: { "@type": "Organization", name: site.legalName },
     mainEntityOfPage: postUrl,
   },
@@ -65,7 +65,7 @@ const schema = [
   imageAlt={post.data.title}
   publishedTime={post.data.date}
   modifiedTime={post.data.modified ?? post.data.date}
-  authorName={site.owner}
+  authorName={site.name}
 >
   <div class="pagehead">
     <div class="container">

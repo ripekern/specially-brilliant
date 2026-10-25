@@ -124,7 +124,6 @@ const config = defineCollection({
     name: z.string(),
     tagline: z.string(),
     legalName: z.string(),
-    owner: z.string(),
     phone: z.string(),
     email: z.string(),
     url: z.string().url(),

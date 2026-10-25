@@ -79,7 +79,6 @@ const orgSchema = {
   geo: geoSchema(site),
   openingHours: openingHours(site),
   openingHoursSpecification: openingHoursSpecification(site),
-  founder: { "@type": "Person", name: site.owner },
   sameAs: site.social?.facebook ? [site.social.facebook] : undefined,
 };
 

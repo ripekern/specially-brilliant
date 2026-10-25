@@ -10,10 +10,6 @@
     "astro": "astro",
     "check": "astro check",
     "verify": "npm run build && python3 tools/verify_build.py",
-    "content:convert": "python3 tools/convert.py",
-    "content:classify": "python3 tools/classify.py",
-    "content:media": "python3 tools/localize_media.py",
-    "content:headings": "python3 tools/normalize_headings.py",
     "content:todos": "python3 tools/check_todos.py",
     "content:photo": "python3 tools/prep_photo.py",
     "audit:contrast:browser": "node tools/audit_contrast_browser.js"

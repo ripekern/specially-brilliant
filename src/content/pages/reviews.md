@@ -13,7 +13,7 @@ reviews:
     rating: 5
     when: 2025
     service: "window-washing"
-    text: "Sven has cleaned our windows for years. He does a great job and is very professional. This year he did a house wash and some moss removal. We were very happy with the results."
+    text: "Specially Brilliant has cleaned our windows for years. They do a great job and are very professional. This year they did a house wash and some moss removal. We were very happy with the results."
   - author: "Daniel C."
     rating: 5
     when: 2025
@@ -43,9 +43,10 @@ counts the same as the rest.
 
 ## How we got here
 
-Sven has been owner-operating in the Spokane Valley since 2012. Most of the
-business still comes from people he has already worked for, which is why the
-reviews above mention second and third visits rather than a first impression.
+Specially Brilliant has been owner-operated in the Spokane Valley since 2012.
+Most of the business still comes from people we have already worked for, which
+is why the reviews above mention second and third visits rather than a first
+impression.
 
 If you have already had work done and have a minute to spare, a review on Google
 is the most useful thing you could leave. It is the only place a prospective

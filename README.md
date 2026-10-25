@@ -190,20 +190,11 @@ Unlike `content:todos` this gates: a non-zero exit is a real defect.
 
 ## Content pipeline
 
-The `tools/` scripts are for importing from WordPress, not for normal editing.
-Re-running `content:convert` **overwrites** hand-edited Markdown, so only run it
-when deliberately re-importing.
+The import from WordPress is finished and its export has been removed. The
+Markdown in `src/content/` is now the source of truth; edit it directly.
 
-```bash
-npm run content:convert   # _raw/*.json  -> Markdown + frontmatter
-npm run content:classify  # apply the type/order/noindex map
-npm run content:media     # download + WebP-convert images, rewrite references
-npm run content:headings  # normalise the heading outline (idempotent)
-npm run content:todos     # list TODO(owner) facts still needed from Sven
-```
-
-`_raw/` holds the untouched WordPress REST export and is the recovery path: if
-content is ever lost, re-run the pipeline from it.
+`npm run content:todos` lists any `TODO(owner)` placeholders still waiting on
+business facts.
 
 ## Design
 
@@ -264,6 +255,5 @@ src/
   pages/          routes: index, [slug], services/, journal/, 404
   styles/         tokens.css, base.css, components.css
 public/images/    images, converted to WebP and sized to their render slot
-tools/            one-off import scripts
-_raw/             verbatim WordPress export
+tools/            build, audit and content utilities
 ```

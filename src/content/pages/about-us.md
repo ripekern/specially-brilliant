@@ -1,6 +1,6 @@
 ---
 title: "About Us – About Our Workers"
-description: "Sven has run Specially Brilliant out of the Spokane Valley since 2012. Owner-operated, and the same person quotes the job and does the work."
+description: "Specially Brilliant has run out of the Spokane Valley since 2012. Owner-operated, and the same person quotes the job and does the work."
 slug: "about-us"
 wpId: "26"
 date: "2023-01-06"
@@ -15,35 +15,35 @@ tags: []
 
 ![A man in a striped shirt and tie, holding a notepad and pen and smiling at the camera](/images/content/window-washer-in-spokane.webp)
 
-**I’m Your Home Service Professional-Sven.**
+**I’m Your Home Service Professional.**
 
-## Where he started
+## Where I started
 
-Sven grew up in Newport, a small town north of Spokane, where his family managed a 40-acre mountain farm and cared for a diverse range of livestock. This upbringing instilled in him a deep appreciation for hard work and responsibility from an early age.
+I grew up in Newport, a small town north of Spokane, where my family managed a 40-acre mountain farm and cared for a diverse range of livestock. This upbringing instilled in me a deep appreciation for hard work and responsibility from an early age.
 
 ## Learning the trade
 
-Under his father’s guidance, he developed a strong work ethic while assisting in home construction and remodeling projects, focusing primarily on site preparation and cleanup. He later earned a degree in Electrical Engineering from Eastern Washington University, where he also took an active role in building community within campus housing.
+Under my father’s guidance, I developed a strong work ethic while assisting in home construction and remodeling projects, focusing primarily on site preparation and cleanup. I later earned a degree in Electrical Engineering from Eastern Washington University, where I also took an active role in building community within campus housing.
 
 ## Running Specially Brilliant
 
 ![The same man seated, looking down as he writes in a notepad](/images/content/expert-home-services-in-spokane.webp)
 
-Today, Sven is dedicated to growing his local small business while pursuing studies in biblical law and government. This unique combination of entrepreneurship and lifelong learning reflects his commitment to both professional excellence and meaningful service.
+Today, I am dedicated to growing this local small business while pursuing studies in biblical law and government. This unique combination of entrepreneurship and lifelong learning reflects my commitment to both professional excellence and meaningful service.
 
 ## Outside the work
 
-Sven has a passion for outdoor activities such as skiing, boating, swimming, and hiking, along with a strong commitment to maintaining an active lifestyle. Regular visits to the fitness center keep him engaged with sports like basketball, volleyball, racquetball, and running, complemented by dedicated time for stretching and recovery. He also follows a clean diet, reflecting his focus on health and wellness.
+I have a passion for outdoor activities such as skiing, boating, swimming, and hiking, along with a strong commitment to maintaining an active lifestyle. Regular visits to the fitness center keep me engaged with sports like basketball, volleyball, racquetball, and running, complemented by dedicated time for stretching and recovery. I also follow a clean diet, reflecting my focus on health and wellness.
 
 ## Bitcoin Cash
 
-Beyond physical activity, Sven enjoys traveling, connecting with others, and exploring creative outlets including writing, reading, calligraphy, graphic design, web design, and painting. Teaching, cleaning, and continuous learning are also integral parts of his life.
+Beyond physical activity, I enjoy traveling, connecting with others, and exploring creative outlets including writing, reading, calligraphy, graphic design, web design, and painting. Teaching, cleaning, and continuous learning are also integral parts of my life.
 
-Sven is a strong advocate for Bitcoin Cash and is passionate about helping people understand and use it. He believes that as more people adopt Bitcoin Cash, the world becomes a more just, free and empowered place for everyone.
+I am a strong advocate for Bitcoin Cash and am passionate about helping people understand and use it. I believe that as more people adopt Bitcoin Cash, the world becomes a more just, free and empowered place for everyone.
 
-Sven is deeply motivated by a desire to foster peace and serve as a steady, uplifting presence in the lives of others. As he puts it, *“There’s nothing more meaningful to me than sharing peaceful moments and real conversations with people—those are the things that truly last.”*
+I am deeply motivated by a desire to foster peace and serve as a steady, uplifting presence in the lives of others. As I put it, *“There’s nothing more meaningful to me than sharing peaceful moments and real conversations with people—those are the things that truly last.”*
 
-He looks forward to collaborating with you on your next project. Feel free to explore his blog for more insights and updates.
+I look forward to collaborating with you on your next project. Feel free to explore my blog for more insights and updates.
 
 ## Serving the Spokane Valley since 2012
 
