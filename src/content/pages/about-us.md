@@ -51,6 +51,11 @@ I look forward to collaborating with you on your next project. Feel free to expl
 
 We are proud to have been meeting the needs of residential maintenance customers since 2012. Our goal is to provide the best possible service to our customers, and we are always looking for ways to improve. We appreciate the feedback we have received from our customers over the years, and we are constantly striving to make our service even better. Thank you for being a part of our company, and we look forward to continuing to serve you in the future.
 
+- ## [We Do Computer Engineering Too](/journal/we-do-computer-engineering-too/)
+
+Most people find us because we wash their windows, clean their gutters or detail their cars. That's the side of the business you can see a truck doing. But it is not the only kind of work we do. Alongside home maintenance, Specially Brilliant does computer engineering of all sorts of types: web design, application design, firmware design,… 
+
+October 25, 2026
 - ## [Why We Joined a Bitcoin Cash Co-Op](/journal/why-we-joined-a-bitcoin-cash-co-op/)
 
 The modern economy has long idolized business competition as the path to innovation and prosperity. But beneath this glossy myth lies a harsh truth: relentless competition breeds instability, waste, and short-term thinking. Instead of building value, companies often burn out in price wars, marketing battles, and a race to the bottom. It’s time for something… 
